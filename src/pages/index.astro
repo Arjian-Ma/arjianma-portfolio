@@ -3,27 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ProjectCard from '../components/ProjectCard.astro';
-
-const projects = [
-  {
-    title: "Cloud-Based Search Engine",
-    date: "Aug 2025",
-    description: "Distributed search engine integrating a custom HTTP/HTTPS server, distributed key-value store, analytics engine, and web crawler with PageRank and indexing algorithms.",
-    tags: ["Distributed Systems", "PageRank", "Cloud", "Web"],
-  },
-  {
-    title: "Esports Match Prediction",
-    date: "Nov 2025",
-    description: "Match outcome prediction for League of Legends using Riot API. Trained LSTMs, GRUs, Temporal Transformers, Random Forest, Gradient Boosting, and XGBoost.",
-    tags: ["Machine Learning", "Deep Learning", "Python", "PyTorch"],
-  },
-  {
-    title: "Mathematical Modeling of Idea Intrusion",
-    date: "Jul 2023",
-    description: "Models of ideological conflict using bifurcation and stability analyses to study opinion fragmentation, group dynamics, and deradicalization strategies.",
-    tags: ["Mathematical Modeling", "Stability Analysis", "MATLAB"],
-  },
-];
+import { projects } from '../data/projects';
 ---
 <!doctype html>
 <html lang="en">
