@@ -126,6 +126,21 @@ import { projects } from '../data/projects';
         </div>
       </section>
 
+      <!-- LEARN WITH ME -->
+      <section class="learn-teaser">
+        <div class="section-inner learn-card">
+          <div>
+            <p class="eyebrow">Reading list · papers · GitHub</p>
+            <h2>Learn With Me</h2>
+            <p>
+              A curated trail of papers and repositories I am following in mathematics,
+              machine learning, and AI agents.
+            </p>
+          </div>
+          <a href="/learn" class="learn-link">Explore resources →</a>
+        </div>
+      </section>
+
       <!-- SKILLS -->
       <section class="skills">
         <div class="section-inner">
@@ -227,6 +242,48 @@ import { projects } from '../data/projects';
   .see-all:hover { text-decoration: underline; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
 
+  /* LEARN TEASER */
+  .learn-teaser { padding: 4rem 1.5rem; border-bottom: 1px solid var(--border); }
+  .learn-card {
+    background:
+      radial-gradient(circle at top right, rgba(184, 92, 27, 0.14), transparent 35%),
+      linear-gradient(145deg, rgba(255, 250, 244, 0.96), rgba(244, 226, 205, 0.82));
+    border: 1px solid rgba(184, 92, 27, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 14px 34px rgba(64, 45, 26, 0.08);
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem;
+  }
+  .learn-card .eyebrow {
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    margin: 0 0 0.55rem;
+    text-transform: uppercase;
+  }
+  .learn-card h2 { margin-bottom: 0.7rem; }
+  .learn-card p:last-child {
+    color: var(--text-muted);
+    line-height: 1.65;
+    margin: 0;
+    max-width: 560px;
+  }
+  .learn-link {
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    color: var(--accent);
+    font-weight: 800;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+  }
+  .learn-link:hover { background: var(--accent); color: #fff; transform: translateY(-2px); }
+
   /* SKILLS */
   .skills { padding: 4rem 1.5rem; }
   .skill-groups { display: flex; flex-direction: column; gap: 1.5rem; }
@@ -254,5 +311,7 @@ import { projects } from '../data/projects';
     h1 { font-size: 2.5rem; }
     .about-inner { grid-template-columns: 1fr; }
     .stats { justify-content: center; }
+    .learn-card { flex-direction: column; align-items: flex-start; }
+    .learn-link { white-space: normal; }
   }
 </style>

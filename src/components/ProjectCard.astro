@@ -12,7 +12,6 @@ interface Props {
   tags: string[];
   links?: ProjectLink[];
 }
-
 const { title, date, description, highlights = [], tags, links = [] } = Astro.props;
 const previewHighlights = highlights.slice(0, 2);
 ---
@@ -21,19 +20,15 @@ const previewHighlights = highlights.slice(0, 2);
     <h3>{title}</h3>
     <span class="date">{date}</span>
   </div>
-
   <p class="description">{description}</p>
-
   {previewHighlights.length > 0 && (
     <ul class="highlights" aria-label={`${title} highlights`}>
       {previewHighlights.map(highlight => <li>{highlight}</li>)}
     </ul>
   )}
-
   <div class="tags">
     {tags.map(tag => <span>{tag}</span>)}
   </div>
-
   {links.length > 0 && (
     <div class="links">
       {links.map(link => {
@@ -67,13 +62,11 @@ const previewHighlights = highlights.slice(0, 2);
     min-height: 100%;
     box-shadow: 0 10px 26px rgba(64, 45, 26, 0.06);
   }
-
   .card:hover {
     transform: translateY(-4px);
     border-color: rgba(184, 92, 27, 0.36);
     box-shadow: 0 16px 34px rgba(64, 45, 26, 0.13);
   }
-
   .card-header {
     display: flex;
     justify-content: space-between;
@@ -81,34 +74,29 @@ const previewHighlights = highlights.slice(0, 2);
     margin-bottom: 0.75rem;
     gap: 0.75rem;
   }
-
   h3 {
     font-size: 1.1rem;
     margin: 0;
     line-height: 1.2;
   }
-
   .date {
     font-size: 0.8rem;
     color: var(--text-muted);
     white-space: nowrap;
     padding-top: 0.1rem;
   }
-
   p {
     font-size: 0.95rem;
     line-height: 1.6;
     color: var(--text-muted);
     margin-bottom: 1rem;
   }
-
   .description {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-
   .highlights {
     margin: 0 0 1rem;
     padding-left: 1.1rem;
@@ -116,22 +104,14 @@ const previewHighlights = highlights.slice(0, 2);
     font-size: 0.86rem;
     line-height: 1.5;
   }
-
-  .highlights li + li {
-    margin-top: 0.35rem;
-  }
-
-  .highlights li::marker {
-    color: var(--accent);
-  }
-
+  .highlights li + li { margin-top: 0.35rem; }
+  .highlights li::marker { color: var(--accent); }
   .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
     margin-top: auto;
   }
-
   .tags span {
     font-size: 0.78rem;
     background: var(--accent);
@@ -139,14 +119,12 @@ const previewHighlights = highlights.slice(0, 2);
     padding: 0.2rem 0.6rem;
     border-radius: 20px;
   }
-
   .links {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
     margin-top: 1.1rem;
   }
-
   .links a {
     display: inline-flex;
     align-items: center;
@@ -161,7 +139,6 @@ const previewHighlights = highlights.slice(0, 2);
     text-decoration: none;
     transition: background 0.2s, color 0.2s, transform 0.2s;
   }
-
   .links a:hover {
     background: var(--accent);
     color: #fff;
