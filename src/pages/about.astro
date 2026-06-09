@@ -1,0 +1,64 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title="About | Jiantang Ma" description="About Jiantang Ma" />
+  </head>
+  <body>
+    <Header />
+    <main class="about">
+      <h1>About Me</h1>
+      <p>
+      <p>
+        I'm pursuing my MS in Data Science at the University of Pennsylvania, and completed my BS in Applied Mathematics at UCLA.
+      </p>
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>AIA Group</strong> — External Consultant, Health Division (Aug–Oct 2024)</li>
+        <li><strong>Boston Consulting Group</strong> — Part Time Assistant (Jun–Aug 2024)</li>
+        <li><strong>Bridge Trust Co., Ltd</strong> — Intern, Quantitative Department (Dec 2023–Feb 2024)</li>
+      </ul>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Python</span><span>R</span><span>C++</span><span>Java</span>
+        <span>SQL</span><span>PyTorch</span><span>MATLAB</span>
+        <span>Machine Learning</span><span>Deep Learning</span>
+        <span>Linear Algebra</span><span>Probability Theory</span>
+      </div>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:majiantang020724@gmail.com">majiantang020724@gmail.com</a></p>
+      <p>Phone: +1 (805) 689-7574</p>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .about {
+    max-width: 700px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    line-height: 1.8;
+  }
+  h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+  h2 { margin-top: 2rem; color: var(--accent); }
+  ul { padding-left: 1.5rem; }
+  li { margin-bottom: 0.5rem; }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+  }
+  .skills span {
+    background: var(--accent);
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+</style>

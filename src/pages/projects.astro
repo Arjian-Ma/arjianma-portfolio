@@ -1,0 +1,57 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const projects = [
+  {
+    title: "Cloud-Based Search Engine",
+    date: "Aug 2025",
+    description: "Distributed search engine integrating a custom HTTP/HTTPS server, distributed key-value store, analytics engine, and web crawler. Implements PageRank and indexing algorithms deployed on cloud infrastructure.",
+    tags: ["Distributed Systems", "PageRank", "Cloud", "Web"],
+  },
+  {
+    title: "Esports Match Prediction",
+    date: "Nov 2025",
+    description: "Large-scale match outcome prediction for League of Legends using Riot API data. Trained and compared LSTMs, GRUs, Temporal Transformers, Random Forest, Gradient Boosting, and XGBoost.",
+    tags: ["Machine Learning", "Deep Learning", "Python", "PyTorch"],
+  },
+  {
+    title: "Mathematical Modeling of Idea Intrusion",
+    date: "Jul 2023",
+    description: "Models of ideological conflict incorporating committed minorities and deradicalization factors. Applied bifurcation and stability analyses to study opinion fragmentation and group dynamics.",
+    tags: ["Mathematical Modeling", "Stability Analysis", "MATLAB", "Research"],
+  },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title="Projects | Jiantang Ma" description="Projects by Jiantang Ma" />
+  </head>
+  <body>
+    <Header />
+    <main class="projects">
+      <h1>Projects</h1>
+      <div class="grid">
+        {projects.map(p => <ProjectCard {...p} />)}
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .projects {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+  }
+  h1 { font-size: 2.5rem; margin-bottom: 2rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+</style>

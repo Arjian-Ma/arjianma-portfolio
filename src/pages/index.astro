@@ -1,0 +1,278 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const projects = [
+  {
+    title: "Cloud-Based Search Engine",
+    date: "Aug 2025",
+    description: "Distributed search engine integrating a custom HTTP/HTTPS server, distributed key-value store, analytics engine, and web crawler with PageRank and indexing algorithms.",
+    tags: ["Distributed Systems", "PageRank", "Cloud", "Web"],
+  },
+  {
+    title: "Esports Match Prediction",
+    date: "Nov 2025",
+    description: "Match outcome prediction for League of Legends using Riot API. Trained LSTMs, GRUs, Temporal Transformers, Random Forest, Gradient Boosting, and XGBoost.",
+    tags: ["Machine Learning", "Deep Learning", "Python", "PyTorch"],
+  },
+  {
+    title: "Mathematical Modeling of Idea Intrusion",
+    date: "Jul 2023",
+    description: "Models of ideological conflict using bifurcation and stability analyses to study opinion fragmentation, group dynamics, and deradicalization strategies.",
+    tags: ["Mathematical Modeling", "Stability Analysis", "MATLAB"],
+  },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title="Jiantang Ma" description="Personal portfolio of Jiantang Ma — Data Scientist & Applied Mathematician" />
+  </head>
+  <body>
+    <Header />
+    <main>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="greeting">👋 Hi, I'm</p>
+          <h1>Jiantang Ma</h1>
+          <p class="tagline">Data Scientist · Applied Mathematician</p>
+          <p class="subtagline">MS in Data Science @ UPenn &nbsp;·&nbsp; BS in Applied Math @ UCLA</p>
+          <div class="cta-links">
+            <a href="/projects">View Projects</a>
+            <a href="/Jiantang_Ma_CV.docx" download class="secondary">Download CV</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Arjian-Ma" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/jiantang-ma-38307a2bb/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:majiantang020724@gmail.com">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT + STATS -->
+      <section class="about-strip">
+        <div class="about-inner">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              I'm a data scientist and applied mathematician who loves building systems at the intersection
+              of machine learning, quantitative finance, and distributed computing. I turn complex data
+              into meaningful decisions — whether that's predicting esports match outcomes, pricing
+              insurance products, or modeling ideological dynamics.
+            </p>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Degrees</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE TIMELINE -->
+      <section class="experience">
+        <div class="section-inner">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <strong>AIA Group</strong>
+                  <span class="timeline-date">Aug – Oct 2024</span>
+                </div>
+                <p class="timeline-role">External Consultant, Health Division · Shanghai</p>
+                <p>Market forecasting, competitive analysis, and risk assessment of life and health insurance products. Developed a pricing model incorporating market dynamics and customer behavior.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <strong>Boston Consulting Group</strong>
+                  <span class="timeline-date">Jun – Aug 2024</span>
+                </div>
+                <p class="timeline-role">Part Time Assistant · Remote</p>
+                <p>Industry and competitor research supporting ongoing projects. Market sizing, time series analysis, and client presentation design.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <strong>Bridge Trust Co., Ltd</strong>
+                  <span class="timeline-date">Dec 2023 – Feb 2024</span>
+                </div>
+                <p class="timeline-role">Intern, Quantitative Department · Zhengzhou</p>
+                <p>Back-tested Triple Moving Average and Grid Trading strategies. Extracted insights and presented comprehensive reports to senior management.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECTS -->
+      <section class="featured-projects">
+        <div class="section-inner">
+          <div class="section-header">
+            <h2>Featured Projects</h2>
+            <a href="/projects" class="see-all">See all →</a>
+          </div>
+          <div class="grid">
+            {projects.map(p => <ProjectCard {...p} />)}
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills">
+        <div class="section-inner">
+          <h2>Skills</h2>
+          <div class="skill-groups">
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <div class="tags">
+                {["Python", "R", "C++", "Java", "SQL", "MATLAB"].map(s => <span>{s}</span>)}
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>ML / AI</h3>
+              <div class="tags">
+                {["PyTorch", "Machine Learning", "Deep Learning", "LSTMs", "Transformers", "XGBoost"].map(s => <span>{s}</span>)}
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Mathematics</h3>
+              <div class="tags">
+                {["Linear Algebra", "Probability Theory", "Topology", "Fourier Analysis", "Cryptography", "Stochastic Processes"].map(s => <span>{s}</span>)}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  /* HERO */
+  .hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1.5rem;
+  }
+  .hero-inner { max-width: 680px; }
+  .greeting { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+  h1 { font-size: 4rem; font-weight: 800; margin-bottom: 0.5rem; line-height: 1.1; }
+  .tagline { font-size: 1.4rem; color: var(--accent); font-weight: 600; margin-bottom: 0.4rem; }
+  .subtagline { font-size: 1rem; color: var(--text-muted); margin-bottom: 2.5rem; }
+  .cta-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+  .cta-links a {
+    padding: 0.75rem 1.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    background: var(--accent);
+    color: #fff;
+    transition: opacity 0.2s;
+  }
+  .cta-links a:hover { opacity: 0.85; }
+  .cta-links a.secondary { background: transparent; border: 2px solid var(--accent); color: var(--accent); }
+  .socials { display: flex; gap: 1.5rem; justify-content: center; }
+  .socials a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+  .socials a:hover { color: var(--accent); }
+
+  /* ABOUT + STATS */
+  .about-strip {  padding: 4rem 1.5rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .about-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
+  .about-text h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+  .about-text p { line-height: 1.8; color: var(--text-muted); }
+  .stats { display: flex; gap: 2rem; }
+  .stat { text-align: center; }
+  .stat-num { display: block; font-size: 2.5rem; font-weight: 800; color: var(--accent); }
+  .stat-label { font-size: 0.85rem; color: var(--text-muted); }
+
+  /* EXPERIENCE */
+  .experience { padding: 4rem 1.5rem; }
+  .section-inner { max-width: 900px; margin: 0 auto; }
+  .section-inner h2 { font-size: 1.8rem; margin-bottom: 2rem; }
+  .timeline { position: relative; padding-left: 1.5rem; border-left: 2px solid var(--border); display: flex; flex-direction: column; gap: 2.5rem; }
+  .timeline-item { position: relative; }
+  .timeline-dot { position: absolute; left: -1.6rem; top: 0.4rem; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+  .timeline-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.2rem; flex-wrap: wrap; gap: 0.5rem; }
+  .timeline-date { font-size: 0.85rem; color: var(--text-muted); }
+  .timeline-role { font-size: 0.9rem; color: var(--accent); margin-bottom: 0.5rem; }
+  .timeline-content p:last-child { color: var(--text-muted); line-height: 1.7; font-size: 0.95rem; }
+
+  /* PROJECTS */
+  .featured-projects { padding: 4rem 1.5rem;  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+  .section-header h2 { font-size: 1.8rem; }
+  .see-all { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .see-all:hover { text-decoration: underline; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+
+  /* SKILLS */
+  .skills { padding: 4rem 1.5rem; }
+  .skill-groups { display: flex; flex-direction: column; gap: 1.5rem; }
+  .skill-group h3 { font-size: 1rem; color: var(--text-muted); margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tags span {  border: 1px solid var(--border); color: var(--text); padding: 0.3rem 0.9rem; border-radius: 20px; font-size: 0.9rem; }
+
+  /* HERO BACKGROUNDS */
+  :global([data-theme="dark"]) .hero {
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(79, 70, 229, 0.4) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(109, 40, 217, 0.35) 0%, transparent 55%),
+      radial-gradient(ellipse at 60% 80%, rgba(37, 99, 235, 0.3) 0%, transparent 50%);
+    background-color: #0a0a0f;
+  }
+  .hero {
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(210, 180, 140, 0.35) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(188, 143, 100, 0.25) 0%, transparent 55%),
+      radial-gradient(ellipse at 60% 80%, rgba(222, 196, 160, 0.3) 0%, transparent 50%);
+    background-color: #fdf8f2;
+  }
+  /* RESPONSIVE */
+  @media (max-width: 640px) {
+    h1 { font-size: 2.5rem; }
+    .about-inner { grid-template-columns: 1fr; }
+    .stats { justify-content: center; }
+  }
+</style>
