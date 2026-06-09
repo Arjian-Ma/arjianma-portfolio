@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Accuracy by Match Time</title>
+  <desc id="desc">Illustrative chart showing prediction accuracy increasing from early game to late game.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff8ef"/><stop offset="1" stop-color="#ead1b5"/></linearGradient></defs>
+  <rect width="1200" height="680" rx="28" fill="url(#bg)"/>
+  <text x="70" y="78" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#151515">Prediction Accuracy Across Game Time</text>
+  <text x="70" y="118" font-family="Arial, sans-serif" font-size="20" fill="#68635e">Later checkpoints contain stronger signals from gold, XP, objectives, vision, and map control</text>
+  <g transform="translate(130 170)" font-family="Arial, sans-serif">
+    <line x1="0" y1="390" x2="920" y2="390" stroke="#3a332c" stroke-width="3"/>
+    <line x1="0" y1="40" x2="0" y2="390" stroke="#3a332c" stroke-width="3"/>
+    <g stroke="#d7c0a8" stroke-width="1"><line x1="0" y1="320" x2="920" y2="320"/><line x1="0" y1="250" x2="920" y2="250"/><line x1="0" y1="180" x2="920" y2="180"/><line x1="0" y1="110" x2="920" y2="110"/></g>
+    <polyline points="90,300 270,232 450,183 630,118 810,95" fill="none" stroke="#b85c1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#b85c1b"><circle cx="90" cy="300" r="11"/><circle cx="270" cy="232" r="11"/><circle cx="450" cy="183" r="11"/><circle cx="630" cy="118" r="11"/><circle cx="810" cy="95" r="11"/></g>
+    <g font-size="17" fill="#4d463f"><text x="70" y="430">10 min</text><text x="250" y="430">15 min</text><text x="430" y="430">20 min</text><text x="610" y="430">25 min</text><text x="790" y="430">30 min</text><text x="-70" y="325">70%</text><text x="-70" y="255">75%</text><text x="-70" y="185">80%</text><text x="-70" y="115">85%</text></g>
+    <g font-size="18" font-weight="700" fill="#1f1b17"><text x="62" y="284">~68%</text><text x="242" y="216">~75%</text><text x="422" y="167">~79%</text><text x="602" y="102">~85%</text><text x="782" y="79">~85%</text></g>
+    <text x="460" y="485" text-anchor="middle" font-size="18" fill="#68635e">Game-time checkpoint</text>
+    <text x="-70" y="205" transform="rotate(-90 -70 205)" text-anchor="middle" font-size="18" fill="#68635e">Test accuracy</text>
+  </g>
+</svg>

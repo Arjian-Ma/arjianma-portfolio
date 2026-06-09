@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Distributed Search Engine Architecture</title>
+  <desc id="desc">Architecture diagram showing seed URLs flowing through crawler workers, KVS, indexer, PageRank, and a search frontend.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff8ef"/><stop offset="1" stop-color="#ead1b5"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f7efe6"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b85c1b"/></marker>
+  </defs>
+  <rect width="1200" height="680" rx="28" fill="url(#bg)"/>
+  <text x="70" y="78" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#161616">Distributed Web Crawler and Search Engine</text>
+  <text x="70" y="118" font-family="Arial, sans-serif" font-size="20" fill="#68635e">Java · KVS · Flame-style compute · PageRank · Search frontend</text>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(70 230)"><rect width="170" height="115" rx="18" fill="url(#card)" stroke="#dfc8b0"/><text x="85" y="47" text-anchor="middle" font-size="22" font-weight="700" fill="#252525">Seed URLs</text><text x="85" y="77" text-anchor="middle" font-size="16" fill="#666">Starting crawl set</text></g>
+    <g transform="translate(320 180)"><rect width="230" height="215" rx="18" fill="url(#card)" stroke="#dfc8b0"/><text x="115" y="45" text-anchor="middle" font-size="24" font-weight="700" fill="#252525">Crawler Workers</text><text x="115" y="82" text-anchor="middle" font-size="16" fill="#666">Robots.txt</text><text x="115" y="112" text-anchor="middle" font-size="16" fill="#666">Rate limiting</text><text x="115" y="142" text-anchor="middle" font-size="16" fill="#666">Deduplication</text><text x="115" y="172" text-anchor="middle" font-size="16" fill="#666">Anchor extraction</text></g>
+    <g transform="translate(640 180)"><rect width="210" height="215" rx="18" fill="url(#card)" stroke="#dfc8b0"/><text x="105" y="45" text-anchor="middle" font-size="24" font-weight="700" fill="#252525">KVS</text><text x="105" y="82" text-anchor="middle" font-size="16" fill="#666">pt-crawl</text><text x="105" y="112" text-anchor="middle" font-size="16" fill="#666">content hashes</text><text x="105" y="142" text-anchor="middle" font-size="16" fill="#666">domain stats</text><text x="105" y="172" text-anchor="middle" font-size="16" fill="#666">hosts cache</text></g>
+    <g transform="translate(940 120)"><rect width="190" height="115" rx="18" fill="url(#card)" stroke="#dfc8b0"/><text x="95" y="47" text-anchor="middle" font-size="23" font-weight="700" fill="#252525">Indexer</text><text x="95" y="77" text-anchor="middle" font-size="16" fill="#666">Inverted index</text></g>
+    <g transform="translate(940 310)"><rect width="190" height="115" rx="18" fill="url(#card)" stroke="#dfc8b0"/><text x="95" y="47" text-anchor="middle" font-size="23" font-weight="700" fill="#252525">PageRank</text><text x="95" y="77" text-anchor="middle" font-size="16" fill="#666">Link graph ranking</text></g>
+    <g transform="translate(480 500)"><rect width="250" height="105" rx="18" fill="#b85c1b"/><text x="125" y="45" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">Search Frontend</text><text x="125" y="75" text-anchor="middle" font-size="16" fill="#ffe8d6">ranked query results</text></g>
+  </g>
+  <g stroke="#b85c1b" stroke-width="4" fill="none" marker-end="url(#arrow)">
+    <path d="M240 287 H305"/><path d="M550 287 H625"/><path d="M850 260 C900 235 905 180 930 175"/><path d="M850 330 C900 355 905 365 930 365"/><path d="M1035 235 C1010 485 755 555 735 555"/><path d="M940 425 C870 505 785 545 735 555"/>
+  </g>
+</svg>
