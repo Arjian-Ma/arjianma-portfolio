@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-09";
+export const lastUpdated = "2026-06-12";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,42 +28,52 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Weighted universal approximation of differentiable maps on infinite-dimensional manifolds",
+        title: "Stochastic dominations for FK percolation and sharp thinning thresholds for the Ising energy field",
         source: "arXiv",
-        date: "2026-06-08",
-        href: "https://arxiv.org/abs/2606.09820",
+        date: "2026-06-11",
+        href: "https://arxiv.org/abs/2606.13648",
         summary:
-          "A recent theory paper on approximation for differentiable maps in infinite-dimensional settings.",
-        tags: ["Approximation", "Manifolds", "Theory"],
+          "A probability paper probing stochastic domination and thinning thresholds in Ising-model energy fields.",
+        tags: ["Probability", "Percolation", "Ising Models"],
       },
       {
         type: "Paper",
-        title: "PTL-Diffusion: Manifold-Aware Diffusion with Periodic Terminal Laws",
+        title: "Data-driven subsampling rates for diffusion parameter estimation of SDEs",
         source: "arXiv",
-        date: "2026-06-08",
-        href: "https://arxiv.org/abs/2606.09816",
+        date: "2026-06-11",
+        href: "https://arxiv.org/abs/2606.13615",
         summary:
-          "A mathematically motivated diffusion-model paper involving manifold-aware dynamics.",
-        tags: ["Diffusion", "Manifolds", "Stochastic Models"],
+          "A statistical-probability approach to choosing subsampling scales for estimating diffusion parameters in SDE models.",
+        tags: ["SDEs", "Statistics", "Parameter Estimation"],
+      },
+      {
+        type: "GitHub",
+        title: "casadi/casadi",
+        source: "GitHub",
+        date: "Updated 2026-06-12",
+        href: "https://github.com/casadi/casadi",
+        summary:
+          "A symbolic framework for numerical optimization and algorithmic differentiation, useful for control and applied math workflows.",
+        tags: ["Optimization", "Numerical Computing", "Control"],
       },
       {
         type: "GitHub",
         title: "antoniolupetti/algebrica",
         source: "GitHub",
-        date: "Updated 2026-06-09",
+        date: "Updated 2026-06-12",
         href: "https://github.com/antoniolupetti/algebrica",
         summary:
-          "An open mathematical knowledge base focused on clear structure and conceptual learning.",
+          "An open mathematical knowledge base focused on clear structure, visual explanations, and conceptual learning.",
         tags: ["Knowledge Base", "Math Learning"],
       },
       {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-09",
+        date: "Updated 2026-06-12",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
-          "A large numerical computing library for JavaScript and TypeScript, useful for computational math references.",
+          "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
         tags: ["Numerical Computing", "Library"],
       },
     ],
@@ -77,33 +87,43 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Rethinking the Divergence Regularization in LLM RL",
+        title: "Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning",
         source: "arXiv",
-        date: "2026-06-08",
-        href: "https://arxiv.org/abs/2606.09821",
+        date: "2026-06-11",
+        href: "https://arxiv.org/abs/2606.13680",
         summary:
-          "A recent paper on reinforcement learning for LLMs and the role of divergence regularization.",
-        tags: ["LLM RL", "Regularization", "Training"],
+          "A retrieval-augmented reinforcement fine-tuning paper that targets analogy-based reasoning rather than simple semantic similarity.",
+        tags: ["RAG", "Reinforcement Fine-Tuning", "Reasoning"],
       },
       {
         type: "Paper",
-        title: "An Agency-Transferring Model-Free Policy Enhancement Technique",
+        title: "Understanding Truncated Positional Encodings for Graph Neural Networks",
         source: "arXiv",
-        date: "2026-06-08",
-        href: "https://arxiv.org/abs/2606.09825",
+        date: "2026-06-11",
+        href: "https://arxiv.org/abs/2606.13671",
         summary:
-          "A reinforcement-learning paper related to policy improvement and agent behavior transfer.",
-        tags: ["Reinforcement Learning", "Policy", "Agents"],
+          "A graph-learning paper studying how truncated positional encodings affect the power and behavior of GNNs.",
+        tags: ["Graph Neural Networks", "Positional Encoding", "Theory"],
       },
       {
         type: "GitHub",
-        title: "pytorch/pytorch",
+        title: "huggingface/diffusers",
         source: "GitHub",
-        date: "Updated 2026-06-09",
-        href: "https://github.com/pytorch/pytorch",
+        date: "Updated 2026-06-12",
+        href: "https://github.com/huggingface/diffusers",
         summary:
-          "The core PyTorch repository for tensors, autograd, neural networks, and GPU acceleration.",
-        tags: ["PyTorch", "Deep Learning", "Framework"],
+          "A widely used library for state-of-the-art diffusion models across image, video, and audio generation.",
+        tags: ["Diffusion Models", "Generative AI", "PyTorch"],
+      },
+      {
+        type: "GitHub",
+        title: "voxel51/fiftyone",
+        source: "GitHub",
+        date: "Updated 2026-06-12",
+        href: "https://github.com/voxel51/fiftyone",
+        summary:
+          "A dataset curation and model-analysis toolkit for improving computer-vision and multimodal ML workflows.",
+        tags: ["Datasets", "Evaluation", "Computer Vision"],
       },
       {
         type: "GitHub",
@@ -126,43 +146,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics",
+        title: "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
         source: "arXiv",
-        date: "2026-06-08",
-        href: "https://arxiv.org/abs/2606.09826",
+        date: "2026-06-11",
+        href: "https://arxiv.org/abs/2606.13681",
         summary:
-          "A benchmark paper for visual-language game agents, focused on embodied evaluation and improvement dynamics.",
-        tags: ["Benchmarks", "VLM Agents", "Game Agents"],
+          "A benchmark-style agent paper focused on memory evolution and robustness when environments change over time.",
+        tags: ["Memory", "Benchmarks", "Dynamic Environments"],
       },
       {
         type: "Paper",
-        title: "Evaluation Cards: An Interpretive Layer for AI Evaluation Reporting",
+        title: "HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents",
         source: "arXiv",
-        date: "2026-06-08",
-        href: "https://arxiv.org/abs/2606.09809",
+        date: "2026-06-11",
+        href: "https://arxiv.org/abs/2606.13663",
         summary:
-          "A paper about making AI evaluation results easier to interpret, compare, and communicate.",
-        tags: ["Evaluation", "Reporting", "AI Safety"],
+          "A tool-use paper addressing the mismatch between atomic tool calls and larger deterministic tool workflows.",
+        tags: ["Tool Use", "Agent Workflows", "LLM Agents"],
+      },
+      {
+        type: "Paper",
+        title: "Agents-K1: Towards Agent-native Knowledge Orchestration",
+        source: "arXiv",
+        date: "2026-06-11",
+        href: "https://arxiv.org/abs/2606.13669",
+        summary:
+          "A research-agent paper that shifts attention from simple paper retrieval toward richer scientific knowledge orchestration.",
+        tags: ["Research Agents", "Knowledge Orchestration", "Scientific AI"],
       },
       {
         type: "GitHub",
-        title: "Mintplex-Labs/anything-llm",
+        title: "microsoft/agent-framework",
         source: "GitHub",
-        date: "Updated 2026-06-09",
-        href: "https://github.com/Mintplex-Labs/anything-llm",
+        date: "Updated 2026-06-12",
+        href: "https://github.com/microsoft/agent-framework",
         summary:
-          "A popular local-first AI application stack with chat, documents, agents, and private deployment options.",
-        tags: ["Local AI", "Agents", "RAG"],
+          "Microsoft's framework for building, orchestrating, and deploying AI agents and multi-agent workflows.",
+        tags: ["Agent Framework", "Multi-Agent", "Orchestration"],
       },
       {
         type: "GitHub",
-        title: "winstonkoh87/Athena-Public",
+        title: "Human-Agent-Society/CORAL",
         source: "GitHub",
-        date: "Updated 2026-06-09",
-        href: "https://github.com/winstonkoh87/Athena-Public",
+        date: "Updated 2026-06-12",
+        href: "https://github.com/Human-Agent-Society/CORAL",
         summary:
-          "An experimental Linux environment for AI agents with memory, autonomy, and time-awareness concepts.",
-        tags: ["Agent OS", "Memory", "Autonomy"],
+          "A lightweight infrastructure project for multi-agent autonomous self-evolution and human-agent society experiments.",
+        tags: ["Multi-Agent", "Autonomy", "Agent Infrastructure"],
       },
     ],
   },
