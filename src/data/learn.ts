@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-12";
+export const lastUpdated = "2026-06-13";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -58,9 +58,19 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
+        title: "runmat-org/runmat",
+        source: "GitHub",
+        date: "Updated 2026-06-13",
+        href: "https://github.com/runmat-org/runmat",
+        summary:
+          "An open-source MATLAB-style runtime written in Rust, with CPU, GPU, Jupyter, and web targets for scientific computing experiments.",
+        tags: ["Numerical Analysis", "Scientific Computing", "Rust"],
+      },
+      {
+        type: "GitHub",
         title: "antoniolupetti/algebrica",
         source: "GitHub",
-        date: "Updated 2026-06-12",
+        date: "Updated 2026-06-13",
         href: "https://github.com/antoniolupetti/algebrica",
         summary:
           "An open mathematical knowledge base focused on clear structure, visual explanations, and conceptual learning.",
@@ -70,7 +80,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-12",
+        date: "Updated 2026-06-13",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
@@ -107,29 +117,29 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "huggingface/diffusers",
+        title: "skypilot-org/skypilot",
         source: "GitHub",
-        date: "Updated 2026-06-12",
-        href: "https://github.com/huggingface/diffusers",
+        date: "Updated 2026-06-13",
+        href: "https://github.com/skypilot-org/skypilot",
         summary:
-          "A widely used library for state-of-the-art diffusion models across image, video, and audio generation.",
-        tags: ["Diffusion Models", "Generative AI", "PyTorch"],
+          "A practical infrastructure layer for running and scaling AI workloads across Kubernetes, Slurm, cloud, and on-prem GPU environments.",
+        tags: ["ML Infrastructure", "Distributed Training", "LLM Serving"],
       },
       {
         type: "GitHub",
-        title: "voxel51/fiftyone",
+        title: "py-why/dowhy",
         source: "GitHub",
-        date: "Updated 2026-06-12",
-        href: "https://github.com/voxel51/fiftyone",
+        date: "Updated 2026-06-13",
+        href: "https://github.com/py-why/dowhy",
         summary:
-          "A dataset curation and model-analysis toolkit for improving computer-vision and multimodal ML workflows.",
-        tags: ["Datasets", "Evaluation", "Computer Vision"],
+          "A causal machine-learning library that keeps assumptions explicit through graphical models, potential outcomes, and refutation tests.",
+        tags: ["Causal ML", "Evaluation", "Statistics"],
       },
       {
         type: "GitHub",
         title: "pytorch/executorch",
         source: "GitHub",
-        date: "Updated 2026-06-09",
+        date: "Updated 2026-06-13",
         href: "https://github.com/pytorch/executorch",
         summary:
           "PyTorch's on-device AI runtime for mobile, embedded, and edge deployment.",
@@ -175,24 +185,24 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Research Agents", "Knowledge Orchestration", "Scientific AI"],
       },
       {
-        type: "GitHub",
-        title: "microsoft/agent-framework",
-        source: "GitHub",
-        date: "Updated 2026-06-12",
-        href: "https://github.com/microsoft/agent-framework",
+        type: "Paper",
+        title: "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
+        source: "arXiv",
+        date: "2026-06-11",
+        href: "https://arxiv.org/abs/2606.13608",
         summary:
-          "Microsoft's framework for building, orchestrating, and deploying AI agents and multi-agent workflows.",
-        tags: ["Agent Framework", "Multi-Agent", "Orchestration"],
+          "An evaluation-focused agent paper that proposes more open, standardized, and reproducible assessment harnesses for agent systems.",
+        tags: ["Agent Evaluation", "Benchmarks", "Reproducibility"],
       },
       {
         type: "GitHub",
-        title: "Human-Agent-Society/CORAL",
+        title: "callstack/agent-device",
         source: "GitHub",
-        date: "Updated 2026-06-12",
-        href: "https://github.com/Human-Agent-Society/CORAL",
+        date: "Updated 2026-06-13",
+        href: "https://github.com/callstack/agent-device",
         summary:
-          "A lightweight infrastructure project for multi-agent autonomous self-evolution and human-agent society experiments.",
-        tags: ["Multi-Agent", "Autonomy", "Agent Infrastructure"],
+          "A mobile-device control CLI that gives AI agents a concrete bridge into iOS and Android automation and testing workflows.",
+        tags: ["Mobile Agents", "Tool Use", "Automation"],
       },
     ],
   },
