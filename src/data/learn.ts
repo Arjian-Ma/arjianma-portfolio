@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-13";
+export const lastUpdated = "2026-06-15";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,13 +28,23 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Stochastic dominations for FK percolation and sharp thinning thresholds for the Ising energy field",
+        title: "Lehner's operator norm formulas, semidefinite programming, and spiked matrix models",
         source: "arXiv",
-        date: "2026-06-11",
-        href: "https://arxiv.org/abs/2606.13648",
+        date: "2026-06-12",
+        href: "https://arxiv.org/abs/2606.14687",
         summary:
-          "A probability paper probing stochastic domination and thinning thresholds in Ising-model energy fields.",
-        tags: ["Probability", "Percolation", "Ising Models"],
+          "Connects operator norm formulas, semidefinite programming, and random matrix ideas in a way that bridges probability and optimization.",
+        tags: ["Probability", "Semidefinite Programming", "Random Matrices"],
+      },
+      {
+        type: "Paper",
+        title: "Upper tails for irregular graphs beyond the mean-field regime",
+        source: "arXiv",
+        date: "2026-06-12",
+        href: "https://arxiv.org/abs/2606.14564",
+        summary:
+          "Studies sharp upper-tail behavior for subgraph counts in irregular random graph settings beyond classical mean-field assumptions.",
+        tags: ["Probability", "Random Graphs", "Combinatorics"],
       },
       {
         type: "Paper",
@@ -48,13 +58,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "casadi/casadi",
+        title: "statsmodels/statsmodels",
         source: "GitHub",
-        date: "Updated 2026-06-12",
-        href: "https://github.com/casadi/casadi",
+        date: "Updated 2026-06-15",
+        href: "https://github.com/statsmodels/statsmodels",
         summary:
-          "A symbolic framework for numerical optimization and algorithmic differentiation, useful for control and applied math workflows.",
-        tags: ["Optimization", "Numerical Computing", "Control"],
+          "A mature Python library for statistical modeling and econometrics, useful for building intuition around inference and model diagnostics.",
+        tags: ["Statistics", "Econometrics", "Python"],
       },
       {
         type: "GitHub",
@@ -68,19 +78,9 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "antoniolupetti/algebrica",
-        source: "GitHub",
-        date: "Updated 2026-06-13",
-        href: "https://github.com/antoniolupetti/algebrica",
-        summary:
-          "An open mathematical knowledge base focused on clear structure, visual explanations, and conceptual learning.",
-        tags: ["Knowledge Base", "Math Learning"],
-      },
-      {
-        type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-13",
+        date: "Updated 2026-06-15",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
@@ -97,6 +97,26 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "Gaze Heads: How VLMs Look at What They Describe",
+        source: "arXiv",
+        date: "2026-06-12",
+        href: "https://arxiv.org/abs/2606.14703",
+        summary:
+          "Analyzes attention heads that appear to align language generation with visual evidence inside vision-language models.",
+        tags: ["Vision-Language Models", "Interpretability", "Attention"],
+      },
+      {
+        type: "Paper",
+        title: "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+        source: "arXiv",
+        date: "2026-06-12",
+        href: "https://arxiv.org/abs/2606.14697",
+        summary:
+          "Introduces a medical multimodal benchmark aimed at locating where hallucinations arise across reasoning stages.",
+        tags: ["Multimodal Models", "Evaluation", "Medical AI"],
+      },
+      {
+        type: "Paper",
         title: "Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning",
         source: "arXiv",
         date: "2026-06-11",
@@ -106,34 +126,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["RAG", "Reinforcement Fine-Tuning", "Reasoning"],
       },
       {
-        type: "Paper",
-        title: "Understanding Truncated Positional Encodings for Graph Neural Networks",
-        source: "arXiv",
-        date: "2026-06-11",
-        href: "https://arxiv.org/abs/2606.13671",
-        summary:
-          "A graph-learning paper studying how truncated positional encodings affect the power and behavior of GNNs.",
-        tags: ["Graph Neural Networks", "Positional Encoding", "Theory"],
-      },
-      {
         type: "GitHub",
-        title: "skypilot-org/skypilot",
+        title: "sgl-project/sglang",
         source: "GitHub",
-        date: "Updated 2026-06-13",
-        href: "https://github.com/skypilot-org/skypilot",
+        date: "Updated 2026-06-15",
+        href: "https://github.com/sgl-project/sglang",
         summary:
-          "A practical infrastructure layer for running and scaling AI workloads across Kubernetes, Slurm, cloud, and on-prem GPU environments.",
-        tags: ["ML Infrastructure", "Distributed Training", "LLM Serving"],
-      },
-      {
-        type: "GitHub",
-        title: "py-why/dowhy",
-        source: "GitHub",
-        date: "Updated 2026-06-13",
-        href: "https://github.com/py-why/dowhy",
-        summary:
-          "A causal machine-learning library that keeps assumptions explicit through graphical models, potential outcomes, and refutation tests.",
-        tags: ["Causal ML", "Evaluation", "Statistics"],
+          "A high-performance serving framework for large language and multimodal models, especially relevant for inference systems practice.",
+        tags: ["LLM Serving", "Inference", "Systems"],
       },
       {
         type: "GitHub",
@@ -145,6 +145,16 @@ export const learnTopics: LearnTopic[] = [
           "PyTorch's on-device AI runtime for mobile, embedded, and edge deployment.",
         tags: ["Edge AI", "Deployment", "PyTorch"],
       },
+      {
+        type: "GitHub",
+        title: "comet-ml/opik",
+        source: "GitHub",
+        date: "Updated 2026-06-15",
+        href: "https://github.com/comet-ml/opik",
+        summary:
+          "An observability and evaluation stack for LLM, RAG, and agentic applications, useful for making model behavior inspectable.",
+        tags: ["LLM Evaluation", "Observability", "RAG"],
+      },
     ],
   },
   {
@@ -154,6 +164,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "Paper",
+        title: "AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition",
+        source: "arXiv",
+        date: "2026-06-12",
+        href: "https://arxiv.org/abs/2606.14674",
+        summary:
+          "Dissects agent scaffolds by composing reasoning, memory, reflection, action execution, and learning components in controlled ways.",
+        tags: ["Agent Scaffolds", "Embodied Agents", "Evaluation"],
+      },
+      {
+        type: "Paper",
+        title: "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows",
+        source: "arXiv",
+        date: "2026-06-12",
+        href: "https://arxiv.org/abs/2606.14672",
+        summary:
+          "Explores how agent workflows with parallel branches might move beyond purely sequential text-context execution.",
+        tags: ["Agent Workflows", "Planning", "Latent Space"],
+      },
       {
         type: "Paper",
         title: "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
@@ -175,34 +205,24 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Tool Use", "Agent Workflows", "LLM Agents"],
       },
       {
-        type: "Paper",
-        title: "Agents-K1: Towards Agent-native Knowledge Orchestration",
-        source: "arXiv",
-        date: "2026-06-11",
-        href: "https://arxiv.org/abs/2606.13669",
+        type: "GitHub",
+        title: "langgenius/dify",
+        source: "GitHub",
+        date: "Updated 2026-06-15",
+        href: "https://github.com/langgenius/dify",
         summary:
-          "A research-agent paper that shifts attention from simple paper retrieval toward richer scientific knowledge orchestration.",
-        tags: ["Research Agents", "Knowledge Orchestration", "Scientific AI"],
-      },
-      {
-        type: "Paper",
-        title: "AgentBeats: Agentifying Agent Assessment for Openness, Standardization, and Reproducibility",
-        source: "arXiv",
-        date: "2026-06-11",
-        href: "https://arxiv.org/abs/2606.13608",
-        summary:
-          "An evaluation-focused agent paper that proposes more open, standardized, and reproducible assessment harnesses for agent systems.",
-        tags: ["Agent Evaluation", "Benchmarks", "Reproducibility"],
+          "A production-oriented platform for building agentic workflows, combining orchestration, automation, and LLM application tooling.",
+        tags: ["Agentic Workflows", "Automation", "LLM Apps"],
       },
       {
         type: "GitHub",
-        title: "callstack/agent-device",
+        title: "promptfoo/promptfoo",
         source: "GitHub",
-        date: "Updated 2026-06-13",
-        href: "https://github.com/callstack/agent-device",
+        date: "Updated 2026-06-15",
+        href: "https://github.com/promptfoo/promptfoo",
         summary:
-          "A mobile-device control CLI that gives AI agents a concrete bridge into iOS and Android automation and testing workflows.",
-        tags: ["Mobile Agents", "Tool Use", "Automation"],
+          "A practical testing, red-teaming, and evaluation framework for prompts, RAG systems, and agents.",
+        tags: ["Agent Evaluation", "Red Teaming", "RAG"],
       },
     ],
   },
