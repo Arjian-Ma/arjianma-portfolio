@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-15";
+export const lastUpdated = "2026-06-16";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,33 +28,33 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Lehner's operator norm formulas, semidefinite programming, and spiked matrix models",
+        title: "Learning the Geometry of Data: A Mathematical Review of Shape Space Analysis",
         source: "arXiv",
-        date: "2026-06-12",
-        href: "https://arxiv.org/abs/2606.14687",
+        date: "2026-06-15",
+        href: "https://arxiv.org/abs/2606.17022",
         summary:
-          "Connects operator norm formulas, semidefinite programming, and random matrix ideas in a way that bridges probability and optimization.",
-        tags: ["Probability", "Semidefinite Programming", "Random Matrices"],
+          "A mathematical review of shape spaces for data with rich geometric structure, connecting statistics, geometry, and machine learning.",
+        tags: ["Shape Analysis", "Statistics", "Geometry"],
       },
       {
         type: "Paper",
-        title: "Upper tails for irregular graphs beyond the mean-field regime",
+        title: "Filtered Conformal Ellipsoids for Graph-Native Time Series",
         source: "arXiv",
-        date: "2026-06-12",
-        href: "https://arxiv.org/abs/2606.14564",
+        date: "2026-06-15",
+        href: "https://arxiv.org/abs/2606.17014",
         summary:
-          "Studies sharp upper-tail behavior for subgraph counts in irregular random graph settings beyond classical mean-field assumptions.",
-        tags: ["Probability", "Random Graphs", "Combinatorics"],
+          "Builds conformal ellipsoids around graph-aware state-space forecasts to give joint uncertainty sets for multivariate time series.",
+        tags: ["Conformal Prediction", "Time Series", "Statistics"],
       },
       {
         type: "Paper",
-        title: "Data-driven subsampling rates for diffusion parameter estimation of SDEs",
+        title: "Nitsche-based FEM for the Laplace eigenvalue problem: spectral approximation and a posteriori error analysis",
         source: "arXiv",
-        date: "2026-06-11",
-        href: "https://arxiv.org/abs/2606.13615",
+        date: "2026-06-15",
+        href: "https://arxiv.org/abs/2606.17052",
         summary:
-          "A statistical-probability approach to choosing subsampling scales for estimating diffusion parameters in SDE models.",
-        tags: ["SDEs", "Statistics", "Parameter Estimation"],
+          "Analyzes a weak-boundary-condition finite element method for Laplace eigenvalue problems, with spectral approximation and error estimates.",
+        tags: ["Numerical Analysis", "Finite Elements", "Eigenvalues"],
       },
       {
         type: "GitHub",
@@ -80,7 +80,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-15",
+        date: "Updated 2026-06-16",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
@@ -97,33 +97,33 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Gaze Heads: How VLMs Look at What They Describe",
+        title: "Exact Posterior Score Estimation for Solving Linear Inverse Problems",
         source: "arXiv",
-        date: "2026-06-12",
-        href: "https://arxiv.org/abs/2606.14703",
+        date: "2026-06-15",
+        href: "https://arxiv.org/abs/2606.17048",
         summary:
-          "Analyzes attention heads that appear to align language generation with visual evidence inside vision-language models.",
-        tags: ["Vision-Language Models", "Interpretability", "Attention"],
+          "Studies how to estimate exact posterior scores when using diffusion or flow priors for linear inverse problems.",
+        tags: ["Diffusion Models", "Inverse Problems", "Posterior Sampling"],
       },
       {
         type: "Paper",
-        title: "ClinHallu: A Benchmark for Diagnosing Stage-Wise Hallucinations in Medical MLLM Reasoning",
+        title: "KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing",
         source: "arXiv",
-        date: "2026-06-12",
-        href: "https://arxiv.org/abs/2606.14697",
+        date: "2026-06-15",
+        href: "https://arxiv.org/abs/2606.17034",
         summary:
-          "Introduces a medical multimodal benchmark aimed at locating where hallucinations arise across reasoning stages.",
-        tags: ["Multimodal Models", "Evaluation", "Medical AI"],
+          "Targets efficient post-hoc context erasing by directly steering the KV cache rather than replaying or pruning whole contexts.",
+        tags: ["LLMs", "KV Cache", "Context Editing"],
       },
       {
         type: "Paper",
-        title: "Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning",
+        title: "ExpRL: Exploratory RL for LLM Mid-Training",
         source: "arXiv",
-        date: "2026-06-11",
-        href: "https://arxiv.org/abs/2606.13680",
+        date: "2026-06-15",
+        href: "https://arxiv.org/abs/2606.17024",
         summary:
-          "A retrieval-augmented reinforcement fine-tuning paper that targets analogy-based reasoning rather than simple semantic similarity.",
-        tags: ["RAG", "Reinforcement Fine-Tuning", "Reasoning"],
+          "Explores how mid-training can improve the coverage that sparse-reward reinforcement learning needs for stronger LLM reasoning.",
+        tags: ["LLM Training", "Reinforcement Learning", "Reasoning"],
       },
       {
         type: "GitHub",
@@ -137,13 +137,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "pytorch/executorch",
+        title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-06-13",
-        href: "https://github.com/pytorch/executorch",
+        date: "Updated 2026-06-16",
+        href: "https://github.com/vllm-project/vllm",
         summary:
-          "PyTorch's on-device AI runtime for mobile, embedded, and edge deployment.",
-        tags: ["Edge AI", "Deployment", "PyTorch"],
+          "A high-throughput inference and serving engine for LLMs, useful for understanding practical deployment bottlenecks.",
+        tags: ["LLM Serving", "Inference", "Systems"],
       },
       {
         type: "GitHub",
@@ -166,33 +166,33 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition",
+        title: "Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio",
         source: "arXiv",
-        date: "2026-06-12",
-        href: "https://arxiv.org/abs/2606.14674",
+        date: "2026-06-15",
+        href: "https://arxiv.org/abs/2606.17041",
         summary:
-          "Dissects agent scaffolds by composing reasoning, memory, reflection, action execution, and learning components in controlled ways.",
-        tags: ["Agent Scaffolds", "Embodied Agents", "Evaluation"],
+          "Uses the structured workflow of meta-analysis articles to evaluate agentic literature retrieval, selection, and synthesis behavior.",
+        tags: ["Agent Benchmarks", "Literature Review", "Evaluation"],
       },
       {
         type: "Paper",
-        title: "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows",
+        title: "TokenPilot: Cache-Efficient Context Management for LLM Agents",
         source: "arXiv",
-        date: "2026-06-12",
-        href: "https://arxiv.org/abs/2606.14672",
+        date: "2026-06-15",
+        href: "https://arxiv.org/abs/2606.17016",
         summary:
-          "Explores how agent workflows with parallel branches might move beyond purely sequential text-context execution.",
-        tags: ["Agent Workflows", "Planning", "Latent Space"],
+          "Focuses on keeping long-horizon LLM agents cheaper by managing accumulated context without uncontrolled token reordering.",
+        tags: ["Context Management", "Memory", "LLM Agents"],
       },
       {
         type: "Paper",
-        title: "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+        title: "Semantic Flip: Synthetic OOD Generation for Robust Refusal in Embodied Question Answering and Spatial Localization",
         source: "arXiv",
-        date: "2026-06-11",
-        href: "https://arxiv.org/abs/2606.13681",
+        date: "2026-06-15",
+        href: "https://arxiv.org/abs/2606.16898",
         summary:
-          "A benchmark-style agent paper focused on memory evolution and robustness when environments change over time.",
-        tags: ["Memory", "Benchmarks", "Dynamic Environments"],
+          "Creates synthetic out-of-distribution cases to make embodied agents better at refusing unanswerable visual-spatial queries.",
+        tags: ["Embodied Agents", "Robustness", "VLMs"],
       },
       {
         type: "Paper",
