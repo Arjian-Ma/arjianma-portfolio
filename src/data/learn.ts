@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-16";
+export const lastUpdated = "2026-06-18";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,43 +28,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Learning the Geometry of Data: A Mathematical Review of Shape Space Analysis",
+        title: "Stability of Khintchine-type inequalities via log-monotonicity",
         source: "arXiv",
-        date: "2026-06-15",
-        href: "https://arxiv.org/abs/2606.17022",
+        date: "2026-06-17",
+        href: "https://arxiv.org/abs/2606.19313",
         summary:
-          "A mathematical review of shape spaces for data with rich geometric structure, connecting statistics, geometry, and machine learning.",
-        tags: ["Shape Analysis", "Statistics", "Geometry"],
+          "Studies sharp comparison and stability behavior for weighted sums of independent symmetric random variables through log-monotonicity.",
+        tags: ["Probability", "Inequalities", "Stability"],
       },
       {
         type: "Paper",
-        title: "Filtered Conformal Ellipsoids for Graph-Native Time Series",
+        title: "On two overlooked stick-breaking constructions of the normalized inverse Gaussian process",
         source: "arXiv",
-        date: "2026-06-15",
-        href: "https://arxiv.org/abs/2606.17014",
+        date: "2026-06-17",
+        href: "https://arxiv.org/abs/2606.19306",
         summary:
-          "Builds conformal ellipsoids around graph-aware state-space forecasts to give joint uncertainty sets for multivariate time series.",
-        tags: ["Conformal Prediction", "Time Series", "Statistics"],
+          "Revisits Bayesian nonparametric stick-breaking views of normalized inverse Gaussian processes, useful for probabilistic modeling intuition.",
+        tags: ["Probability", "Bayesian Nonparametrics", "Statistics"],
       },
       {
         type: "Paper",
-        title: "Nitsche-based FEM for the Laplace eigenvalue problem: spectral approximation and a posteriori error analysis",
+        title: "Projected Stochastic Gradient Descent with Decision Dependent Distributions: Extended Version",
         source: "arXiv",
-        date: "2026-06-15",
-        href: "https://arxiv.org/abs/2606.17052",
+        date: "2026-06-17",
+        href: "https://arxiv.org/abs/2606.19284",
         summary:
-          "Analyzes a weak-boundary-condition finite element method for Laplace eigenvalue problems, with spectral approximation and error estimates.",
-        tags: ["Numerical Analysis", "Finite Elements", "Eigenvalues"],
+          "Develops online feedback optimization for constrained stochastic systems where the data distribution shifts with the chosen decision.",
+        tags: ["Optimization", "Stochastic Gradient", "Feedback Systems"],
       },
       {
         type: "GitHub",
-        title: "statsmodels/statsmodels",
+        title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-15",
-        href: "https://github.com/statsmodels/statsmodels",
+        date: "Updated 2026-06-18",
+        href: "https://github.com/stdlib-js/stdlib",
         summary:
-          "A mature Python library for statistical modeling and econometrics, useful for building intuition around inference and model diagnostics.",
-        tags: ["Statistics", "Econometrics", "Python"],
+          "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
+        tags: ["Numerical Computing", "Library"],
+      },
+      {
+        type: "GitHub",
+        title: "root-project/root",
+        source: "GitHub",
+        date: "Updated 2026-06-18",
+        href: "https://github.com/root-project/root",
+        summary:
+          "A mature scientific data analysis framework for storing, analyzing, and visualizing large experimental datasets.",
+        tags: ["Scientific Computing", "Data Analysis", "C++"],
       },
       {
         type: "GitHub",
@@ -75,16 +85,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "An open-source MATLAB-style runtime written in Rust, with CPU, GPU, Jupyter, and web targets for scientific computing experiments.",
         tags: ["Numerical Analysis", "Scientific Computing", "Rust"],
-      },
-      {
-        type: "GitHub",
-        title: "stdlib-js/stdlib",
-        source: "GitHub",
-        date: "Updated 2026-06-16",
-        href: "https://github.com/stdlib-js/stdlib",
-        summary:
-          "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
-        tags: ["Numerical Computing", "Library"],
       },
     ],
   },
@@ -97,33 +97,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Exact Posterior Score Estimation for Solving Linear Inverse Problems",
+        title: "Rethinking Reward Supervision: Rubric-Conditioned Self-Distillation",
         source: "arXiv",
-        date: "2026-06-15",
-        href: "https://arxiv.org/abs/2606.17048",
+        date: "2026-06-17",
+        href: "https://arxiv.org/abs/2606.19327",
         summary:
-          "Studies how to estimate exact posterior scores when using diffusion or flow priors for linear inverse problems.",
-        tags: ["Diffusion Models", "Inverse Problems", "Posterior Sampling"],
+          "Explores reward supervision for reasoning models by conditioning self-distillation on rubrics rather than relying only on expensive chain-of-thought labels.",
+        tags: ["Reasoning Models", "Post-Training", "Reward Models"],
       },
       {
         type: "Paper",
-        title: "KVEraser: Learning to Steer KV Cache for Efficient Localized Context Erasing",
+        title: "Explaining Attention with Program Synthesis",
         source: "arXiv",
-        date: "2026-06-15",
-        href: "https://arxiv.org/abs/2606.17034",
+        date: "2026-06-17",
+        href: "https://arxiv.org/abs/2606.19317",
         summary:
-          "Targets efficient post-hoc context erasing by directly steering the KV cache rather than replaying or pruning whole contexts.",
-        tags: ["LLMs", "KV Cache", "Context Editing"],
+          "Uses program synthesis to approximate attention behavior with symbolic descriptions that are easier to inspect and reason about.",
+        tags: ["Interpretability", "Attention", "Program Synthesis"],
       },
       {
         type: "Paper",
-        title: "ExpRL: Exploratory RL for LLM Mid-Training",
+        title: "Diffusion-Proof: Recipe for Formal Theorem Proving Beyond Auto-Regressive Generation",
         source: "arXiv",
-        date: "2026-06-15",
-        href: "https://arxiv.org/abs/2606.17024",
+        date: "2026-06-17",
+        href: "https://arxiv.org/abs/2606.19315",
         summary:
-          "Explores how mid-training can improve the coverage that sparse-reward reinforcement learning needs for stronger LLM reasoning.",
-        tags: ["LLM Training", "Reinforcement Learning", "Reasoning"],
+          "Investigates diffusion-style generation as an alternative path for improving formal mathematical reasoning and theorem proving.",
+        tags: ["Theorem Proving", "Diffusion Models", "Reasoning"],
+      },
+      {
+        type: "GitHub",
+        title: "vllm-project/vllm",
+        source: "GitHub",
+        date: "Updated 2026-06-18",
+        href: "https://github.com/vllm-project/vllm",
+        summary:
+          "A high-throughput inference and serving engine for LLMs, useful for understanding practical deployment bottlenecks.",
+        tags: ["LLM Serving", "Inference", "Systems"],
+      },
+      {
+        type: "GitHub",
+        title: "modular/modular",
+        source: "GitHub",
+        date: "Updated 2026-06-18",
+        href: "https://github.com/modular/modular",
+        summary:
+          "The open Modular platform around MAX and Mojo, relevant for learning about high-performance AI infrastructure.",
+        tags: ["AI Infrastructure", "Performance", "Mojo"],
       },
       {
         type: "GitHub",
@@ -134,26 +154,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A high-performance serving framework for large language and multimodal models, especially relevant for inference systems practice.",
         tags: ["LLM Serving", "Inference", "Systems"],
-      },
-      {
-        type: "GitHub",
-        title: "vllm-project/vllm",
-        source: "GitHub",
-        date: "Updated 2026-06-16",
-        href: "https://github.com/vllm-project/vllm",
-        summary:
-          "A high-throughput inference and serving engine for LLMs, useful for understanding practical deployment bottlenecks.",
-        tags: ["LLM Serving", "Inference", "Systems"],
-      },
-      {
-        type: "GitHub",
-        title: "comet-ml/opik",
-        source: "GitHub",
-        date: "Updated 2026-06-15",
-        href: "https://github.com/comet-ml/opik",
-        summary:
-          "An observability and evaluation stack for LLM, RAG, and agentic applications, useful for making model behavior inspectable.",
-        tags: ["LLM Evaluation", "Observability", "RAG"],
       },
     ],
   },
@@ -166,53 +166,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Benchmarking LLM Agents on Meta-Analysis Articles from Nature Portfolio",
+        title: "Data Intelligence Agents: Interpreting, Modeling, and Querying Enterprise Data via Autonomous Coding Agents",
         source: "arXiv",
-        date: "2026-06-15",
-        href: "https://arxiv.org/abs/2606.17041",
+        date: "2026-06-17",
+        href: "https://arxiv.org/abs/2606.19319",
         summary:
-          "Uses the structured workflow of meta-analysis articles to evaluate agentic literature retrieval, selection, and synthesis behavior.",
-        tags: ["Agent Benchmarks", "Literature Review", "Evaluation"],
+          "Presents autonomous coding agents for discovering, modeling, and querying enterprise data, a practical direction for agentic data work.",
+        tags: ["Autonomous Agents", "Data Systems", "Coding Agents"],
       },
       {
         type: "Paper",
-        title: "TokenPilot: Cache-Efficient Context Management for LLM Agents",
+        title: "Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
         source: "arXiv",
-        date: "2026-06-15",
-        href: "https://arxiv.org/abs/2606.17016",
+        date: "2026-06-17",
+        href: "https://arxiv.org/abs/2606.19340",
         summary:
-          "Focuses on keeping long-horizon LLM agents cheaper by managing accumulated context without uncontrolled token reordering.",
-        tags: ["Context Management", "Memory", "LLM Agents"],
+          "Uses multi-view 3D-grounded VLM reasoning to turn language instructions into executable long-horizon manipulation plans.",
+        tags: ["VLM Agents", "Robotics", "Planning"],
       },
       {
         type: "Paper",
-        title: "Semantic Flip: Synthetic OOD Generation for Robust Refusal in Embodied Question Answering and Spatial Localization",
+        title: "Beyond the Current Observation: Evaluating Multimodal Large Language Models in Controllable Non-Markov Games",
         source: "arXiv",
-        date: "2026-06-15",
-        href: "https://arxiv.org/abs/2606.16898",
+        date: "2026-06-17",
+        href: "https://arxiv.org/abs/2606.19338",
         summary:
-          "Creates synthetic out-of-distribution cases to make embodied agents better at refusing unanswerable visual-spatial queries.",
-        tags: ["Embodied Agents", "Robustness", "VLMs"],
-      },
-      {
-        type: "Paper",
-        title: "HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents",
-        source: "arXiv",
-        date: "2026-06-11",
-        href: "https://arxiv.org/abs/2606.13663",
-        summary:
-          "A tool-use paper addressing the mismatch between atomic tool calls and larger deterministic tool workflows.",
-        tags: ["Tool Use", "Agent Workflows", "LLM Agents"],
+          "Evaluates multimodal models as closed-loop policies in settings that require hidden-state memory instead of only the current observation.",
+        tags: ["Agent Evaluation", "Memory", "Multimodal Models"],
       },
       {
         type: "GitHub",
-        title: "langgenius/dify",
+        title: "chopratejas/headroom",
         source: "GitHub",
-        date: "Updated 2026-06-15",
-        href: "https://github.com/langgenius/dify",
+        date: "Updated 2026-06-18",
+        href: "https://github.com/chopratejas/headroom",
         summary:
-          "A production-oriented platform for building agentic workflows, combining orchestration, automation, and LLM application tooling.",
-        tags: ["Agentic Workflows", "Automation", "LLM Apps"],
+          "Compresses tool outputs, logs, files, and RAG chunks before they reach an LLM, targeting cheaper and cleaner agent context.",
+        tags: ["Context Compression", "Tool Use", "MCP"],
+      },
+      {
+        type: "GitHub",
+        title: "elizaOS/eliza",
+        source: "GitHub",
+        date: "Updated 2026-06-18",
+        href: "https://github.com/elizaOS/eliza",
+        summary:
+          "An open-source agentic operating system and framework for building long-running AI agents and workflows.",
+        tags: ["Agent Framework", "Workflows", "LLM Agents"],
       },
       {
         type: "GitHub",
