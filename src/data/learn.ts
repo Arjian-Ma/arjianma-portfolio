@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-18";
+export const lastUpdated = "2026-06-19";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -38,13 +38,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "On two overlooked stick-breaking constructions of the normalized inverse Gaussian process",
+        title: "On Second-Order Methods for Bilevel Optimization",
         source: "arXiv",
-        date: "2026-06-17",
-        href: "https://arxiv.org/abs/2606.19306",
+        date: "2026-06-18",
+        href: "https://arxiv.org/abs/2606.20534",
         summary:
-          "Revisits Bayesian nonparametric stick-breaking views of normalized inverse Gaussian processes, useful for probabilistic modeling intuition.",
-        tags: ["Probability", "Bayesian Nonparametrics", "Statistics"],
+          "Studies second-order stationarity for bilevel optimization, a mathematical foundation behind many modern ML and engineering design problems.",
+        tags: ["Optimization", "Bilevel Optimization", "Second-Order Methods"],
       },
       {
         type: "Paper",
@@ -60,7 +60,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-18",
+        date: "Updated 2026-06-19",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
@@ -117,13 +117,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "Diffusion-Proof: Recipe for Formal Theorem Proving Beyond Auto-Regressive Generation",
+        title: "How Transparent is DiffusionGemma?",
         source: "arXiv",
-        date: "2026-06-17",
-        href: "https://arxiv.org/abs/2606.19315",
+        date: "2026-06-18",
+        href: "https://arxiv.org/abs/2606.20560",
         summary:
-          "Investigates diffusion-style generation as an alternative path for improving formal mathematical reasoning and theorem proving.",
-        tags: ["Theorem Proving", "Diffusion Models", "Reasoning"],
+          "Examines whether diffusion-style LLM computation changes how visible and interpretable model reasoning remains.",
+        tags: ["Interpretability", "Diffusion LLMs", "Reasoning"],
       },
       {
         type: "GitHub",
@@ -139,7 +139,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "modular/modular",
         source: "GitHub",
-        date: "Updated 2026-06-18",
+        date: "Updated 2026-06-19",
         href: "https://github.com/modular/modular",
         summary:
           "The open Modular platform around MAX and Mojo, relevant for learning about high-performance AI infrastructure.",
@@ -176,23 +176,23 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
+        title: "LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents",
         source: "arXiv",
-        date: "2026-06-17",
-        href: "https://arxiv.org/abs/2606.19340",
+        date: "2026-06-18",
+        href: "https://arxiv.org/abs/2606.20529",
         summary:
-          "Uses multi-view 3D-grounded VLM reasoning to turn language instructions into executable long-horizon manipulation plans.",
-        tags: ["VLM Agents", "Robotics", "Planning"],
+          "Introduces structured task-state tracking for tool-calling agents that must follow domain policies across multi-turn workflows.",
+        tags: ["Tool Use", "State Management", "Policy Adherence"],
       },
       {
         type: "Paper",
-        title: "Beyond the Current Observation: Evaluating Multimodal Large Language Models in Controllable Non-Markov Games",
+        title: "Efficient and Sound Probabilistic Verification for AI Agents",
         source: "arXiv",
-        date: "2026-06-17",
-        href: "https://arxiv.org/abs/2606.19338",
+        date: "2026-06-18",
+        href: "https://arxiv.org/abs/2606.20510",
         summary:
-          "Evaluates multimodal models as closed-loop policies in settings that require hidden-state memory instead of only the current observation.",
-        tags: ["Agent Evaluation", "Memory", "Multimodal Models"],
+          "Develops probabilistic runtime verification for agents, extending formal policy monitoring beyond deterministic tool-use assumptions.",
+        tags: ["Agent Verification", "Runtime Monitoring", "Safety"],
       },
       {
         type: "GitHub",
@@ -216,13 +216,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "promptfoo/promptfoo",
+        title: "omnigent-ai/omnigent",
         source: "GitHub",
-        date: "Updated 2026-06-15",
-        href: "https://github.com/promptfoo/promptfoo",
+        date: "Updated 2026-06-19",
+        href: "https://github.com/omnigent-ai/omnigent",
         summary:
-          "A practical testing, red-teaming, and evaluation framework for prompts, RAG systems, and agents.",
-        tags: ["Agent Evaluation", "Red Teaming", "RAG"],
+          "An agent framework and meta-harness for orchestrating coding agents with policies, sandboxing, and collaborative workflows.",
+        tags: ["Agent Framework", "Orchestration", "Coding Agents"],
       },
     ],
   },
