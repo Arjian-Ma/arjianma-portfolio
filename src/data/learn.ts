@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-19";
+export const lastUpdated = "2026-06-21";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -60,7 +60,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-19",
+        date: "Updated 2026-06-21",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
@@ -70,7 +70,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "root-project/root",
         source: "GitHub",
-        date: "Updated 2026-06-18",
+        date: "Updated 2026-06-21",
         href: "https://github.com/root-project/root",
         summary:
           "A mature scientific data analysis framework for storing, analyzing, and visualizing large experimental datasets.",
@@ -78,13 +78,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "runmat-org/runmat",
+        title: "igraph/rigraph",
         source: "GitHub",
-        date: "Updated 2026-06-13",
-        href: "https://github.com/runmat-org/runmat",
+        date: "Updated 2026-06-21",
+        href: "https://github.com/igraph/rigraph",
         summary:
-          "An open-source MATLAB-style runtime written in Rust, with CPU, GPU, Jupyter, and web targets for scientific computing experiments.",
-        tags: ["Numerical Analysis", "Scientific Computing", "Rust"],
+          "The R interface to igraph, useful for learning graph algorithms, network analysis, and computational discrete mathematics in practice.",
+        tags: ["Graph Theory", "Network Analysis", "R"],
       },
     ],
   },
@@ -129,7 +129,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-06-18",
+        date: "Updated 2026-06-21",
         href: "https://github.com/vllm-project/vllm",
         summary:
           "A high-throughput inference and serving engine for LLMs, useful for understanding practical deployment bottlenecks.",
@@ -139,21 +139,21 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "modular/modular",
         source: "GitHub",
-        date: "Updated 2026-06-19",
+        date: "Updated 2026-06-20",
         href: "https://github.com/modular/modular",
         summary:
           "The open Modular platform around MAX and Mojo, relevant for learning about high-performance AI infrastructure.",
         tags: ["AI Infrastructure", "Performance", "Mojo"],
       },
       {
-        type: "GitHub",
-        title: "sgl-project/sglang",
-        source: "GitHub",
-        date: "Updated 2026-06-15",
-        href: "https://github.com/sgl-project/sglang",
+        type: "Paper",
+        title: "Optimal Deterministic Multicalibration and Omniprediction",
+        source: "arXiv",
+        date: "2026-06-18",
+        href: "https://arxiv.org/abs/2606.20557",
         summary:
-          "A high-performance serving framework for large language and multimodal models, especially relevant for inference systems practice.",
-        tags: ["LLM Serving", "Inference", "Systems"],
+          "Improves the theoretical toolkit around calibration and omniprediction, connecting statistical learning guarantees with reliable downstream decisions.",
+        tags: ["Calibration", "Statistical Learning", "Omniprediction"],
       },
     ],
   },
@@ -208,7 +208,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "elizaOS/eliza",
         source: "GitHub",
-        date: "Updated 2026-06-18",
+        date: "Updated 2026-06-21",
         href: "https://github.com/elizaOS/eliza",
         summary:
           "An open-source agentic operating system and framework for building long-running AI agents and workflows.",
@@ -216,13 +216,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "omnigent-ai/omnigent",
+        title: "open-multi-agent/open-multi-agent",
         source: "GitHub",
-        date: "Updated 2026-06-19",
-        href: "https://github.com/omnigent-ai/omnigent",
+        date: "Updated 2026-06-21",
+        href: "https://github.com/open-multi-agent/open-multi-agent",
         summary:
-          "An agent framework and meta-harness for orchestrating coding agents with policies, sandboxing, and collaborative workflows.",
-        tags: ["Agent Framework", "Orchestration", "Coding Agents"],
+          "A TypeScript-native multi-agent orchestration project that turns goals into task DAGs, useful for studying practical agent workflow design.",
+        tags: ["Agent Framework", "Orchestration", "Task DAGs"],
       },
     ],
   },
