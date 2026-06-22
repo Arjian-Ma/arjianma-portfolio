@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-21";
+export const lastUpdated = "2026-06-22";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -60,7 +60,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-21",
+        date: "Updated 2026-06-22",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
@@ -70,21 +70,21 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "root-project/root",
         source: "GitHub",
-        date: "Updated 2026-06-21",
+        date: "Updated 2026-06-22",
         href: "https://github.com/root-project/root",
         summary:
           "A mature scientific data analysis framework for storing, analyzing, and visualizing large experimental datasets.",
         tags: ["Scientific Computing", "Data Analysis", "C++"],
       },
       {
-        type: "GitHub",
-        title: "igraph/rigraph",
-        source: "GitHub",
-        date: "Updated 2026-06-21",
-        href: "https://github.com/igraph/rigraph",
+        type: "Paper",
+        title: "Agentic Symbolic Search: Characterizing PDEs Beyond Hand-crafted Expressions, Meshes, and Neural Networks",
+        source: "arXiv",
+        date: "2026-06-18",
+        href: "https://arxiv.org/abs/2606.20467",
         summary:
-          "The R interface to igraph, useful for learning graph algorithms, network analysis, and computational discrete mathematics in practice.",
-        tags: ["Graph Theory", "Network Analysis", "R"],
+          "Frames PDE understanding as a symbolic search problem, connecting numerical analysis, scientific ML, and human-readable mathematical structure.",
+        tags: ["Numerical Analysis", "PDEs", "Symbolic Search"],
       },
     ],
   },
@@ -129,21 +129,21 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-06-21",
+        date: "Updated 2026-06-22",
         href: "https://github.com/vllm-project/vllm",
         summary:
           "A high-throughput inference and serving engine for LLMs, useful for understanding practical deployment bottlenecks.",
         tags: ["LLM Serving", "Inference", "Systems"],
       },
       {
-        type: "GitHub",
-        title: "modular/modular",
-        source: "GitHub",
-        date: "Updated 2026-06-20",
-        href: "https://github.com/modular/modular",
+        type: "Paper",
+        title: "The Token Is a Group Element: On Lie-Algebra Attention over Matrix Lie Groups",
+        source: "arXiv",
+        date: "2026-06-18",
+        href: "https://arxiv.org/abs/2606.20547",
         summary:
-          "The open Modular platform around MAX and Mojo, relevant for learning about high-performance AI infrastructure.",
-        tags: ["AI Infrastructure", "Performance", "Mojo"],
+          "Explores attention over matrix Lie groups, a geometric perspective on representation learning for vision, robotics, and structured tokens.",
+        tags: ["Geometric Deep Learning", "Attention", "Lie Groups"],
       },
       {
         type: "Paper",
@@ -196,13 +196,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "chopratejas/headroom",
+        title: "omnigent-ai/omnigent",
         source: "GitHub",
-        date: "Updated 2026-06-18",
-        href: "https://github.com/chopratejas/headroom",
+        date: "Updated 2026-06-22",
+        href: "https://github.com/omnigent-ai/omnigent",
         summary:
-          "Compresses tool outputs, logs, files, and RAG chunks before they reach an LLM, targeting cheaper and cleaner agent context.",
-        tags: ["Context Compression", "Tool Use", "MCP"],
+          "An open-source meta-harness for orchestrating coding agents such as Claude Code, Codex, and Cursor while adding policy and telemetry layers.",
+        tags: ["Agent Framework", "Coding Agents", "Orchestration"],
       },
       {
         type: "GitHub",
@@ -215,14 +215,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Agent Framework", "Workflows", "LLM Agents"],
       },
       {
-        type: "GitHub",
-        title: "open-multi-agent/open-multi-agent",
-        source: "GitHub",
-        date: "Updated 2026-06-21",
-        href: "https://github.com/open-multi-agent/open-multi-agent",
+        type: "Paper",
+        title: "Contagion Networks: Evaluator Bias Propagation in Multi-Agent LLM Systems",
+        source: "arXiv",
+        date: "2026-06-18",
+        href: "https://arxiv.org/abs/2606.20493",
         summary:
-          "A TypeScript-native multi-agent orchestration project that turns goals into task DAGs, useful for studying practical agent workflow design.",
-        tags: ["Agent Framework", "Orchestration", "Task DAGs"],
+          "Models how evaluation biases can spread through multi-agent LLM systems, which is useful for designing safer agent evaluation loops.",
+        tags: ["Multi-Agent Systems", "Evaluation", "Bias"],
       },
     ],
   },
