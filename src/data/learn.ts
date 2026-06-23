@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-22";
+export const lastUpdated = "2026-06-23";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,39 +28,39 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Stability of Khintchine-type inequalities via log-monotonicity",
+        title: "Optimal Stopping for a Diffusion with Unobserved Bernoulli Drift",
         source: "arXiv",
-        date: "2026-06-17",
-        href: "https://arxiv.org/abs/2606.19313",
+        date: "2026-06-22",
+        href: "https://arxiv.org/abs/2606.23648",
         summary:
-          "Studies sharp comparison and stability behavior for weighted sums of independent symmetric random variables through log-monotonicity.",
-        tags: ["Probability", "Inequalities", "Stability"],
+          "Solves a partially observed Wiener-process stopping problem by filtering and lifting the free-boundary analysis into a two-dimensional state space.",
+        tags: ["Probability", "Optimal Stopping", "Free Boundaries"],
       },
       {
         type: "Paper",
-        title: "On Second-Order Methods for Bilevel Optimization",
+        title: "A posteriori error bounds for finite element approximations of time-dependent mean field games",
         source: "arXiv",
-        date: "2026-06-18",
-        href: "https://arxiv.org/abs/2606.20534",
+        date: "2026-06-22",
+        href: "https://arxiv.org/abs/2606.23613",
         summary:
-          "Studies second-order stationarity for bilevel optimization, a mathematical foundation behind many modern ML and engineering design problems.",
-        tags: ["Optimization", "Bilevel Optimization", "Second-Order Methods"],
+          "Builds reliable and efficient residual-based error estimators for stabilized finite element methods on coupled mean-field-game PDEs.",
+        tags: ["Numerical Analysis", "Finite Elements", "Mean Field Games"],
       },
       {
         type: "Paper",
-        title: "Projected Stochastic Gradient Descent with Decision Dependent Distributions: Extended Version",
+        title: "Open Problem: Is AdamW Effective Under Heavy-Tailed Noise?",
         source: "arXiv",
-        date: "2026-06-17",
-        href: "https://arxiv.org/abs/2606.19284",
+        date: "2026-06-22",
+        href: "https://arxiv.org/abs/2606.23676",
         summary:
-          "Develops online feedback optimization for constrained stochastic systems where the data distribution shifts with the chosen decision.",
-        tags: ["Optimization", "Stochastic Gradient", "Feedback Systems"],
+          "Connects optimization theory with LLM training by asking whether AdamW's second-moment memory remains reliable under heavy-tailed stochastic gradients.",
+        tags: ["Optimization", "Heavy-Tailed Noise", "LLM Training"],
       },
       {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-22",
+        date: "Updated 2026-06-23",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
@@ -70,7 +70,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "root-project/root",
         source: "GitHub",
-        date: "Updated 2026-06-22",
+        date: "Updated 2026-06-23",
         href: "https://github.com/root-project/root",
         summary:
           "A mature scientific data analysis framework for storing, analyzing, and visualizing large experimental datasets.",
@@ -97,39 +97,39 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Rethinking Reward Supervision: Rubric-Conditioned Self-Distillation",
+        title: "Tapered Language Models",
         source: "arXiv",
-        date: "2026-06-17",
-        href: "https://arxiv.org/abs/2606.19327",
+        date: "2026-06-22",
+        href: "https://arxiv.org/abs/2606.23670",
         summary:
-          "Explores reward supervision for reasoning models by conditioning self-distillation on rubrics rather than relying only on expensive chain-of-thought labels.",
-        tags: ["Reasoning Models", "Post-Training", "Reward Models"],
+          "Shows that reallocating MLP capacity toward earlier layers can improve language-model performance without increasing parameter or compute budgets.",
+        tags: ["Language Models", "Architecture", "Efficiency"],
       },
       {
         type: "Paper",
-        title: "Explaining Attention with Program Synthesis",
+        title: "Diffusion Models Adapt to Low-Dimensional Structure Under Flexible Coefficient Choices",
         source: "arXiv",
-        date: "2026-06-17",
-        href: "https://arxiv.org/abs/2606.19317",
+        date: "2026-06-22",
+        href: "https://arxiv.org/abs/2606.23627",
         summary:
-          "Uses program synthesis to approximate attention behavior with symbolic descriptions that are easier to inspect and reason about.",
-        tags: ["Interpretability", "Attention", "Program Synthesis"],
+          "Proves that diffusion samplers can retain dimension-independent convergence under broad coefficient schedules when data has low-dimensional structure.",
+        tags: ["Diffusion Models", "Theory", "Sampling"],
       },
       {
         type: "Paper",
-        title: "How Transparent is DiffusionGemma?",
+        title: "Scheduling Thoughts: Learning the Order of Thought in Diffusion Language Models",
         source: "arXiv",
-        date: "2026-06-18",
-        href: "https://arxiv.org/abs/2606.20560",
+        date: "2026-06-22",
+        href: "https://arxiv.org/abs/2606.23567",
         summary:
-          "Examines whether diffusion-style LLM computation changes how visible and interpretable model reasoning remains.",
-        tags: ["Interpretability", "Diffusion LLMs", "Reasoning"],
+          "Learns token-unmasking schedules for diffusion language models, improving reasoning accuracy by optimizing the model's decoding order.",
+        tags: ["Diffusion LLMs", "Reasoning", "Policy Optimization"],
       },
       {
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-06-22",
+        date: "Updated 2026-06-23",
         href: "https://github.com/vllm-project/vllm",
         summary:
           "A high-throughput inference and serving engine for LLMs, useful for understanding practical deployment bottlenecks.",
@@ -166,39 +166,39 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Data Intelligence Agents: Interpreting, Modeling, and Querying Enterprise Data via Autonomous Coding Agents",
+        title: "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
         source: "arXiv",
-        date: "2026-06-17",
-        href: "https://arxiv.org/abs/2606.19319",
+        date: "2026-06-22",
+        href: "https://arxiv.org/abs/2606.23664",
         summary:
-          "Presents autonomous coding agents for discovering, modeling, and querying enterprise data, a practical direction for agentic data work.",
-        tags: ["Autonomous Agents", "Data Systems", "Coding Agents"],
+          "Benchmarks prompt optimization across multi-agent workflows, communication protocols, tasks, and team sizes to show when MAS prompting helps.",
+        tags: ["Multi-Agent Systems", "Prompt Optimization", "Benchmarks"],
       },
       {
         type: "Paper",
-        title: "LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents",
+        title: "SPIRAL: Learning to Search and Aggregate",
         source: "arXiv",
-        date: "2026-06-18",
-        href: "https://arxiv.org/abs/2606.20529",
+        date: "2026-06-22",
+        href: "https://arxiv.org/abs/2606.23595",
         summary:
-          "Introduces structured task-state tracking for tool-calling agents that must follow domain policies across multi-turn workflows.",
-        tags: ["Tool Use", "State Management", "Policy Adherence"],
+          "Trains language models to combine sequential reasoning, parallel search, and aggregation so inference-time compute scales more effectively.",
+        tags: ["Reasoning", "Search", "Aggregation"],
       },
       {
         type: "Paper",
-        title: "Efficient and Sound Probabilistic Verification for AI Agents",
+        title: "Causal Discovery in the Era of Agents",
         source: "arXiv",
-        date: "2026-06-18",
-        href: "https://arxiv.org/abs/2606.20510",
+        date: "2026-06-22",
+        href: "https://arxiv.org/abs/2606.23608",
         summary:
-          "Develops probabilistic runtime verification for agents, extending formal policy monitoring beyond deterministic tool-use assumptions.",
-        tags: ["Agent Verification", "Runtime Monitoring", "Safety"],
+          "Argues for agents as workflow assistants in causal discovery while keeping causal claims grounded in data, assumptions, algorithms, and experts.",
+        tags: ["Agent Workflows", "Causal Discovery", "Scientific AI"],
       },
       {
         type: "GitHub",
         title: "omnigent-ai/omnigent",
         source: "GitHub",
-        date: "Updated 2026-06-22",
+        date: "Updated 2026-06-23",
         href: "https://github.com/omnigent-ai/omnigent",
         summary:
           "An open-source meta-harness for orchestrating coding agents such as Claude Code, Codex, and Cursor while adding policy and telemetry layers.",
