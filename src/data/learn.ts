@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-23";
+export const lastUpdated = "2026-06-25";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,39 +28,39 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Optimal Stopping for a Diffusion with Unobserved Bernoulli Drift",
+        title: "On the entropic convergence for piecewise deterministic samplers: speedup and obstruction",
         source: "arXiv",
-        date: "2026-06-22",
-        href: "https://arxiv.org/abs/2606.23648",
+        date: "2026-06-24",
+        href: "https://arxiv.org/abs/2606.26086",
         summary:
-          "Solves a partially observed Wiener-process stopping problem by filtering and lifting the free-boundary analysis into a two-dimensional state space.",
-        tags: ["Probability", "Optimal Stopping", "Free Boundaries"],
+          "Studies entropy convergence for RHMC, Bouncy Particle, and Zig-Zag samplers, clarifying when ballistic speedups over overdamped Langevin dynamics appear or fail.",
+        tags: ["Probability", "Sampling", "Hypocoercivity"],
       },
       {
         type: "Paper",
-        title: "A posteriori error bounds for finite element approximations of time-dependent mean field games",
+        title: "Toward a Systematic Understanding and Interactive Search of Lyapunov-Style Proofs in Optimization",
         source: "arXiv",
-        date: "2026-06-22",
-        href: "https://arxiv.org/abs/2606.23613",
+        date: "2026-06-24",
+        href: "https://arxiv.org/abs/2606.26077",
         summary:
-          "Builds reliable and efficient residual-based error estimators for stabilized finite element methods on coupled mean-field-game PDEs.",
-        tags: ["Numerical Analysis", "Finite Elements", "Mean Field Games"],
+          "Turns tight computer-assisted convergence analyses into Lyapunov-style proofs, making first-order optimization arguments easier to inspect and search.",
+        tags: ["Optimization", "Lyapunov Proofs", "Computer-Assisted Math"],
       },
       {
         type: "Paper",
-        title: "Open Problem: Is AdamW Effective Under Heavy-Tailed Noise?",
+        title: "Bayesian Nonparametric Privacy-Preserving Synthetic Data Generation: I. Discrete Data",
         source: "arXiv",
-        date: "2026-06-22",
-        href: "https://arxiv.org/abs/2606.23676",
+        date: "2026-06-24",
+        href: "https://arxiv.org/abs/2606.26073",
         summary:
-          "Connects optimization theory with LLM training by asking whether AdamW's second-moment memory remains reliable under heavy-tailed stochastic gradients.",
-        tags: ["Optimization", "Heavy-Tailed Noise", "LLM Training"],
+          "Uses Pitman-Yor process posterior predictives to generate discrete synthetic data with a direct privacy-utility perspective.",
+        tags: ["Statistics", "Bayesian Nonparametrics", "Synthetic Data"],
       },
       {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-23",
+        date: "Updated 2026-06-25",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
@@ -68,23 +68,23 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
+        title: "pymc-devs/pytensor",
+        source: "GitHub",
+        date: "Updated 2026-06-25",
+        href: "https://github.com/pymc-devs/pytensor",
+        summary:
+          "A symbolic tensor compiler used by PyMC for defining, optimizing, and evaluating mathematical expressions efficiently.",
+        tags: ["Statistics", "Symbolic Math", "Probabilistic Programming"],
+      },
+      {
+        type: "GitHub",
         title: "root-project/root",
         source: "GitHub",
-        date: "Updated 2026-06-23",
+        date: "Updated 2026-06-25",
         href: "https://github.com/root-project/root",
         summary:
           "A mature scientific data analysis framework for storing, analyzing, and visualizing large experimental datasets.",
         tags: ["Scientific Computing", "Data Analysis", "C++"],
-      },
-      {
-        type: "Paper",
-        title: "Agentic Symbolic Search: Characterizing PDEs Beyond Hand-crafted Expressions, Meshes, and Neural Networks",
-        source: "arXiv",
-        date: "2026-06-18",
-        href: "https://arxiv.org/abs/2606.20467",
-        summary:
-          "Frames PDE understanding as a symbolic search problem, connecting numerical analysis, scientific ML, and human-readable mathematical structure.",
-        tags: ["Numerical Analysis", "PDEs", "Symbolic Search"],
       },
     ],
   },
@@ -97,63 +97,63 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Tapered Language Models",
+        title: "Learning Action Priors for Cross-embodiment Robot Manipulation",
         source: "arXiv",
-        date: "2026-06-22",
-        href: "https://arxiv.org/abs/2606.23670",
+        date: "2026-06-24",
+        href: "https://arxiv.org/abs/2606.26095",
         summary:
-          "Shows that reallocating MLP capacity toward earlier layers can improve language-model performance without increasing parameter or compute budgets.",
-        tags: ["Language Models", "Architecture", "Efficiency"],
+          "Pretrains robot action modules with motion priors before VLA alignment, targeting better transfer across different robot embodiments.",
+        tags: ["Robotics", "Vision-Language-Action", "Transfer Learning"],
       },
       {
         type: "Paper",
-        title: "Diffusion Models Adapt to Low-Dimensional Structure Under Flexible Coefficient Choices",
+        title: "On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity",
         source: "arXiv",
-        date: "2026-06-22",
-        href: "https://arxiv.org/abs/2606.23627",
+        date: "2026-06-24",
+        href: "https://arxiv.org/abs/2606.26091",
         summary:
-          "Proves that diffusion samplers can retain dimension-independent convergence under broad coefficient schedules when data has low-dimensional structure.",
-        tags: ["Diffusion Models", "Theory", "Sampling"],
+          "Shows that self-distillation can improve pass@1 while flattening pass@k, a useful warning for reasoning and code-generation evaluation.",
+        tags: ["Self-Distillation", "Diversity", "Evaluation"],
       },
       {
         type: "Paper",
-        title: "Scheduling Thoughts: Learning the Order of Thought in Diffusion Language Models",
+        title: "RevengeBench: Reverse Engineering Code-Space Policies from Behavioral Experiments",
         source: "arXiv",
-        date: "2026-06-22",
-        href: "https://arxiv.org/abs/2606.23567",
+        date: "2026-06-24",
+        href: "https://arxiv.org/abs/2606.26094",
         summary:
-          "Learns token-unmasking schedules for diffusion language models, improving reasoning accuracy by optimizing the model's decoding order.",
-        tags: ["Diffusion LLMs", "Reasoning", "Policy Optimization"],
+          "Benchmarks whether learners can reconstruct hidden decision programs from behavioral traces and targeted experiments.",
+        tags: ["Benchmarks", "Program Synthesis", "Behavioral Modeling"],
+      },
+      {
+        type: "GitHub",
+        title: "huggingface/transformers",
+        source: "GitHub",
+        date: "Updated 2026-06-25",
+        href: "https://github.com/huggingface/transformers",
+        summary:
+          "The model-definition backbone for a large share of modern text, vision, audio, and multimodal ML experimentation.",
+        tags: ["Transformers", "Model Library", "Multimodal"],
       },
       {
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-06-23",
+        date: "Updated 2026-06-25",
         href: "https://github.com/vllm-project/vllm",
         summary:
           "A high-throughput inference and serving engine for LLMs, useful for understanding practical deployment bottlenecks.",
         tags: ["LLM Serving", "Inference", "Systems"],
       },
       {
-        type: "Paper",
-        title: "The Token Is a Group Element: On Lie-Algebra Attention over Matrix Lie Groups",
-        source: "arXiv",
-        date: "2026-06-18",
-        href: "https://arxiv.org/abs/2606.20547",
+        type: "GitHub",
+        title: "kvcache-ai/Mooncake",
+        source: "GitHub",
+        date: "Updated 2026-06-25",
+        href: "https://github.com/kvcache-ai/Mooncake",
         summary:
-          "Explores attention over matrix Lie groups, a geometric perspective on representation learning for vision, robotics, and structured tokens.",
-        tags: ["Geometric Deep Learning", "Attention", "Lie Groups"],
-      },
-      {
-        type: "Paper",
-        title: "Optimal Deterministic Multicalibration and Omniprediction",
-        source: "arXiv",
-        date: "2026-06-18",
-        href: "https://arxiv.org/abs/2606.20557",
-        summary:
-          "Improves the theoretical toolkit around calibration and omniprediction, connecting statistical learning guarantees with reliable downstream decisions.",
-        tags: ["Calibration", "Statistical Learning", "Omniprediction"],
+          "An LLM serving platform from the Kimi ecosystem that is especially relevant for studying KV-cache-centric inference systems.",
+        tags: ["LLM Serving", "KV Cache", "Systems"],
       },
     ],
   },
@@ -166,63 +166,63 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "MAS-PromptBench: When Does Prompt Optimization Improve Multi-Agent LLM Systems?",
+        title: "Why Multi-Step Tool-Use Reinforcement Learning Collapses and How Supervisory Signals Fix It",
         source: "arXiv",
-        date: "2026-06-22",
-        href: "https://arxiv.org/abs/2606.23664",
+        date: "2026-06-24",
+        href: "https://arxiv.org/abs/2606.26027",
         summary:
-          "Benchmarks prompt optimization across multi-agent workflows, communication protocols, tasks, and team sizes to show when MAS prompting helps.",
-        tags: ["Multi-Agent Systems", "Prompt Optimization", "Benchmarks"],
+          "Diagnoses catastrophic collapse in tool-use RL as control-token probability spikes and tests supervisory signals that recover structured tool calling.",
+        tags: ["Tool Use", "Reinforcement Learning", "Agent Training"],
       },
       {
         type: "Paper",
-        title: "SPIRAL: Learning to Search and Aggregate",
+        title: "Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents",
         source: "arXiv",
-        date: "2026-06-22",
-        href: "https://arxiv.org/abs/2606.23595",
+        date: "2026-06-24",
+        href: "https://arxiv.org/abs/2606.26080",
         summary:
-          "Trains language models to combine sequential reasoning, parallel search, and aggregation so inference-time compute scales more effectively.",
-        tags: ["Reasoning", "Search", "Aggregation"],
+          "Derives a step-level progress signal from RL post-training itself, reducing the need for separate process reward model annotation in agent tasks.",
+        tags: ["LLM Agents", "Post-Training", "Process Rewards"],
       },
       {
         type: "Paper",
-        title: "Causal Discovery in the Era of Agents",
+        title: "The Unfireable Safety Kernel: Execution-Time AI Alignment for AI Agents and Other Escapable AI Systems",
         source: "arXiv",
-        date: "2026-06-22",
-        href: "https://arxiv.org/abs/2606.23608",
+        date: "2026-06-24",
+        href: "https://arxiv.org/abs/2606.26057",
         summary:
-          "Argues for agents as workflow assistants in causal discovery while keeping causal claims grounded in data, assumptions, algorithms, and experts.",
-        tags: ["Agent Workflows", "Causal Discovery", "Scientific AI"],
+          "Argues for process-separated, fail-closed authorization on the action path rather than relying only on in-agent prompts or filters.",
+        tags: ["Agent Safety", "Authorization", "Runtime Controls"],
+      },
+      {
+        type: "Paper",
+        title: "Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces",
+        source: "arXiv",
+        date: "Updated 2026-06-24",
+        href: "https://arxiv.org/abs/2605.10913",
+        summary:
+          "Treats agent execution as a reversible first-class object so meta-agents can inspect, halt, repair, and coordinate runs more systematically.",
+        tags: ["Meta-Agents", "Execution Traces", "Agent Infrastructure"],
+      },
+      {
+        type: "GitHub",
+        title: "stablyai/orca",
+        source: "GitHub",
+        date: "Updated 2026-06-25",
+        href: "https://github.com/stablyai/orca",
+        summary:
+          "An agent development environment for running fleets of parallel coding agents with local control over subscriptions and workflows.",
+        tags: ["Coding Agents", "Agent IDE", "Parallel Agents"],
       },
       {
         type: "GitHub",
         title: "omnigent-ai/omnigent",
         source: "GitHub",
-        date: "Updated 2026-06-23",
+        date: "Updated 2026-06-25",
         href: "https://github.com/omnigent-ai/omnigent",
         summary:
-          "An open-source meta-harness for orchestrating coding agents such as Claude Code, Codex, and Cursor while adding policy and telemetry layers.",
+          "An open-source meta-harness for orchestrating coding agents such as Claude Code, Codex, Cursor, and custom agents with policy layers.",
         tags: ["Agent Framework", "Coding Agents", "Orchestration"],
-      },
-      {
-        type: "GitHub",
-        title: "elizaOS/eliza",
-        source: "GitHub",
-        date: "Updated 2026-06-21",
-        href: "https://github.com/elizaOS/eliza",
-        summary:
-          "An open-source agentic operating system and framework for building long-running AI agents and workflows.",
-        tags: ["Agent Framework", "Workflows", "LLM Agents"],
-      },
-      {
-        type: "Paper",
-        title: "Contagion Networks: Evaluator Bias Propagation in Multi-Agent LLM Systems",
-        source: "arXiv",
-        date: "2026-06-18",
-        href: "https://arxiv.org/abs/2606.20493",
-        summary:
-          "Models how evaluation biases can spread through multi-agent LLM systems, which is useful for designing safer agent evaluation loops.",
-        tags: ["Multi-Agent Systems", "Evaluation", "Bias"],
       },
     ],
   },
