@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-25";
+export const lastUpdated = "2026-06-26";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,63 +28,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "On the entropic convergence for piecewise deterministic samplers: speedup and obstruction",
+        title: "All you need is log",
         source: "arXiv",
-        date: "2026-06-24",
-        href: "https://arxiv.org/abs/2606.26086",
+        date: "2026-06-25",
+        href: "https://arxiv.org/abs/2606.27349",
         summary:
-          "Studies entropy convergence for RHMC, Bouncy Particle, and Zig-Zag samplers, clarifying when ballistic speedups over overdamped Langevin dynamics appear or fail.",
-        tags: ["Probability", "Sampling", "Hypocoercivity"],
+          "Characterizes Rényi divergences through data-processing monotonicity, giving a compact bridge between probability, statistics, and ML evaluation.",
+        tags: ["Probability", "Statistics", "Information Theory"],
       },
       {
         type: "Paper",
-        title: "Toward a Systematic Understanding and Interactive Search of Lyapunov-Style Proofs in Optimization",
+        title: "Error-Conditioned Neural Solvers",
         source: "arXiv",
-        date: "2026-06-24",
-        href: "https://arxiv.org/abs/2606.26077",
+        date: "2026-06-25",
+        href: "https://arxiv.org/abs/2606.27354",
         summary:
-          "Turns tight computer-assisted convergence analyses into Lyapunov-style proofs, making first-order optimization arguments easier to inspect and search.",
-        tags: ["Optimization", "Lyapunov Proofs", "Computer-Assisted Math"],
+          "Frames PDE surrogate modeling as an iterative error-correction problem, connecting numerical analysis with learnable solvers.",
+        tags: ["Numerical Analysis", "PDEs", "Neural Solvers"],
       },
       {
         type: "Paper",
-        title: "Bayesian Nonparametric Privacy-Preserving Synthetic Data Generation: I. Discrete Data",
+        title: "Typical distances in high-genus triangulations",
         source: "arXiv",
-        date: "2026-06-24",
-        href: "https://arxiv.org/abs/2606.26073",
+        date: "2026-06-25",
+        href: "https://arxiv.org/abs/2606.27357",
         summary:
-          "Uses Pitman-Yor process posterior predictives to generate discrete synthetic data with a direct privacy-utility perspective.",
-        tags: ["Statistics", "Bayesian Nonparametrics", "Synthetic Data"],
+          "Studies logarithmic distance scaling in random triangulations with genus proportional to face count, a clean probabilistic geometry result.",
+        tags: ["Probability", "Random Geometry", "Combinatorics"],
       },
       {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-25",
+        date: "Updated 2026-06-26",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
-        tags: ["Numerical Computing", "Library"],
+        tags: ["Numerical Computing", "Library", "TypeScript"],
       },
       {
         type: "GitHub",
         title: "pymc-devs/pytensor",
         source: "GitHub",
-        date: "Updated 2026-06-25",
+        date: "Updated 2026-06-26",
         href: "https://github.com/pymc-devs/pytensor",
         summary:
           "A symbolic tensor compiler used by PyMC for defining, optimizing, and evaluating mathematical expressions efficiently.",
         tags: ["Statistics", "Symbolic Math", "Probabilistic Programming"],
-      },
-      {
-        type: "GitHub",
-        title: "root-project/root",
-        source: "GitHub",
-        date: "Updated 2026-06-25",
-        href: "https://github.com/root-project/root",
-        summary:
-          "A mature scientific data analysis framework for storing, analyzing, and visualizing large experimental datasets.",
-        tags: ["Scientific Computing", "Data Analysis", "C++"],
       },
     ],
   },
@@ -97,63 +87,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Learning Action Priors for Cross-embodiment Robot Manipulation",
+        title: "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
         source: "arXiv",
-        date: "2026-06-24",
-        href: "https://arxiv.org/abs/2606.26095",
+        date: "2026-06-25",
+        href: "https://arxiv.org/abs/2606.27369",
         summary:
-          "Pretrains robot action modules with motion priors before VLA alignment, targeting better transfer across different robot embodiments.",
-        tags: ["Robotics", "Vision-Language-Action", "Transfer Learning"],
+          "Explores rank-based reinforcement learning for LLMs when ground-truth solutions are unavailable, expanding where RL-style post-training can be applied.",
+        tags: ["LLMs", "Reinforcement Learning", "Post-Training"],
       },
       {
         type: "Paper",
-        title: "On-Policy Self-Distillation with Sampled Demonstrations Reduces Output Diversity",
+        title: "When are likely answers right? On Sequence Probability and Correctness in LLMs",
         source: "arXiv",
-        date: "2026-06-24",
-        href: "https://arxiv.org/abs/2606.26091",
+        date: "2026-06-25",
+        href: "https://arxiv.org/abs/2606.27359",
         summary:
-          "Shows that self-distillation can improve pass@1 while flattening pass@k, a useful warning for reasoning and code-generation evaluation.",
-        tags: ["Self-Distillation", "Diversity", "Evaluation"],
+          "Examines when higher sequence probability actually correlates with correctness, sharpening intuition around decoding and confidence.",
+        tags: ["LLMs", "Decoding", "Evaluation"],
       },
       {
         type: "Paper",
-        title: "RevengeBench: Reverse Engineering Code-Space Policies from Behavioral Experiments",
+        title: "Autoregressive Boltzmann Generators",
         source: "arXiv",
-        date: "2026-06-24",
-        href: "https://arxiv.org/abs/2606.26094",
+        date: "2026-06-25",
+        href: "https://arxiv.org/abs/2606.27361",
         summary:
-          "Benchmarks whether learners can reconstruct hidden decision programs from behavioral traces and targeted experiments.",
-        tags: ["Benchmarks", "Program Synthesis", "Behavioral Modeling"],
+          "Uses autoregressive modeling for equilibrium molecular sampling, linking generative ML with statistical physics.",
+        tags: ["Generative Models", "Molecular ML", "Sampling"],
+      },
+      {
+        type: "GitHub",
+        title: "unslothai/unsloth",
+        source: "GitHub",
+        date: "Updated 2026-06-26",
+        href: "https://github.com/unslothai/unsloth",
+        summary:
+          "A fast fine-tuning and local model workflow for open LLMs, worth tracking for practical training efficiency.",
+        tags: ["LLMs", "Fine-Tuning", "Local Models"],
       },
       {
         type: "GitHub",
         title: "huggingface/transformers",
         source: "GitHub",
-        date: "Updated 2026-06-25",
+        date: "Updated 2026-06-26",
         href: "https://github.com/huggingface/transformers",
         summary:
           "The model-definition backbone for a large share of modern text, vision, audio, and multimodal ML experimentation.",
         tags: ["Transformers", "Model Library", "Multimodal"],
-      },
-      {
-        type: "GitHub",
-        title: "vllm-project/vllm",
-        source: "GitHub",
-        date: "Updated 2026-06-25",
-        href: "https://github.com/vllm-project/vllm",
-        summary:
-          "A high-throughput inference and serving engine for LLMs, useful for understanding practical deployment bottlenecks.",
-        tags: ["LLM Serving", "Inference", "Systems"],
-      },
-      {
-        type: "GitHub",
-        title: "kvcache-ai/Mooncake",
-        source: "GitHub",
-        date: "Updated 2026-06-25",
-        href: "https://github.com/kvcache-ai/Mooncake",
-        summary:
-          "An LLM serving platform from the Kimi ecosystem that is especially relevant for studying KV-cache-centric inference systems.",
-        tags: ["LLM Serving", "KV Cache", "Systems"],
       },
     ],
   },
@@ -166,59 +146,49 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Why Multi-Step Tool-Use Reinforcement Learning Collapses and How Supervisory Signals Fix It",
+        title: "Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning",
         source: "arXiv",
-        date: "2026-06-24",
-        href: "https://arxiv.org/abs/2606.26027",
+        date: "2026-06-25",
+        href: "https://arxiv.org/abs/2606.27330",
         summary:
-          "Diagnoses catastrophic collapse in tool-use RL as control-token probability spikes and tests supervisory signals that recover structured tool calling.",
-        tags: ["Tool Use", "Reinforcement Learning", "Agent Training"],
+          "Improves GUI-agent task planning by letting agents explore autonomously and reuse hindsight from experience traces.",
+        tags: ["GUI Agents", "Planning", "Experience Learning"],
       },
       {
         type: "Paper",
-        title: "Neglected Free Lunch from Post-training: Progress Advantage for LLM Agents",
+        title: "When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models",
         source: "arXiv",
-        date: "2026-06-24",
-        href: "https://arxiv.org/abs/2606.26080",
+        date: "2026-06-25",
+        href: "https://arxiv.org/abs/2606.27288",
         summary:
-          "Derives a step-level progress signal from RL post-training itself, reducing the need for separate process reward model annotation in agent tasks.",
-        tags: ["LLM Agents", "Post-Training", "Process Rewards"],
+          "Quantifies how correlated failures limit multi-model systems, giving a practical diagnostic for routers, voting, and mixture-of-agents designs.",
+        tags: ["Mixture-of-Agents", "Evaluation", "Model Routing"],
       },
       {
         type: "Paper",
-        title: "The Unfireable Safety Kernel: Execution-Time AI Alignment for AI Agents and Other Escapable AI Systems",
+        title: "Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy",
         source: "arXiv",
-        date: "2026-06-24",
-        href: "https://arxiv.org/abs/2606.26057",
+        date: "2026-06-25",
+        href: "https://arxiv.org/abs/2606.27251",
         summary:
-          "Argues for process-separated, fail-closed authorization on the action path rather than relying only on in-agent prompts or filters.",
-        tags: ["Agent Safety", "Authorization", "Runtime Controls"],
-      },
-      {
-        type: "Paper",
-        title: "Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces",
-        source: "arXiv",
-        date: "Updated 2026-06-24",
-        href: "https://arxiv.org/abs/2605.10913",
-        summary:
-          "Treats agent execution as a reversible first-class object so meta-agents can inspect, halt, repair, and coordinate runs more systematically.",
-        tags: ["Meta-Agents", "Execution Traces", "Agent Infrastructure"],
+          "Surveys and motivates persistent embodied agents that orchestrate cyber and physical tools with recovery in real environments.",
+        tags: ["Embodied Agents", "Autonomy", "Tool Orchestration"],
       },
       {
         type: "GitHub",
-        title: "stablyai/orca",
+        title: "volcengine/OpenViking",
         source: "GitHub",
-        date: "Updated 2026-06-25",
-        href: "https://github.com/stablyai/orca",
+        date: "Updated 2026-06-26",
+        href: "https://github.com/volcengine/OpenViking",
         summary:
-          "An agent development environment for running fleets of parallel coding agents with local control over subscriptions and workflows.",
-        tags: ["Coding Agents", "Agent IDE", "Parallel Agents"],
+          "An open context database for AI agents that treats memory, resources, and skills as filesystem-managed context.",
+        tags: ["Agent Memory", "Context Engineering", "RAG"],
       },
       {
         type: "GitHub",
         title: "omnigent-ai/omnigent",
         source: "GitHub",
-        date: "Updated 2026-06-25",
+        date: "Updated 2026-06-26",
         href: "https://github.com/omnigent-ai/omnigent",
         summary:
           "An open-source meta-harness for orchestrating coding agents such as Claude Code, Codex, Cursor, and custom agents with policy layers.",
