@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-26";
+export const lastUpdated = "2026-06-28";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -38,29 +38,29 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "Error-Conditioned Neural Solvers",
+        title: "Automated Galerkin time stepping in Irksome",
         source: "arXiv",
         date: "2026-06-25",
-        href: "https://arxiv.org/abs/2606.27354",
+        href: "https://arxiv.org/abs/2606.27300",
         summary:
-          "Frames PDE surrogate modeling as an iterative error-correction problem, connecting numerical analysis with learnable solvers.",
-        tags: ["Numerical Analysis", "PDEs", "Neural Solvers"],
+          "Automates discontinuous and continuous Galerkin-in-time discretizations, making structure-preserving time stepping easier to experiment with.",
+        tags: ["Numerical Analysis", "Galerkin Methods", "Scientific Computing"],
       },
       {
         type: "Paper",
-        title: "Typical distances in high-genus triangulations",
+        title: "Fast algorithms for learning a Gaussian under halfspace truncation with optimal sample complexity",
         source: "arXiv",
         date: "2026-06-25",
-        href: "https://arxiv.org/abs/2606.27357",
+        href: "https://arxiv.org/abs/2606.27298",
         summary:
-          "Studies logarithmic distance scaling in random triangulations with genus proportional to face count, a clean probabilistic geometry result.",
-        tags: ["Probability", "Random Geometry", "Combinatorics"],
+          "Improves efficient learning of truncated high-dimensional Gaussians, a useful intersection of statistics, algorithms, and robust estimation.",
+        tags: ["Statistics", "Algorithms", "Learning Theory"],
       },
       {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-06-26",
+        date: "Updated 2026-06-28",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
@@ -68,13 +68,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "pymc-devs/pytensor",
+        title: "quantified-uncertainty/squiggle",
         source: "GitHub",
-        date: "Updated 2026-06-26",
-        href: "https://github.com/pymc-devs/pytensor",
+        date: "Updated 2026-06-27",
+        href: "https://github.com/quantified-uncertainty/squiggle",
         summary:
-          "A symbolic tensor compiler used by PyMC for defining, optimizing, and evaluating mathematical expressions efficiently.",
-        tags: ["Statistics", "Symbolic Math", "Probabilistic Programming"],
+          "A probability-focused modeling language and hub for representing uncertainty in forecasts and decision models.",
+        tags: ["Probability", "Uncertainty", "Forecasting"],
       },
     ],
   },
@@ -107,33 +107,33 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "Autoregressive Boltzmann Generators",
+        title: "Hallucination in World Models is Predictable and Preventable",
         source: "arXiv",
         date: "2026-06-25",
-        href: "https://arxiv.org/abs/2606.27361",
+        href: "https://arxiv.org/abs/2606.27326",
         summary:
-          "Uses autoregressive modeling for equilibrium molecular sampling, linking generative ML with statistical physics.",
-        tags: ["Generative Models", "Molecular ML", "Sampling"],
+          "Introduces data-centric signals for detecting and mitigating rollout drift in visual world models, grounding generative evaluation in dynamics coverage.",
+        tags: ["World Models", "Evaluation", "Data-Centric ML"],
       },
       {
         type: "GitHub",
-        title: "unslothai/unsloth",
+        title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-06-26",
-        href: "https://github.com/unslothai/unsloth",
+        date: "Updated 2026-06-28",
+        href: "https://github.com/vllm-project/vllm",
         summary:
-          "A fast fine-tuning and local model workflow for open LLMs, worth tracking for practical training efficiency.",
-        tags: ["LLMs", "Fine-Tuning", "Local Models"],
+          "A high-throughput LLM inference and serving engine that is central to practical deployment and systems-level ML work.",
+        tags: ["LLM Serving", "Inference", "PyTorch"],
       },
       {
         type: "GitHub",
-        title: "huggingface/transformers",
+        title: "xorbitsai/inference",
         source: "GitHub",
-        date: "Updated 2026-06-26",
-        href: "https://github.com/huggingface/transformers",
+        date: "Updated 2026-06-28",
+        href: "https://github.com/xorbitsai/inference",
         summary:
-          "The model-definition backbone for a large share of modern text, vision, audio, and multimodal ML experimentation.",
-        tags: ["Transformers", "Model Library", "Multimodal"],
+          "Xinference offers a unified API for running open-source text, speech, and multimodal models locally or in production.",
+        tags: ["LLMs", "Multimodal", "Inference"],
       },
     ],
   },
@@ -156,43 +156,43 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models",
+        title: "VIGIL: Runtime Enforcement of Behavioral Specifications in AI Agent Skills",
         source: "arXiv",
         date: "2026-06-25",
-        href: "https://arxiv.org/abs/2606.27288",
+        href: "https://arxiv.org/abs/2606.26524",
         summary:
-          "Quantifies how correlated failures limit multi-model systems, giving a practical diagnostic for routers, voting, and mixture-of-agents designs.",
-        tags: ["Mixture-of-Agents", "Evaluation", "Model Routing"],
-      },
-      {
-        type: "Paper",
-        title: "Advancing Omnimodal Embodied Agents from Isolated Skills to Everyday Physical Autonomy",
-        source: "arXiv",
-        date: "2026-06-25",
-        href: "https://arxiv.org/abs/2606.27251",
-        summary:
-          "Surveys and motivates persistent embodied agents that orchestrate cyber and physical tools with recovery in real environments.",
-        tags: ["Embodied Agents", "Autonomy", "Tool Orchestration"],
+          "Targets a practical safety layer for agent skills by turning behavioral specifications into runtime enforcement rather than passive documentation.",
+        tags: ["Agent Safety", "Skills", "Runtime Enforcement"],
       },
       {
         type: "GitHub",
-        title: "volcengine/OpenViking",
+        title: "caura-ai/caura-memclaw",
         source: "GitHub",
-        date: "Updated 2026-06-26",
-        href: "https://github.com/volcengine/OpenViking",
+        date: "Updated 2026-06-28",
+        href: "https://github.com/caura-ai/caura-memclaw",
         summary:
-          "An open context database for AI agents that treats memory, resources, and skills as filesystem-managed context.",
-        tags: ["Agent Memory", "Context Engineering", "RAG"],
+          "A governed shared-memory layer for agent fleets with MCP-native access, trust tiers, audit trails, and retrieval policies.",
+        tags: ["Agent Memory", "MCP", "Governance"],
       },
       {
         type: "GitHub",
-        title: "omnigent-ai/omnigent",
+        title: "strukto-ai/mirage",
         source: "GitHub",
-        date: "Updated 2026-06-26",
-        href: "https://github.com/omnigent-ai/omnigent",
+        date: "Updated 2026-06-28",
+        href: "https://github.com/strukto-ai/mirage",
         summary:
-          "An open-source meta-harness for orchestrating coding agents such as Claude Code, Codex, Cursor, and custom agents with policy layers.",
-        tags: ["Agent Framework", "Coding Agents", "Orchestration"],
+          "A unified virtual filesystem for agents, relevant to how long-running systems organize context and tool-facing state.",
+        tags: ["Agent Infrastructure", "Virtual Filesystem", "Context"],
+      },
+      {
+        type: "GitHub",
+        title: "IBM/AssetOpsBench",
+        source: "GitHub",
+        date: "Updated 2026-06-28",
+        href: "https://github.com/IBM/AssetOpsBench",
+        summary:
+          "A domain-specific benchmark and framework for evaluating multi-agent industrial operations workflows across hundreds of scenarios.",
+        tags: ["Agent Benchmarks", "Multi-Agent", "Operations"],
       },
     ],
   },
