@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-06-28";
+export const lastUpdated = "2026-06-29";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title: "Second-Order KKT Guarantees for Bregman ADMM in Nonconvex and Non-Lipschitz Optimization",
+        source: "arXiv",
+        date: "2026-06-26",
+        href: "https://arxiv.org/abs/2606.28307",
+        summary:
+          "Extends ADMM analysis beyond standard Lipschitz-gradient assumptions, useful for connecting optimization theory with practical nonconvex algorithms.",
+        tags: ["Optimization", "ADMM", "Nonconvex Analysis"],
+      },
       {
         type: "Paper",
         title: "All you need is log",
@@ -87,6 +97,16 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "VGB for Masked Diffusion Model: Efficient Test-time Scaling for Reward Satisfaction and Sample Editing",
+        source: "arXiv",
+        date: "2026-06-26",
+        href: "https://arxiv.org/abs/2606.28301",
+        summary:
+          "Introduces value-guided branching for masked diffusion, a clean example of test-time scaling for constrained generation and editing.",
+        tags: ["Diffusion Models", "Test-Time Scaling", "Generative ML"],
+      },
+      {
+        type: "Paper",
         title: "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
         source: "arXiv",
         date: "2026-06-25",
@@ -144,6 +164,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "GitHub",
+        title: "omnigent-ai/omnigent",
+        source: "GitHub",
+        date: "Updated 2026-06-29",
+        href: "https://github.com/omnigent-ai/omnigent",
+        summary:
+          "A meta-harness for orchestrating coding and research agents while swapping harnesses, enforcing policies, and sandboxing execution.",
+        tags: ["Agent Framework", "Orchestration", "Sandboxing"],
+      },
       {
         type: "Paper",
         title: "Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning",
