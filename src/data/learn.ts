@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-01";
+export const lastUpdated = "2026-07-02";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -58,23 +58,23 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "McMg: A Learned Phase-Space Multi-channel Multigrid Preconditioner for Helmholtz Equation",
+        title: "GAIA: Geometry-Adaptive Operator Learning for Forward and Inverse Problems",
         source: "arXiv",
-        date: "2026-06-29",
-        href: "https://arxiv.org/abs/2606.30495",
+        date: "2026-07-01",
+        href: "https://arxiv.org/abs/2607.01128",
         summary:
-          "A learned multigrid preconditioner that preserves phase and direction information for difficult high-frequency Helmholtz solves.",
-        tags: ["Numerical Analysis", "PDE Solvers", "Scientific ML"],
+          "Extends neural operator learning to forward, boundary-value, and inverse PDE problems on changing geometries through geometry-conditioned integral layers.",
+        tags: ["Numerical Analysis", "Operator Learning", "PDEs"],
       },
       {
         type: "Paper",
-        title: "Second-Order KKT Guarantees for Bregman ADMM in Nonconvex and Non-Lipschitz Optimization",
+        title: "Characterizing and Identifying Separable Graphical Models",
         source: "arXiv",
-        date: "2026-06-26",
-        href: "https://arxiv.org/abs/2606.28307",
+        date: "2026-07-01",
+        href: "https://arxiv.org/abs/2607.01057",
         summary:
-          "Extends ADMM analysis beyond standard Lipschitz-gradient assumptions, useful for connecting optimization theory with practical nonconvex algorithms.",
-        tags: ["Optimization", "ADMM", "Nonconvex Analysis"],
+          "Develops structure and identification results for mixed graphical models that encode feedback, latent variables, and selection effects.",
+        tags: ["Statistics", "Graphical Models", "Independence"],
       },
       {
         type: "GitHub",
@@ -127,23 +127,23 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "One-Step Gradient Delay is Not a Barrier for Large-Scale Asynchronous Pipeline Parallel LLM Pretraining",
+        title: "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
         source: "arXiv",
-        date: "2026-06-29",
-        href: "https://arxiv.org/abs/2606.30634",
+        date: "2026-07-01",
+        href: "https://arxiv.org/abs/2607.01232",
         summary:
-          "Shows that optimizer choice and error-feedback corrections can make asynchronous pipeline-parallel LLM pretraining robust to one-step gradient delay.",
-        tags: ["LLM Training", "Pipeline Parallelism", "Optimization"],
+          "A layer-wise RL post-training study showing that carefully selected single-layer updates can recover much of full-parameter LLM adaptation.",
+        tags: ["LLM Post-Training", "Reinforcement Learning", "Efficiency"],
       },
       {
         type: "Paper",
-        title: "VGB for Masked Diffusion Model: Efficient Test-time Scaling for Reward Satisfaction and Sample Editing",
+        title: "Language-Critique Imitation Learning from Suboptimal Demonstrations",
         source: "arXiv",
-        date: "2026-06-26",
-        href: "https://arxiv.org/abs/2606.28301",
+        date: "2026-07-01",
+        href: "https://arxiv.org/abs/2607.01225",
         summary:
-          "Introduces value-guided branching for masked diffusion, a clean example of test-time scaling for constrained generation and editing.",
-        tags: ["Diffusion Models", "Test-Time Scaling", "Generative ML"],
+          "Uses natural-language critiques as richer supervision than scalar confidence scores when learning from imperfect demonstrations.",
+        tags: ["Imitation Learning", "Language Feedback", "Policy Learning"],
       },
       {
         type: "GitHub",
@@ -196,23 +196,23 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "Self-Evolving World Models for LLM Agent Planning",
+        title: "Can Agents Generalize to the Open World? Unveiling the Fragility of Static Training in Tool Use",
         source: "arXiv",
-        date: "2026-06-29",
-        href: "https://arxiv.org/abs/2606.30639",
+        date: "2026-07-01",
+        href: "https://arxiv.org/abs/2607.01084",
         summary:
-          "Introduces WorldEvolver, which improves agent planning by revising episodic and semantic memory at test time while keeping model weights frozen.",
-        tags: ["World Models", "Agent Planning", "Memory"],
+          "Formalizes open-world tool-use shifts and shows why static agent training can be brittle when queries, tools, observations, or domains change.",
+        tags: ["Tool Use", "Generalization", "Agent Evaluation"],
       },
       {
         type: "Paper",
-        title: "Entity Binding Failures in Tool-Augmented Agents",
+        title: "Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains",
         source: "arXiv",
-        date: "2026-06-29",
-        href: "https://arxiv.org/abs/2606.30531",
+        date: "2026-07-01",
+        href: "https://arxiv.org/abs/2607.01136",
         summary:
-          "Separates tool correctness from entity correctness and shows why agents need explicit binding, clarification, and provenance before taking actions.",
-        tags: ["Tool Use", "Agent Safety", "Entity Resolution"],
+          "Treats reusable agent skills as dependency-bearing artifacts and adapts SBOM-style analysis to track provenance, versions, and risk.",
+        tags: ["Agent Skills", "Supply Chain", "Safety"],
       },
       {
         type: "GitHub",
