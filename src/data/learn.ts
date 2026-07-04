@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-02";
+export const lastUpdated = "2026-07-04";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title: "Almost Supermartingale Extensions of Olivier's Theorem",
+        source: "arXiv",
+        date: "2026-07-02",
+        href: "https://arxiv.org/abs/2607.02489",
+        summary:
+          "Extends a classical convergence-rate theorem to almost supermartingales, with applications to stochastic iterative processes.",
+        tags: ["Probability", "Stochastic Processes", "Optimization"],
+      },
       {
         type: "Paper",
         title: "Random Reshuffling Dominates Stochastic Gradient Descent",
@@ -76,16 +86,6 @@ export const learnTopics: LearnTopic[] = [
           "Develops structure and identification results for mixed graphical models that encode feedback, latent variables, and selection effects.",
         tags: ["Statistics", "Graphical Models", "Independence"],
       },
-      {
-        type: "GitHub",
-        title: "stdlib-js/stdlib",
-        source: "GitHub",
-        date: "Updated 2026-07-01",
-        href: "https://github.com/stdlib-js/stdlib",
-        summary:
-          "A broad numerical computing library for JavaScript and TypeScript, useful as a practical computational reference.",
-        tags: ["Numerical Computing", "Library", "TypeScript"],
-      },
     ],
   },
   {
@@ -95,6 +95,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "A running list of ML papers and codebases I am reading to improve model-building, evaluation, and deployment intuition.",
     resources: [
+      {
+        type: "Paper",
+        title: "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+        source: "arXiv",
+        date: "2026-07-02",
+        href: "https://arxiv.org/abs/2607.02512",
+        summary:
+          "Compiles natural-language fuzzy-function specs into small local neural adapters, trading repeated large-model calls for reproducible lightweight execution.",
+        tags: ["Neural Programs", "LLMs", "Efficient Inference"],
+      },
       {
         type: "Paper",
         title: "Introspective Coupling: Self-Explanation Training Tracks Behavioral Change Despite Fixed Supervision",
@@ -145,16 +155,6 @@ export const learnTopics: LearnTopic[] = [
           "Uses natural-language critiques as richer supervision than scalar confidence scores when learning from imperfect demonstrations.",
         tags: ["Imitation Learning", "Language Feedback", "Policy Learning"],
       },
-      {
-        type: "GitHub",
-        title: "vllm-project/vllm",
-        source: "GitHub",
-        date: "Updated 2026-06-30",
-        href: "https://github.com/vllm-project/vllm",
-        summary:
-          "A high-throughput LLM inference and serving engine that is central to practical deployment and systems-level ML work.",
-        tags: ["LLM Serving", "Inference", "PyTorch"],
-      },
     ],
   },
   {
@@ -164,6 +164,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "Paper",
+        title: "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
+        source: "arXiv",
+        date: "2026-07-02",
+        href: "https://arxiv.org/abs/2607.02507",
+        summary:
+          "Uses public and off-the-record debate channels to probe how social context can produce latent objectives and divergent agent behavior.",
+        tags: ["Multi-Agent Systems", "Evaluation", "Agent Behavior"],
+      },
       {
         type: "Paper",
         title: "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
@@ -213,16 +223,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "Treats reusable agent skills as dependency-bearing artifacts and adapts SBOM-style analysis to track provenance, versions, and risk.",
         tags: ["Agent Skills", "Supply Chain", "Safety"],
-      },
-      {
-        type: "GitHub",
-        title: "omnigent-ai/omnigent",
-        source: "GitHub",
-        date: "Updated 2026-07-01",
-        href: "https://github.com/omnigent-ai/omnigent",
-        summary:
-          "A meta-harness for orchestrating coding and research agents while swapping harnesses, enforcing policies, and sandboxing execution.",
-        tags: ["Agent Framework", "Orchestration", "Sandboxing"],
       },
     ],
   },
