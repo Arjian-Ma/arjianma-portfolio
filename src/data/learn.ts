@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-04";
+export const lastUpdated = "2026-07-05";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "GitHub",
+        title: "stdlib-js/stdlib",
+        source: "GitHub",
+        date: "Updated 2026-07-05",
+        href: "https://github.com/stdlib-js/stdlib",
+        summary:
+          "A broad numerical and scientific standard library for JavaScript/TypeScript, useful for portable statistics and computational tooling.",
+        tags: ["Numerical Computing", "Statistics", "TypeScript"],
+      },
       {
         type: "Paper",
         title: "Almost Supermartingale Extensions of Olivier's Theorem",
@@ -57,16 +67,6 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Probability", "Statistics", "Dynamic Graphs"],
       },
       {
-        type: "GitHub",
-        title: "root-project/root",
-        source: "GitHub",
-        date: "Updated 2026-07-01",
-        href: "https://github.com/root-project/root",
-        summary:
-          "A mature scientific data-analysis, storage, and visualization platform whose active development makes it useful for computational science workflows.",
-        tags: ["Scientific Computing", "Data Analysis", "Visualization"],
-      },
-      {
         type: "Paper",
         title: "GAIA: Geometry-Adaptive Operator Learning for Forward and Inverse Problems",
         source: "arXiv",
@@ -95,6 +95,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "A running list of ML papers and codebases I am reading to improve model-building, evaluation, and deployment intuition.",
     resources: [
+      {
+        type: "GitHub",
+        title: "spiceai/spiceai",
+        source: "GitHub",
+        date: "Updated 2026-07-05",
+        href: "https://github.com/spiceai/spiceai",
+        summary:
+          "A Rust-based SQL, search, and LLM-inference engine for data-grounded AI applications, bridging retrieval, analytics, and serving.",
+        tags: ["LLM Inference", "Data Systems", "Rust"],
+      },
       {
         type: "Paper",
         title: "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
@@ -126,16 +136,6 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Reinforcement Learning", "Calibration", "LLMs"],
       },
       {
-        type: "GitHub",
-        title: "LMCache/LMCache",
-        source: "GitHub",
-        date: "Updated 2026-07-01",
-        href: "https://github.com/LMCache/LMCache",
-        summary:
-          "An actively developed KV-cache layer for accelerating LLM serving, directly relevant to practical inference systems.",
-        tags: ["LLM Serving", "KV Cache", "Systems"],
-      },
-      {
         type: "Paper",
         title: "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
         source: "arXiv",
@@ -165,6 +165,16 @@ export const learnTopics: LearnTopic[] = [
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
       {
+        type: "GitHub",
+        title: "unohee/OpenSwarm",
+        source: "GitHub",
+        date: "Updated 2026-07-05",
+        href: "https://github.com/unohee/OpenSwarm",
+        summary:
+          "An autonomous AI development-team orchestrator with Discord control, Linear integration, and cognitive memory for studying practical multi-agent workflows.",
+        tags: ["Multi-Agent", "Orchestration", "Memory"],
+      },
+      {
         type: "Paper",
         title: "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
         source: "arXiv",
@@ -193,16 +203,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "Frames skill selection as a generative composition problem, matching the way reusable agent skill libraries are likely to grow.",
         tags: ["Skills", "Agent Planning", "Tool Use"],
-      },
-      {
-        type: "GitHub",
-        title: "infiniflow/ragflow",
-        source: "GitHub",
-        date: "Updated 2026-07-01",
-        href: "https://github.com/infiniflow/ragflow",
-        summary:
-          "A widely used RAG engine with agent capabilities, useful for studying the retrieval and context layer behind production agents.",
-        tags: ["RAG", "Agent Infrastructure", "Retrieval"],
       },
       {
         type: "Paper",
