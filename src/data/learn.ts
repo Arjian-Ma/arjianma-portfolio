@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-05";
+export const lastUpdated = "2026-07-06";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,13 +28,13 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "GitHub",
-        title: "stdlib-js/stdlib",
+        title: "thomasahle/tensorgrad",
         source: "GitHub",
-        date: "Updated 2026-07-05",
-        href: "https://github.com/stdlib-js/stdlib",
+        date: "Updated 2026-07-06",
+        href: "https://github.com/thomasahle/tensorgrad",
         summary:
-          "A broad numerical and scientific standard library for JavaScript/TypeScript, useful for portable statistics and computational tooling.",
-        tags: ["Numerical Computing", "Statistics", "TypeScript"],
+          "A symbolic tensor library that makes matrix calculus and ML-style tensor expressions easier to inspect, simplify, and teach.",
+        tags: ["Symbolic Math", "Tensor Calculus", "Machine Learning"],
       },
       {
         type: "Paper",
@@ -97,13 +97,13 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "GitHub",
-        title: "spiceai/spiceai",
+        title: "langwatch/langwatch",
         source: "GitHub",
-        date: "Updated 2026-07-05",
-        href: "https://github.com/spiceai/spiceai",
+        date: "Updated 2026-07-06",
+        href: "https://github.com/langwatch/langwatch",
         summary:
-          "A Rust-based SQL, search, and LLM-inference engine for data-grounded AI applications, bridging retrieval, analytics, and serving.",
-        tags: ["LLM Inference", "Data Systems", "Rust"],
+          "An evaluation and testing platform for LLM and agent applications, useful for turning model behavior into measurable feedback loops.",
+        tags: ["LLM Evaluation", "Agent Testing", "Observability"],
       },
       {
         type: "Paper",
@@ -166,13 +166,13 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "GitHub",
-        title: "unohee/OpenSwarm",
+        title: "elizaOS/eliza",
         source: "GitHub",
-        date: "Updated 2026-07-05",
-        href: "https://github.com/unohee/OpenSwarm",
+        date: "Updated 2026-07-06",
+        href: "https://github.com/elizaOS/eliza",
         summary:
-          "An autonomous AI development-team orchestrator with Discord control, Linear integration, and cognitive memory for studying practical multi-agent workflows.",
-        tags: ["Multi-Agent", "Orchestration", "Memory"],
+          "A widely used open-source agentic operating system for building persistent, tool-using agents and studying real-world agent infrastructure.",
+        tags: ["Agent Framework", "Tool Use", "Infrastructure"],
       },
       {
         type: "Paper",
