@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-06";
+export const lastUpdated = "2026-07-07";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,23 +28,34 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "GitHub",
-        title: "thomasahle/tensorgrad",
+        title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-07-06",
-        href: "https://github.com/thomasahle/tensorgrad",
+        date: "Updated 2026-07-07",
+        href: "https://github.com/stdlib-js/stdlib",
         summary:
-          "A symbolic tensor library that makes matrix calculus and ML-style tensor expressions easier to inspect, simplify, and teach.",
-        tags: ["Symbolic Math", "Tensor Calculus", "Machine Learning"],
+          "A broad numerical and scientific computing standard library for JavaScript/TypeScript, useful for seeing production-grade implementations of statistical and numerical routines.",
+        tags: ["Numerical Computing", "Statistics", "JavaScript"],
       },
       {
         type: "Paper",
-        title: "Almost Supermartingale Extensions of Olivier's Theorem",
+        title:
+          "An Analytical Newsvendor Framework for Risk-Averse Energy Storage Capacity Reservation under Non-Normal Uncertainty",
         source: "arXiv",
-        date: "2026-07-02",
-        href: "https://arxiv.org/abs/2607.02489",
+        date: "2026-07-06",
+        href: "https://arxiv.org/abs/2607.05372",
         summary:
-          "Extends a classical convergence-rate theorem to almost supermartingales, with applications to stochastic iterative processes.",
-        tags: ["Probability", "Stochastic Processes", "Optimization"],
+          "Builds an optimization framework for capacity-reservation decisions under asymmetric, heavy-tailed uncertainty using expected profit, CVaR, and regret objectives.",
+        tags: ["Optimization", "Risk", "Energy Systems"],
+      },
+      {
+        type: "Paper",
+        title: "Well-invertible column subsets of sparse matrices are rare",
+        source: "arXiv",
+        date: "2026-07-06",
+        href: "https://arxiv.org/abs/2607.05384",
+        summary:
+          "Studies when sparse random matrices fail as oblivious subspace injections, connecting probability with randomized linear algebra limits.",
+        tags: ["Probability", "Random Matrices", "Linear Algebra"],
       },
       {
         type: "Paper",
@@ -58,16 +69,6 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "Analysis of a maximum-entropy based estimator for dynamic random graph models",
-        source: "arXiv",
-        date: "2026-06-30",
-        href: "https://arxiv.org/abs/2606.32013",
-        summary:
-          "Studies estimation for evolving random graphs through a maximum-entropy lens, connecting probability, statistics, and network modeling.",
-        tags: ["Probability", "Statistics", "Dynamic Graphs"],
-      },
-      {
-        type: "Paper",
         title: "GAIA: Geometry-Adaptive Operator Learning for Forward and Inverse Problems",
         source: "arXiv",
         date: "2026-07-01",
@@ -78,13 +79,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "Characterizing and Identifying Separable Graphical Models",
+        title: "Edgeworth Expansions for Linear Rank Statistics -- Consolidated Version",
         source: "arXiv",
-        date: "2026-07-01",
-        href: "https://arxiv.org/abs/2607.01057",
+        date: "2026-07-06",
+        href: "https://arxiv.org/abs/2607.05284",
         summary:
-          "Develops structure and identification results for mixed graphical models that encode feedback, latent variables, and selection effects.",
-        tags: ["Statistics", "Graphical Models", "Independence"],
+          "Gives first-order Edgeworth expansions for linear rank statistics with refined remainder control, a useful update for asymptotic statistics.",
+        tags: ["Statistics", "Asymptotics", "Rank Statistics"],
       },
     ],
   },
@@ -97,13 +98,33 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "GitHub",
-        title: "langwatch/langwatch",
+        title: "huggingface/transformers",
         source: "GitHub",
-        date: "Updated 2026-07-06",
-        href: "https://github.com/langwatch/langwatch",
+        date: "Updated 2026-07-07",
+        href: "https://github.com/huggingface/transformers",
         summary:
-          "An evaluation and testing platform for LLM and agent applications, useful for turning model behavior into measurable feedback loops.",
-        tags: ["LLM Evaluation", "Agent Testing", "Observability"],
+          "The core open-source model-definition framework for modern text, vision, audio, and multimodal ML systems, worth tracking as production model APIs evolve.",
+        tags: ["Transformers", "Deep Learning", "Open Source"],
+      },
+      {
+        type: "Paper",
+        title: "Weak-to-Strong Generalization via Direct On-Policy Distillation",
+        source: "arXiv",
+        date: "2026-07-06",
+        href: "https://arxiv.org/abs/2607.05394",
+        summary:
+          "Transfers RL gains from cheaper weak-model rollouts into stronger models, targeting the cost bottleneck of post-training at scale.",
+        tags: ["RLVR", "Distillation", "LLMs"],
+      },
+      {
+        type: "Paper",
+        title: "TabPack: Efficient Hyperparameter Ensembles for Tabular Deep Learning",
+        source: "arXiv",
+        date: "2026-07-06",
+        href: "https://arxiv.org/abs/2607.05380",
+        summary:
+          "Trains many tabular MLP configurations efficiently in one run, reducing the tuning burden while preserving ensemble-style robustness.",
+        tags: ["Tabular Learning", "Ensembles", "Hyperparameters"],
       },
       {
         type: "Paper",
@@ -127,16 +148,6 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs",
-        source: "arXiv",
-        date: "2026-06-30",
-        href: "https://arxiv.org/abs/2606.32032",
-        summary:
-          "Uses metacognitive feedback to make LLM uncertainty expression more faithful, a useful direction for calibration and reliability.",
-        tags: ["Reinforcement Learning", "Calibration", "LLMs"],
-      },
-      {
-        type: "Paper",
         title: "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
         source: "arXiv",
         date: "2026-07-01",
@@ -144,16 +155,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A layer-wise RL post-training study showing that carefully selected single-layer updates can recover much of full-parameter LLM adaptation.",
         tags: ["LLM Post-Training", "Reinforcement Learning", "Efficiency"],
-      },
-      {
-        type: "Paper",
-        title: "Language-Critique Imitation Learning from Suboptimal Demonstrations",
-        source: "arXiv",
-        date: "2026-07-01",
-        href: "https://arxiv.org/abs/2607.01225",
-        summary:
-          "Uses natural-language critiques as richer supervision than scalar confidence scores when learning from imperfect demonstrations.",
-        tags: ["Imitation Learning", "Language Feedback", "Policy Learning"],
       },
     ],
   },
@@ -166,43 +167,43 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "GitHub",
-        title: "elizaOS/eliza",
+        title: "agentscope-ai/agentscope",
         source: "GitHub",
-        date: "Updated 2026-07-06",
-        href: "https://github.com/elizaOS/eliza",
+        date: "Updated 2026-07-07",
+        href: "https://github.com/agentscope-ai/agentscope",
         summary:
-          "A widely used open-source agentic operating system for building persistent, tool-using agents and studying real-world agent infrastructure.",
-        tags: ["Agent Framework", "Tool Use", "Infrastructure"],
+          "A high-activity agent framework focused on making multi-agent applications observable, understandable, and easier to operate.",
+        tags: ["Agent Framework", "Multi-Agent", "Observability"],
       },
       {
         type: "Paper",
-        title: "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
+        title: "CompactionRL: Reinforcement Learning with Context Compaction for Long-Horizon Agents",
         source: "arXiv",
-        date: "2026-07-02",
-        href: "https://arxiv.org/abs/2607.02507",
+        date: "2026-07-06",
+        href: "https://arxiv.org/abs/2607.05378",
         summary:
-          "Uses public and off-the-record debate channels to probe how social context can produce latent objectives and divergent agent behavior.",
-        tags: ["Multi-Agent Systems", "Evaluation", "Agent Behavior"],
+          "Trains long-horizon agents to execute tasks while compacting prior interaction context, directly addressing finite context windows.",
+        tags: ["Long-Horizon Agents", "Context", "Reinforcement Learning"],
       },
       {
         type: "Paper",
-        title: "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+        title: "AgentGym2: Benchmarking Large Language Model Agents in De-Idealized Real-World Environments",
         source: "arXiv",
-        date: "2026-06-30",
-        href: "https://arxiv.org/abs/2606.32034",
+        date: "2026-07-06",
+        href: "https://arxiv.org/abs/2607.05174",
         summary:
-          "Targets the evaluation problem behind dense intermediate rewards for long-horizon agents, where outcome-only signals are too sparse.",
-        tags: ["Agent Evaluation", "Dense Rewards", "Long-Horizon Tasks"],
+          "Pushes agent evaluation beyond clean toy setups toward noisy, underspecified environments where agents must explore and recover missing tool information.",
+        tags: ["Agent Benchmarks", "Evaluation", "Real-World Tasks"],
       },
       {
         type: "Paper",
-        title: "Generative Skill Composition for LLM Agents",
+        title: "Untrusted Content Masking for Web Agents with Security Guarantees",
         source: "arXiv",
-        date: "2026-06-30",
-        href: "https://arxiv.org/abs/2606.32025",
+        date: "2026-07-06",
+        href: "https://arxiv.org/abs/2607.05277",
         summary:
-          "Frames skill selection as a generative composition problem, matching the way reusable agent skill libraries are likely to grow.",
-        tags: ["Skills", "Agent Planning", "Tool Use"],
+          "Studies how to restore trusted/untrusted boundaries for web agents, a core issue for prompt-injection-resistant tool use.",
+        tags: ["Web Agents", "Security", "Prompt Injection"],
       },
       {
         type: "Paper",
