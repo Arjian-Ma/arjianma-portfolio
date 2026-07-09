@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-07";
+export const lastUpdated = "2026-07-09";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,28 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title:
+          "Minimum Norm Interpolation via The Local Theory of Banach Spaces: The Role of Gaussianity",
+        source: "arXiv",
+        date: "2026-07-08",
+        href: "https://arxiv.org/abs/2607.07694",
+        summary:
+          "Revisits overparameterized minimum-norm interpolation with tools from Banach-space local theory, clarifying when Gaussian structure drives benign behavior.",
+        tags: ["Statistics", "Probability", "Interpolation"],
+      },
+      {
+        type: "Paper",
+        title:
+          "An optimal control approach for neural network architecture adaptation with a posteriori error estimation",
+        source: "arXiv",
+        date: "2026-07-08",
+        href: "https://arxiv.org/abs/2607.07637",
+        summary:
+          "Connects neural-network depth adaptation to continuous-time optimal control and error estimation, blending numerical analysis with learning theory.",
+        tags: ["Optimal Control", "Numerical Analysis", "Neural Networks"],
+      },
       {
         type: "GitHub",
         title: "stdlib-js/stdlib",
@@ -69,16 +91,6 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "GAIA: Geometry-Adaptive Operator Learning for Forward and Inverse Problems",
-        source: "arXiv",
-        date: "2026-07-01",
-        href: "https://arxiv.org/abs/2607.01128",
-        summary:
-          "Extends neural operator learning to forward, boundary-value, and inverse PDE problems on changing geometries through geometry-conditioned integral layers.",
-        tags: ["Numerical Analysis", "Operator Learning", "PDEs"],
-      },
-      {
-        type: "Paper",
         title: "Edgeworth Expansions for Linear Rank Statistics -- Consolidated Version",
         source: "arXiv",
         date: "2026-07-06",
@@ -96,6 +108,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "A running list of ML papers and codebases I am reading to improve model-building, evaluation, and deployment intuition.",
     resources: [
+      {
+        type: "Paper",
+        title: "Co-LMLM: Continuous-Query Limited Memory Language Models",
+        source: "arXiv",
+        date: "2026-07-08",
+        href: "https://arxiv.org/abs/2607.07707",
+        summary:
+          "Explores language models that externalize factual knowledge to a continuously queried knowledge base instead of relying only on memorized weights.",
+        tags: ["Language Models", "Memory", "Retrieval"],
+      },
+      {
+        type: "Paper",
+        title: "The Key to Going Linear: Analysis-Driven Transformer Linearization",
+        source: "arXiv",
+        date: "2026-07-08",
+        href: "https://arxiv.org/abs/2607.07706",
+        summary:
+          "Dissects which components matter when converting causal attention toward linear-time inference, a practical bottleneck for long-context models.",
+        tags: ["Transformers", "Long Context", "Efficient Inference"],
+      },
       {
         type: "GitHub",
         title: "huggingface/transformers",
@@ -128,26 +160,6 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
-        source: "arXiv",
-        date: "2026-07-02",
-        href: "https://arxiv.org/abs/2607.02512",
-        summary:
-          "Compiles natural-language fuzzy-function specs into small local neural adapters, trading repeated large-model calls for reproducible lightweight execution.",
-        tags: ["Neural Programs", "LLMs", "Efficient Inference"],
-      },
-      {
-        type: "Paper",
-        title: "Introspective Coupling: Self-Explanation Training Tracks Behavioral Change Despite Fixed Supervision",
-        source: "arXiv",
-        date: "2026-06-30",
-        href: "https://arxiv.org/abs/2606.32038",
-        summary:
-          "Investigates when self-explanation training produces faithful introspection instead of shallow rationale imitation, which is important for trustworthy model behavior.",
-        tags: ["Interpretability", "Self-Explanation", "LLMs"],
-      },
-      {
-        type: "Paper",
         title: "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
         source: "arXiv",
         date: "2026-07-01",
@@ -165,6 +177,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "Paper",
+        title: "SkillCenter: A Large-Scale Source-Grounded Skill Library for Autonomous AI Agents",
+        source: "arXiv",
+        date: "2026-07-08",
+        href: "https://arxiv.org/abs/2607.07676",
+        summary:
+          "Builds a source-grounded skill library for autonomous agents, emphasizing executable, secure, and maintainable operational knowledge.",
+        tags: ["Agent Skills", "Autonomous Agents", "Knowledge Libraries"],
+      },
+      {
+        type: "Paper",
+        title: "Beyond Attack-Success Rate: Action-Graded Severity Scale for Tool-Using AI Agents",
+        source: "arXiv",
+        date: "2026-07-08",
+        href: "https://arxiv.org/abs/2607.07474",
+        summary:
+          "Argues that agent security evaluations should grade the severity of tool actions, not just binary jailbreak success, improving risk triage.",
+        tags: ["Tool Use", "Agent Security", "Evaluation"],
+      },
       {
         type: "GitHub",
         title: "agentscope-ai/agentscope",
@@ -205,26 +237,7 @@ export const learnTopics: LearnTopic[] = [
           "Studies how to restore trusted/untrusted boundaries for web agents, a core issue for prompt-injection-resistant tool use.",
         tags: ["Web Agents", "Security", "Prompt Injection"],
       },
-      {
-        type: "Paper",
-        title: "Can Agents Generalize to the Open World? Unveiling the Fragility of Static Training in Tool Use",
-        source: "arXiv",
-        date: "2026-07-01",
-        href: "https://arxiv.org/abs/2607.01084",
-        summary:
-          "Formalizes open-world tool-use shifts and shows why static agent training can be brittle when queries, tools, observations, or domains change.",
-        tags: ["Tool Use", "Generalization", "Agent Evaluation"],
-      },
-      {
-        type: "Paper",
-        title: "Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains",
-        source: "arXiv",
-        date: "2026-07-01",
-        href: "https://arxiv.org/abs/2607.01136",
-        summary:
-          "Treats reusable agent skills as dependency-bearing artifacts and adapts SBOM-style analysis to track provenance, versions, and risk.",
-        tags: ["Agent Skills", "Supply Chain", "Safety"],
-      },
+
     ],
   },
 ];
