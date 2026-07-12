@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-10";
+export const lastUpdated = "2026-07-12";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -45,6 +45,16 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A symbolic math and array-computation backend for PyMC with static graph optimization, gradients, and C/JAX/Numba compilation paths.",
         tags: ["Symbolic Math", "Statistics", "Numerical Computing"],
+      },
+      {
+        type: "GitHub",
+        title: "oscar-system/Oscar.jl",
+        source: "GitHub",
+        date: "Updated 2026-07-12",
+        href: "https://github.com/oscar-system/Oscar.jl",
+        summary:
+          "A comprehensive Julia computer algebra system for algebra, geometry, and number theory, useful for seeing modern mathematical software design in practice.",
+        tags: ["Computer Algebra", "Julia", "Mathematics"],
       },
       {
         type: "Paper",
@@ -115,6 +125,16 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A Triton-based operator library for LLM training and inference that aims to provide PyTorch-compatible kernels across heterogeneous accelerators.",
         tags: ["PyTorch", "Triton", "LLM Systems"],
+      },
+      {
+        type: "GitHub",
+        title: "vllm-project/vllm",
+        source: "GitHub",
+        date: "Updated 2026-07-12",
+        href: "https://github.com/vllm-project/vllm",
+        summary:
+          "A high-throughput LLM inference and serving engine that is worth tracking for practical deployment, batching, and memory-management ideas.",
+        tags: ["LLM Systems", "Inference", "Serving"],
       },
       {
         type: "Paper",
@@ -217,13 +237,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "agentscope-ai/agentscope",
+        title: "zjunlp/LightMem",
         source: "GitHub",
-        date: "Updated 2026-07-07",
-        href: "https://github.com/agentscope-ai/agentscope",
+        date: "Updated 2026-07-12",
+        href: "https://github.com/zjunlp/LightMem",
         summary:
-          "A high-activity agent framework focused on making multi-agent applications observable, understandable, and easier to operate.",
-        tags: ["Agent Framework", "Multi-Agent", "Observability"],
+          "An ICLR 2026 memory-augmented generation project focused on lightweight, efficient long-term memory for agentic and RAG-style systems.",
+        tags: ["Agent Memory", "RAG", "Long-Term Memory"],
       },
     ],
   },
