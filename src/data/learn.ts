@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-13";
+export const lastUpdated = "2026-07-14";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,6 +28,36 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "Optimal Parameter-Free First-Order Methods for Convex Optimization with Unknown Growth and Smoothness",
+        source: "arXiv",
+        date: "2026-07-13",
+        href: "https://arxiv.org/abs/2607.11878",
+        summary:
+          "Develops anytime, parameter-free bundle-level first-order methods for convex optimization when growth and smoothness constants are not known in advance.",
+        tags: ["Optimization", "First-Order Methods", "Convex Analysis"],
+      },
+      {
+        type: "Paper",
+        title: "Stabilize-then-optimize: Feedback transformations as preconditioners in optimal control",
+        source: "arXiv",
+        date: "2026-07-13",
+        href: "https://arxiv.org/abs/2607.11835",
+        summary:
+          "Uses feedback transformations as preconditioners for optimal-control systems, linking numerical linear algebra with more stable control optimization workflows.",
+        tags: ["Optimal Control", "Numerical Analysis", "Preconditioning"],
+      },
+      {
+        type: "GitHub",
+        title: "stdlib-js/stdlib",
+        source: "GitHub",
+        date: "Updated 2026-07-14",
+        href: "https://github.com/stdlib-js/stdlib",
+        summary:
+          "A fundamental numerical library for JavaScript and TypeScript, useful for studying how scientific-computing primitives are engineered for the web ecosystem.",
+        tags: ["Numerical Computing", "JavaScript", "Scientific Libraries"],
+      },
+      {
+        type: "Paper",
         title: "Deep Gaussian Processes on Directed Acyclic Graphs",
         source: "arXiv",
         date: "2026-07-10",
@@ -37,20 +67,10 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Statistics", "Gaussian Processes", "Directed Graphs"],
       },
       {
-        type: "Paper",
-        title: "A Quantum Path to Partial Differential Equations",
-        source: "arXiv",
-        date: "2026-07-10",
-        href: "https://arxiv.org/abs/2607.09639",
-        summary:
-          "Lecture notes that connect finite-difference and finite-element discretizations with block encodings and quantum algorithms for elliptic, hyperbolic, and parabolic PDEs.",
-        tags: ["Numerical Analysis", "PDEs", "Quantum Algorithms"],
-      },
-      {
         type: "GitHub",
         title: "ad-si/Woxi",
         source: "GitHub",
-        date: "Updated 2026-07-13",
+        date: "Updated 2026-07-14",
         href: "https://github.com/ad-si/Woxi",
         summary:
           "A Rust reimplementation of the Wolfram Language that is useful for tracking modern design choices in symbolic computation and computer algebra systems.",
@@ -66,26 +86,6 @@ export const learnTopics: LearnTopic[] = [
           "Turns dense optimization certificates into simpler, reusable proof structures using sparsification, learning heuristics, and semidefinite programming.",
         tags: ["Optimization", "Proof Discovery", "First-Order Methods"],
       },
-      {
-        type: "GitHub",
-        title: "oscar-system/Oscar.jl",
-        source: "GitHub",
-        date: "Updated 2026-07-12",
-        href: "https://github.com/oscar-system/Oscar.jl",
-        summary:
-          "A comprehensive Julia computer algebra system for algebra, geometry, and number theory, useful for seeing modern mathematical software design in practice.",
-        tags: ["Computer Algebra", "Julia", "Mathematics"],
-      },
-      {
-        type: "Paper",
-        title: "Neural and Spectral Operator Surrogates on Gaussian Spaces",
-        source: "arXiv",
-        date: "2026-07-09",
-        href: "https://arxiv.org/abs/2607.08492",
-        summary:
-          "Proves approximation-rate guarantees for spectral and neural operator surrogates on Gaussian Hilbert spaces, including gradient-sensitive error control.",
-        tags: ["Numerical Analysis", "Operator Learning", "Gaussian Spaces"],
-      },
     ],
   },
   {
@@ -95,6 +95,36 @@ export const learnTopics: LearnTopic[] = [
     description:
       "A running list of ML papers and codebases I am reading to improve model-building, evaluation, and deployment intuition.",
     resources: [
+      {
+        type: "Paper",
+        title: "Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data",
+        source: "arXiv",
+        date: "2026-07-13",
+        href: "https://arxiv.org/abs/2607.11883",
+        summary:
+          "Studies model compression through requential coding and self-generated training data, tying shorter codes to the regularities neural networks learn.",
+        tags: ["Compression", "Generalization", "Self-Generated Data"],
+      },
+      {
+        type: "Paper",
+        title: "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+        source: "arXiv",
+        date: "2026-07-13",
+        href: "https://arxiv.org/abs/2607.11881",
+        summary:
+          "Surveys how large language models monitor, assess, and improve their own reasoning, highlighting open problems in reliable self-evaluation.",
+        tags: ["LLMs", "Metacognition", "Evaluation"],
+      },
+      {
+        type: "GitHub",
+        title: "sgl-project/sglang",
+        source: "GitHub",
+        date: "Updated 2026-07-14",
+        href: "https://github.com/sgl-project/sglang",
+        summary:
+          "A high-performance serving framework for large language and multimodal models, worth tracking for inference systems and structured generation workflows.",
+        tags: ["LLM Serving", "Inference", "Multimodal Models"],
+      },
       {
         type: "Paper",
         title: "Scalable Visual Pretraining for Language Intelligence",
@@ -116,26 +146,6 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Diffusion", "PyTorch", "Generative AI"],
       },
       {
-        type: "Paper",
-        title: "Evolution of Accuracy and Visual-Cognitive Errors in a Decade of Vision-Language AI Models",
-        source: "arXiv",
-        date: "2026-07-10",
-        href: "https://arxiv.org/abs/2607.09654",
-        summary:
-          "Tracks VLM progress from 2017 to 2025 on complex social scenes, breaking errors into detection, recognition, hallucination, scene understanding, and spatial dependence.",
-        tags: ["Vision-Language Models", "Evaluation", "Model Errors"],
-      },
-      {
-        type: "Paper",
-        title: "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
-        source: "arXiv",
-        date: "2026-07-09",
-        href: "https://arxiv.org/abs/2607.08754",
-        summary:
-          "Introduces a stateless, architecture-preserving low-rank regularizer that makes vision and language models more compressible with small training overhead.",
-        tags: ["Compression", "Low-Rank", "LLMs"],
-      },
-      {
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
@@ -144,16 +154,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A high-throughput LLM inference and serving engine that is worth tracking for practical deployment, batching, and memory-management ideas.",
         tags: ["LLM Systems", "Inference", "Serving"],
-      },
-      {
-        type: "Paper",
-        title: "Co-LMLM: Continuous-Query Limited Memory Language Models",
-        source: "arXiv",
-        date: "2026-07-08",
-        href: "https://arxiv.org/abs/2607.07707",
-        summary:
-          "Explores language models that externalize factual knowledge to a continuously queried knowledge base instead of relying only on memorized weights.",
-        tags: ["Language Models", "Memory", "Retrieval"],
       },
     ],
   },
@@ -166,6 +166,46 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "When Local Monitors Miss Compositional Harm: Diagnosing Distributed Backdoors in Multi-Agent Systems",
+        source: "arXiv",
+        date: "2026-07-13",
+        href: "https://arxiv.org/abs/2607.11751",
+        summary:
+          "Shows how monitoring each tool call or message in isolation can miss coordinated failures across multi-agent systems, a practical warning for agent safety design.",
+        tags: ["Multi-Agent Systems", "Safety", "Monitoring"],
+      },
+      {
+        type: "Paper",
+        title: "Agent Hacks Agent: Autoresearch for Production-Agent Red-Teaming",
+        source: "arXiv",
+        date: "2026-07-13",
+        href: "https://arxiv.org/abs/2607.11698",
+        summary:
+          "Focuses on red-teaming production coding agents such as Claude Code and Codex, where untrusted files, commands, and workspace state make failures actionable.",
+        tags: ["Red Teaming", "Coding Agents", "Tool Safety"],
+      },
+      {
+        type: "Paper",
+        title: "PaperRouter-Agent: A Content-Grounded LLM Agent for Personalized Hierarchical Paper Routing",
+        source: "arXiv",
+        date: "2026-07-13",
+        href: "https://arxiv.org/abs/2607.11564",
+        summary:
+          "Builds an LLM agent for routing research papers into personal folder hierarchies, making paper triage more grounded in user-specific organization habits.",
+        tags: ["Research Agents", "Paper Triage", "Personalization"],
+      },
+      {
+        type: "GitHub",
+        title: "smithersai/smithers",
+        source: "GitHub",
+        date: "Updated 2026-07-14",
+        href: "https://github.com/smithersai/smithers",
+        summary:
+          "An agent-workflow system with live observability, rewind, fork, and replay, useful for understanding durable execution and debugging of autonomous runs.",
+        tags: ["Agent Workflows", "Observability", "Durable Execution"],
+      },
+      {
+        type: "Paper",
         title: "Shared Selective Persistent Memory for Agentic LLM Systems",
         source: "arXiv",
         date: "2026-07-10",
@@ -173,46 +213,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "Proposes reusable workspace memory that preserves task specs, schemas, tool configurations, and output constraints while discarding noisy session traces.",
         tags: ["Agent Memory", "Tool Use", "Collaboration"],
-      },
-      {
-        type: "Paper",
-        title: "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents",
-        source: "arXiv",
-        date: "2026-07-10",
-        href: "https://arxiv.org/abs/2607.09195",
-        summary:
-          "Turns scientific-agent hypothesis generation, testing, evidence, and belief updates into explicit auditable operations instead of burying them in logs.",
-        tags: ["AI Scientists", "Auditing", "Planning"],
-      },
-      {
-        type: "Paper",
-        title: "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
-        source: "arXiv",
-        date: "2026-07-10",
-        href: "https://arxiv.org/abs/2607.09653",
-        summary:
-          "Builds a multi-agent vulnerability discovery and exploit-execution loop for IoT security testing, highlighting both practical autonomy and safety concerns.",
-        tags: ["Tool Use", "Security", "Autonomous Agents"],
-      },
-      {
-        type: "GitHub",
-        title: "strukto-ai/mirage",
-        source: "GitHub",
-        date: "Updated 2026-07-13",
-        href: "https://github.com/strukto-ai/mirage",
-        summary:
-          "A virtual filesystem layer for AI agents, pointing toward safer and more observable file access patterns for tool-using coding systems.",
-        tags: ["Agent Tools", "Virtual Filesystem", "Sandboxing"],
-      },
-      {
-        type: "Paper",
-        title: "Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows",
-        source: "arXiv",
-        date: "2026-07-09",
-        href: "https://arxiv.org/abs/2607.08740",
-        summary:
-          "Frames agent workflows, inference records, context snapshots, and dependencies as persistent knowledge objects that can be inspected and resumed.",
-        tags: ["Agent Workflows", "Persistence", "Tool Use"],
       },
       {
         type: "GitHub",
