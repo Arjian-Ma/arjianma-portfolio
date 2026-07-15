@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-14";
+export const lastUpdated = "2026-07-15";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title: "Online Control via Counterfactual Tracking",
+        source: "arXiv",
+        date: "2026-07-14",
+        href: "https://arxiv.org/abs/2607.13029",
+        summary:
+          "Introduces an online-control method that competes with broad classes of causal policies under adversarial disturbances, expanding beyond standard linear-controller benchmarks.",
+        tags: ["Online Control", "Dynamical Systems", "Optimization"],
+      },
+      {
+        type: "Paper",
+        title: "Low-Precision Rank Compensation for Matrices and Tensor Trains",
+        source: "arXiv",
+        date: "2026-07-14",
+        href: "https://arxiv.org/abs/2607.12969",
+        summary:
+          "Studies when saved memory from lower precision can be reinvested into higher rank, giving practical guidance for numerical linear algebra with matrices and tensor trains.",
+        tags: ["Numerical Analysis", "Low Precision", "Tensor Trains"],
+      },
       {
         type: "Paper",
         title: "Optimal Parameter-Free First-Order Methods for Convex Optimization with Unknown Growth and Smoothness",
@@ -50,7 +70,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-07-14",
+        date: "Updated 2026-07-15",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A fundamental numerical library for JavaScript and TypeScript, useful for studying how scientific-computing primitives are engineered for the web ecosystem.",
@@ -66,26 +86,6 @@ export const learnTopics: LearnTopic[] = [
           "Extends Gaussian-process modeling to functions composed along DAGs, with theory on prior collapse, graph topology, and information preservation under partial observations.",
         tags: ["Statistics", "Gaussian Processes", "Directed Graphs"],
       },
-      {
-        type: "GitHub",
-        title: "ad-si/Woxi",
-        source: "GitHub",
-        date: "Updated 2026-07-14",
-        href: "https://github.com/ad-si/Woxi",
-        summary:
-          "A Rust reimplementation of the Wolfram Language that is useful for tracking modern design choices in symbolic computation and computer algebra systems.",
-        tags: ["Symbolic Computation", "Computer Algebra", "Rust"],
-      },
-      {
-        type: "Paper",
-        title: "Finding Simple Proofs for First-Order Optimization",
-        source: "arXiv",
-        date: "2026-07-09",
-        href: "https://arxiv.org/abs/2607.08753",
-        summary:
-          "Turns dense optimization certificates into simpler, reusable proof structures using sparsification, learning heuristics, and semidefinite programming.",
-        tags: ["Optimization", "Proof Discovery", "First-Order Methods"],
-      },
     ],
   },
   {
@@ -95,6 +95,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "A running list of ML papers and codebases I am reading to improve model-building, evaluation, and deployment intuition.",
     resources: [
+      {
+        type: "Paper",
+        title: "The Seriality Gap in Video Diffusion Models",
+        source: "arXiv",
+        date: "2026-07-14",
+        href: "https://arxiv.org/abs/2607.13031",
+        summary:
+          "Uses controlled multi-ball dynamics to show where bidirectional video diffusion struggles with long causal chains, sharpening evaluation for physical reasoning in generative models.",
+        tags: ["Video Diffusion", "Causal Reasoning", "Evaluation"],
+      },
+      {
+        type: "GitHub",
+        title: "LMCache/LMCache",
+        source: "GitHub",
+        date: "Updated 2026-07-15",
+        href: "https://github.com/LMCache/LMCache",
+        summary:
+          "A KV-cache layer for accelerating LLM serving, worth following for practical inference performance, reuse, and memory-management ideas.",
+        tags: ["LLM Serving", "KV Cache", "Inference Systems"],
+      },
       {
         type: "Paper",
         title: "Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data",
@@ -119,7 +139,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "sgl-project/sglang",
         source: "GitHub",
-        date: "Updated 2026-07-14",
+        date: "Updated 2026-07-15",
         href: "https://github.com/sgl-project/sglang",
         summary:
           "A high-performance serving framework for large language and multimodal models, worth tracking for inference systems and structured generation workflows.",
@@ -135,26 +155,6 @@ export const learnTopics: LearnTopic[] = [
           "Challenges text-only pretraining by showing that visually rich documents, equations, and layouts can improve foundation-model intelligence at scale.",
         tags: ["Visual Pretraining", "Foundation Models", "Multimodal ML"],
       },
-      {
-        type: "GitHub",
-        title: "Comfy-Org/ComfyUI",
-        source: "GitHub",
-        date: "Updated 2026-07-13",
-        href: "https://github.com/Comfy-Org/ComfyUI",
-        summary:
-          "A highly active node-graph interface and backend for diffusion workflows, useful for studying practical model orchestration and generative-media systems.",
-        tags: ["Diffusion", "PyTorch", "Generative AI"],
-      },
-      {
-        type: "GitHub",
-        title: "vllm-project/vllm",
-        source: "GitHub",
-        date: "Updated 2026-07-12",
-        href: "https://github.com/vllm-project/vllm",
-        summary:
-          "A high-throughput LLM inference and serving engine that is worth tracking for practical deployment, batching, and memory-management ideas.",
-        tags: ["LLM Systems", "Inference", "Serving"],
-      },
     ],
   },
   {
@@ -164,6 +164,36 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "Paper",
+        title: "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
+        source: "arXiv",
+        date: "2026-07-14",
+        href: "https://arxiv.org/abs/2607.13034",
+        summary:
+          "Argues that LLM agents often over-spend context and effort on simple tasks, motivating complexity-aware execution policies for more efficient automation.",
+        tags: ["Agent Efficiency", "Complexity Awareness", "Execution"],
+      },
+      {
+        type: "Paper",
+        title: "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
+        source: "arXiv",
+        date: "2026-07-14",
+        href: "https://arxiv.org/abs/2607.13027",
+        summary:
+          "Explores agent execution directly on mobile devices, an important direction for privacy-preserving and latency-sensitive personal assistants.",
+        tags: ["Mobile Agents", "Tool Use", "On-Device AI"],
+      },
+      {
+        type: "Paper",
+        title: "MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations",
+        source: "arXiv",
+        date: "2026-07-14",
+        href: "https://arxiv.org/abs/2607.12893",
+        summary:
+          "Benchmarks the full lifecycle of agent memory operations rather than only downstream question answering, making long-horizon memory evaluation more diagnostic.",
+        tags: ["Agent Memory", "Benchmarks", "Long-Horizon Tasks"],
+      },
       {
         type: "Paper",
         title: "When Local Monitors Miss Compositional Harm: Diagnosing Distributed Backdoors in Multi-Agent Systems",
@@ -185,16 +215,6 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Red Teaming", "Coding Agents", "Tool Safety"],
       },
       {
-        type: "Paper",
-        title: "PaperRouter-Agent: A Content-Grounded LLM Agent for Personalized Hierarchical Paper Routing",
-        source: "arXiv",
-        date: "2026-07-13",
-        href: "https://arxiv.org/abs/2607.11564",
-        summary:
-          "Builds an LLM agent for routing research papers into personal folder hierarchies, making paper triage more grounded in user-specific organization habits.",
-        tags: ["Research Agents", "Paper Triage", "Personalization"],
-      },
-      {
         type: "GitHub",
         title: "smithersai/smithers",
         source: "GitHub",
@@ -203,26 +223,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "An agent-workflow system with live observability, rewind, fork, and replay, useful for understanding durable execution and debugging of autonomous runs.",
         tags: ["Agent Workflows", "Observability", "Durable Execution"],
-      },
-      {
-        type: "Paper",
-        title: "Shared Selective Persistent Memory for Agentic LLM Systems",
-        source: "arXiv",
-        date: "2026-07-10",
-        href: "https://arxiv.org/abs/2607.09493",
-        summary:
-          "Proposes reusable workspace memory that preserves task specs, schemas, tool configurations, and output constraints while discarding noisy session traces.",
-        tags: ["Agent Memory", "Tool Use", "Collaboration"],
-      },
-      {
-        type: "GitHub",
-        title: "microsoft/agent-framework",
-        source: "GitHub",
-        date: "Updated 2026-07-10",
-        href: "https://github.com/microsoft/agent-framework",
-        summary:
-          "A production-oriented Python/.NET framework for building and orchestrating agents and multi-agent workflows with observability and governance hooks.",
-        tags: ["Agent Framework", "Multi-Agent", "Production"],
       },
     ],
   },
