@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-15";
+export const lastUpdated = "2026-07-17";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,36 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title: "Delocalization of bias in unadjusted Hamiltonian Monte Carlo and underdamped Langevin",
+        source: "arXiv",
+        date: "2026-07-16",
+        href: "https://arxiv.org/abs/2607.15208",
+        summary:
+          "Extends delocalization-of-bias analysis to unadjusted HMC and underdamped Langevin, offering a sharper view of when biased samplers can still be useful at scale.",
+        tags: ["Probability", "Sampling", "Hamiltonian Monte Carlo"],
+      },
+      {
+        type: "Paper",
+        title: "Efficient higher-order local time integration for Friedrichs' systems",
+        source: "arXiv",
+        date: "2026-07-16",
+        href: "https://arxiv.org/abs/2607.15192",
+        summary:
+          "Develops local time-integration schemes for spatial discretizations with only a few small mesh elements, a practical numerical-analysis problem in multiscale simulation.",
+        tags: ["Numerical Analysis", "Time Integration", "PDEs"],
+      },
+      {
+        type: "Paper",
+        title: "Perfectly equidistributed Quasi-Monte Carlo sequences from Artin-Schreier polynomials",
+        source: "arXiv",
+        date: "2026-07-16",
+        href: "https://arxiv.org/abs/2607.15141",
+        summary:
+          "Constructs quasi-Monte Carlo sequences with strong equidistribution guarantees, connecting algebraic structure with practical integration error control.",
+        tags: ["Quasi-Monte Carlo", "Numerical Integration", "Algebra"],
+      },
       {
         type: "Paper",
         title: "Online Control via Counterfactual Tracking",
@@ -47,44 +77,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Numerical Analysis", "Low Precision", "Tensor Trains"],
       },
       {
-        type: "Paper",
-        title: "Optimal Parameter-Free First-Order Methods for Convex Optimization with Unknown Growth and Smoothness",
-        source: "arXiv",
-        date: "2026-07-13",
-        href: "https://arxiv.org/abs/2607.11878",
-        summary:
-          "Develops anytime, parameter-free bundle-level first-order methods for convex optimization when growth and smoothness constants are not known in advance.",
-        tags: ["Optimization", "First-Order Methods", "Convex Analysis"],
-      },
-      {
-        type: "Paper",
-        title: "Stabilize-then-optimize: Feedback transformations as preconditioners in optimal control",
-        source: "arXiv",
-        date: "2026-07-13",
-        href: "https://arxiv.org/abs/2607.11835",
-        summary:
-          "Uses feedback transformations as preconditioners for optimal-control systems, linking numerical linear algebra with more stable control optimization workflows.",
-        tags: ["Optimal Control", "Numerical Analysis", "Preconditioning"],
-      },
-      {
         type: "GitHub",
-        title: "stdlib-js/stdlib",
+        title: "NVIDIA/raft",
         source: "GitHub",
-        date: "Updated 2026-07-15",
-        href: "https://github.com/stdlib-js/stdlib",
+        date: "Updated 2026-07-17",
+        href: "https://github.com/NVIDIA/raft",
         summary:
-          "A fundamental numerical library for JavaScript and TypeScript, useful for studying how scientific-computing primitives are engineered for the web ecosystem.",
-        tags: ["Numerical Computing", "JavaScript", "Scientific Libraries"],
-      },
-      {
-        type: "Paper",
-        title: "Deep Gaussian Processes on Directed Acyclic Graphs",
-        source: "arXiv",
-        date: "2026-07-10",
-        href: "https://arxiv.org/abs/2607.09645",
-        summary:
-          "Extends Gaussian-process modeling to functions composed along DAGs, with theory on prior collapse, graph topology, and information preservation under partial observations.",
-        tags: ["Statistics", "Gaussian Processes", "Directed Graphs"],
+          "CUDA-accelerated primitives for nearest neighbors, clustering, solvers, sampling, and vector search; useful for seeing how numerical and statistical building blocks are engineered for GPUs.",
+        tags: ["GPU Computing", "Statistics", "Linear Algebra"],
       },
     ],
   },
@@ -97,6 +97,26 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "RoboTTT: Context Scaling for Robot Policies",
+        source: "arXiv",
+        date: "2026-07-16",
+        href: "https://arxiv.org/abs/2607.15275",
+        summary:
+          "Scales robot-policy context to thousands of timesteps with test-time training, pointing toward models that can adapt from long demonstrations without adding inference latency.",
+        tags: ["Robot Learning", "Test-Time Training", "Long Context"],
+      },
+      {
+        type: "Paper",
+        title: "Pretraining Data Can Be Poisoned through Computational Propaganda",
+        source: "arXiv",
+        date: "2026-07-16",
+        href: "https://arxiv.org/abs/2607.15267",
+        summary:
+          "Shows how adversarial content can survive realistic data-curation pipelines, making pretraining-data security a concrete systems problem rather than only a benchmark concern.",
+        tags: ["Data Poisoning", "Pretraining", "AI Security"],
+      },
+      {
+        type: "Paper",
         title: "The Seriality Gap in Video Diffusion Models",
         source: "arXiv",
         date: "2026-07-14",
@@ -107,6 +127,16 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
+        title: "vllm-project/vllm",
+        source: "GitHub",
+        date: "Updated 2026-07-17",
+        href: "https://github.com/vllm-project/vllm",
+        summary:
+          "A high-throughput LLM inference engine whose active development is worth following for serving, batching, memory, and deployment patterns.",
+        tags: ["LLM Serving", "Inference", "PyTorch"],
+      },
+      {
+        type: "GitHub",
         title: "LMCache/LMCache",
         source: "GitHub",
         date: "Updated 2026-07-15",
@@ -114,36 +144,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A KV-cache layer for accelerating LLM serving, worth following for practical inference performance, reuse, and memory-management ideas.",
         tags: ["LLM Serving", "KV Cache", "Inference Systems"],
-      },
-      {
-        type: "Paper",
-        title: "Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data",
-        source: "arXiv",
-        date: "2026-07-13",
-        href: "https://arxiv.org/abs/2607.11883",
-        summary:
-          "Studies model compression through requential coding and self-generated training data, tying shorter codes to the regularities neural networks learn.",
-        tags: ["Compression", "Generalization", "Self-Generated Data"],
-      },
-      {
-        type: "Paper",
-        title: "Metacognition in LLMs: Foundations, Progress, and Opportunities",
-        source: "arXiv",
-        date: "2026-07-13",
-        href: "https://arxiv.org/abs/2607.11881",
-        summary:
-          "Surveys how large language models monitor, assess, and improve their own reasoning, highlighting open problems in reliable self-evaluation.",
-        tags: ["LLMs", "Metacognition", "Evaluation"],
-      },
-      {
-        type: "GitHub",
-        title: "sgl-project/sglang",
-        source: "GitHub",
-        date: "Updated 2026-07-15",
-        href: "https://github.com/sgl-project/sglang",
-        summary:
-          "A high-performance serving framework for large language and multimodal models, worth tracking for inference systems and structured generation workflows.",
-        tags: ["LLM Serving", "Inference", "Multimodal Models"],
       },
       {
         type: "Paper",
@@ -166,6 +166,36 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
+        source: "arXiv",
+        date: "2026-07-16",
+        href: "https://arxiv.org/abs/2607.15263",
+        summary:
+          "Evaluates security agents through both task success and the cost of reasoning steps, tool calls, and telemetry queries, which is closer to real operational constraints.",
+        tags: ["Security Agents", "Evaluation", "Cost-Aware AI"],
+      },
+      {
+        type: "Paper",
+        title: "Plover: Steering GUI Agents through Plan-Centric Interaction",
+        source: "arXiv",
+        date: "2026-07-16",
+        href: "https://arxiv.org/abs/2607.15193",
+        summary:
+          "Makes GUI-agent plans inspectable and steerable, highlighting human oversight as a core design layer for reliable desktop automation.",
+        tags: ["GUI Agents", "Planning", "Human Oversight"],
+      },
+      {
+        type: "Paper",
+        title: "OmniaBench: Benchmarking General AI Agents Across Diverse Scenarios",
+        source: "arXiv",
+        date: "2026-07-16",
+        href: "https://arxiv.org/abs/2607.14989",
+        summary:
+          "Proposes a broader benchmark for general agents across heterogeneous tasks, tools, and interaction patterns instead of a single narrow workflow.",
+        tags: ["Agent Benchmarks", "Tool Use", "Evaluation"],
+      },
+      {
+        type: "Paper",
         title: "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
         source: "arXiv",
         date: "2026-07-14",
@@ -173,16 +203,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "Argues that LLM agents often over-spend context and effort on simple tasks, motivating complexity-aware execution policies for more efficient automation.",
         tags: ["Agent Efficiency", "Complexity Awareness", "Execution"],
-      },
-      {
-        type: "Paper",
-        title: "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
-        source: "arXiv",
-        date: "2026-07-14",
-        href: "https://arxiv.org/abs/2607.13027",
-        summary:
-          "Explores agent execution directly on mobile devices, an important direction for privacy-preserving and latency-sensitive personal assistants.",
-        tags: ["Mobile Agents", "Tool Use", "On-Device AI"],
       },
       {
         type: "Paper",
@@ -195,34 +215,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Agent Memory", "Benchmarks", "Long-Horizon Tasks"],
       },
       {
-        type: "Paper",
-        title: "When Local Monitors Miss Compositional Harm: Diagnosing Distributed Backdoors in Multi-Agent Systems",
-        source: "arXiv",
-        date: "2026-07-13",
-        href: "https://arxiv.org/abs/2607.11751",
-        summary:
-          "Shows how monitoring each tool call or message in isolation can miss coordinated failures across multi-agent systems, a practical warning for agent safety design.",
-        tags: ["Multi-Agent Systems", "Safety", "Monitoring"],
-      },
-      {
-        type: "Paper",
-        title: "Agent Hacks Agent: Autoresearch for Production-Agent Red-Teaming",
-        source: "arXiv",
-        date: "2026-07-13",
-        href: "https://arxiv.org/abs/2607.11698",
-        summary:
-          "Focuses on red-teaming production coding agents such as Claude Code and Codex, where untrusted files, commands, and workspace state make failures actionable.",
-        tags: ["Red Teaming", "Coding Agents", "Tool Safety"],
-      },
-      {
         type: "GitHub",
-        title: "smithersai/smithers",
+        title: "first-fluke/oh-my-agent",
         source: "GitHub",
-        date: "Updated 2026-07-14",
-        href: "https://github.com/smithersai/smithers",
+        date: "Updated 2026-07-17",
+        href: "https://github.com/first-fluke/oh-my-agent",
         summary:
-          "An agent-workflow system with live observability, rewind, fork, and replay, useful for understanding durable execution and debugging of autonomous runs.",
-        tags: ["Agent Workflows", "Observability", "Durable Execution"],
+          "A portable, vendor-agnostic agent harness for project-specific skills, workflows, and multi-agent teams aligned with a codebase's conventions.",
+        tags: ["Agent Harness", "Multi-Agent", "Agentic Coding"],
       },
     ],
   },
