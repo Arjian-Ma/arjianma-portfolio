@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-17";
+export const lastUpdated = "2026-07-18";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -47,14 +47,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Numerical Analysis", "Time Integration", "PDEs"],
       },
       {
-        type: "Paper",
-        title: "Perfectly equidistributed Quasi-Monte Carlo sequences from Artin-Schreier polynomials",
-        source: "arXiv",
-        date: "2026-07-16",
-        href: "https://arxiv.org/abs/2607.15141",
+        type: "GitHub",
+        title: "stdlib-js/stdlib",
+        source: "GitHub",
+        date: "Updated 2026-07-18",
+        href: "https://github.com/stdlib-js/stdlib",
         summary:
-          "Constructs quasi-Monte Carlo sequences with strong equidistribution guarantees, connecting algebraic structure with practical integration error control.",
-        tags: ["Quasi-Monte Carlo", "Numerical Integration", "Algebra"],
+          "A broad numerical and statistical standard library for JavaScript/TypeScript, useful for seeing how scientific-computing primitives are packaged for production web stacks.",
+        tags: ["Numerical Computing", "Statistics", "TypeScript"],
       },
       {
         type: "Paper",
@@ -137,13 +137,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "LMCache/LMCache",
+        title: "vllm-project/vllm-omni",
         source: "GitHub",
-        date: "Updated 2026-07-15",
-        href: "https://github.com/LMCache/LMCache",
+        date: "Updated 2026-07-18",
+        href: "https://github.com/vllm-project/vllm-omni",
         summary:
-          "A KV-cache layer for accelerating LLM serving, worth following for practical inference performance, reuse, and memory-management ideas.",
-        tags: ["LLM Serving", "KV Cache", "Inference Systems"],
+          "Extends efficient model serving toward omni-modal generation and inference, making it a practical follow-up to core vLLM for multimodal systems work.",
+        tags: ["Multimodal Inference", "Model Serving", "PyTorch"],
       },
       {
         type: "Paper",
@@ -216,13 +216,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "first-fluke/oh-my-agent",
+        title: "mastra-ai/mastra",
         source: "GitHub",
-        date: "Updated 2026-07-17",
-        href: "https://github.com/first-fluke/oh-my-agent",
+        date: "Updated 2026-07-18",
+        href: "https://github.com/mastra-ai/mastra",
         summary:
-          "A portable, vendor-agnostic agent harness for project-specific skills, workflows, and multi-agent teams aligned with a codebase's conventions.",
-        tags: ["Agent Harness", "Multi-Agent", "Agentic Coding"],
+          "A TypeScript framework for agentic applications with workflows, evals, and MCP support, worth tracking for production-oriented agent architecture patterns.",
+        tags: ["Agent Framework", "Workflows", "TypeScript"],
       },
     ],
   },
