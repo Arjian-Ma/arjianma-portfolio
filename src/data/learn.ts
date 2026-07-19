@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-18";
+export const lastUpdated = "2026-07-19";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -78,13 +78,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "NVIDIA/raft",
+        title: "Paper-Proof/paperproof",
         source: "GitHub",
-        date: "Updated 2026-07-17",
-        href: "https://github.com/NVIDIA/raft",
+        date: "Updated 2026-07-19",
+        href: "https://github.com/Paper-Proof/paperproof",
         summary:
-          "CUDA-accelerated primitives for nearest neighbors, clustering, solvers, sampling, and vector search; useful for seeing how numerical and statistical building blocks are engineered for GPUs.",
-        tags: ["GPU Computing", "Statistics", "Linear Algebra"],
+          "A Lean 4 theorem-proving interface designed to feel closer to pen-and-paper proofs, useful for following how formal mathematics tooling is becoming more approachable.",
+        tags: ["Formal Methods", "Lean 4", "Mathematics"],
       },
     ],
   },
@@ -146,14 +146,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Multimodal Inference", "Model Serving", "PyTorch"],
       },
       {
-        type: "Paper",
-        title: "Scalable Visual Pretraining for Language Intelligence",
-        source: "arXiv",
-        date: "2026-07-10",
-        href: "https://arxiv.org/abs/2607.09657",
+        type: "GitHub",
+        title: "NVIDIA/TensorRT-LLM",
+        source: "GitHub",
+        date: "Updated 2026-07-19",
+        href: "https://github.com/NVIDIA/TensorRT-LLM",
         summary:
-          "Challenges text-only pretraining by showing that visually rich documents, equations, and layouts can improve foundation-model intelligence at scale.",
-        tags: ["Visual Pretraining", "Foundation Models", "Multimodal ML"],
+          "A production-oriented toolkit for optimizing and serving large language models on NVIDIA GPUs, worth tracking for practical inference-engineering patterns.",
+        tags: ["LLM Serving", "Inference Optimization", "PyTorch"],
       },
     ],
   },
@@ -216,13 +216,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "mastra-ai/mastra",
+        title: "open-multi-agent/open-multi-agent",
         source: "GitHub",
-        date: "Updated 2026-07-18",
-        href: "https://github.com/mastra-ai/mastra",
+        date: "Updated 2026-07-19",
+        href: "https://github.com/open-multi-agent/open-multi-agent",
         summary:
-          "A TypeScript framework for agentic applications with workflows, evals, and MCP support, worth tracking for production-oriented agent architecture patterns.",
-        tags: ["Agent Framework", "Workflows", "TypeScript"],
+          "A TypeScript orchestration framework where a coordinator dynamically plans task graphs, making it a useful reference for flexible multi-agent workflow design.",
+        tags: ["Agent Framework", "Multi-Agent", "TypeScript"],
       },
     ],
   },
