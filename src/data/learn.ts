@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-19";
+export const lastUpdated = "2026-07-20";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title: "Optimal control of symmetry-breaking dynamics near criticality",
+        source: "arXiv",
+        date: "2026-07-17",
+        href: "https://arxiv.org/abs/2607.16188",
+        summary:
+          "Uses Pontryagin-style asymptotics to study how control strength changes optimal steering near pitchfork bifurcations, connecting dynamical-systems theory with natural symmetry-breaking processes.",
+        tags: ["Optimal Control", "Dynamical Systems", "Bifurcations"],
+      },
+      {
+        type: "Paper",
+        title: "Cluster-Aware Matching via Laplacian Optimal Transport",
+        source: "arXiv",
+        date: "2026-07-17",
+        href: "https://arxiv.org/abs/2607.16178",
+        summary:
+          "Regularizes optimal transport with graph Laplacians so matched point clouds respect cluster structure, a useful bridge between numerical optimization and statistical learning.",
+        tags: ["Optimal Transport", "Numerical Analysis", "Statistics"],
+      },
       {
         type: "Paper",
         title: "Delocalization of bias in unadjusted Hamiltonian Monte Carlo and underdamped Langevin",
@@ -66,26 +86,6 @@ export const learnTopics: LearnTopic[] = [
           "Introduces an online-control method that competes with broad classes of causal policies under adversarial disturbances, expanding beyond standard linear-controller benchmarks.",
         tags: ["Online Control", "Dynamical Systems", "Optimization"],
       },
-      {
-        type: "Paper",
-        title: "Low-Precision Rank Compensation for Matrices and Tensor Trains",
-        source: "arXiv",
-        date: "2026-07-14",
-        href: "https://arxiv.org/abs/2607.12969",
-        summary:
-          "Studies when saved memory from lower precision can be reinvested into higher rank, giving practical guidance for numerical linear algebra with matrices and tensor trains.",
-        tags: ["Numerical Analysis", "Low Precision", "Tensor Trains"],
-      },
-      {
-        type: "GitHub",
-        title: "Paper-Proof/paperproof",
-        source: "GitHub",
-        date: "Updated 2026-07-19",
-        href: "https://github.com/Paper-Proof/paperproof",
-        summary:
-          "A Lean 4 theorem-proving interface designed to feel closer to pen-and-paper proofs, useful for following how formal mathematics tooling is becoming more approachable.",
-        tags: ["Formal Methods", "Lean 4", "Mathematics"],
-      },
     ],
   },
   {
@@ -95,6 +95,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "A running list of ML papers and codebases I am reading to improve model-building, evaluation, and deployment intuition.",
     resources: [
+      {
+        type: "Paper",
+        title: "PagedWeight: Efficient MoE LLM Serving with Dynamic Quality-Aware Weight Quantization",
+        source: "arXiv",
+        date: "2026-07-17",
+        href: "https://arxiv.org/abs/2607.16184",
+        summary:
+          "Dynamically quantizes MoE weights at runtime to balance expert precision against KV-cache pressure, giving a concrete systems idea for memory-sensitive LLM serving.",
+        tags: ["LLM Serving", "MoE", "Quantization"],
+      },
+      {
+        type: "Paper",
+        title: "When Does Muon Help Agentic Reinforcement Learning?",
+        source: "arXiv",
+        date: "2026-07-17",
+        href: "https://arxiv.org/abs/2607.16169",
+        summary:
+          "Compares Muon and AdamW in sparse-reward agentic RL, showing optimizer choice can materially affect post-training success in environments like ALFWorld.",
+        tags: ["Agentic RL", "Optimization", "Post-Training"],
+      },
       {
         type: "Paper",
         title: "RoboTTT: Context Scaling for Robot Policies",
@@ -116,16 +136,6 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Data Poisoning", "Pretraining", "AI Security"],
       },
       {
-        type: "Paper",
-        title: "The Seriality Gap in Video Diffusion Models",
-        source: "arXiv",
-        date: "2026-07-14",
-        href: "https://arxiv.org/abs/2607.13031",
-        summary:
-          "Uses controlled multi-ball dynamics to show where bidirectional video diffusion struggles with long causal chains, sharpening evaluation for physical reasoning in generative models.",
-        tags: ["Video Diffusion", "Causal Reasoning", "Evaluation"],
-      },
-      {
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
@@ -134,16 +144,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A high-throughput LLM inference engine whose active development is worth following for serving, batching, memory, and deployment patterns.",
         tags: ["LLM Serving", "Inference", "PyTorch"],
-      },
-      {
-        type: "GitHub",
-        title: "vllm-project/vllm-omni",
-        source: "GitHub",
-        date: "Updated 2026-07-18",
-        href: "https://github.com/vllm-project/vllm-omni",
-        summary:
-          "Extends efficient model serving toward omni-modal generation and inference, making it a practical follow-up to core vLLM for multimodal systems work.",
-        tags: ["Multimodal Inference", "Model Serving", "PyTorch"],
       },
       {
         type: "GitHub",
@@ -164,6 +164,36 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "Paper",
+        title: "Searching Videos as Trees: Self-Correcting Agents for Grounded Long Video QA",
+        source: "arXiv",
+        date: "2026-07-17",
+        href: "https://arxiv.org/abs/2607.16189",
+        summary:
+          "Frames long-video QA as adaptive tree search with self-correction, showing how agentic backtracking can improve grounded multimodal reasoning.",
+        tags: ["VLM Agents", "Video QA", "Self-Correction"],
+      },
+      {
+        type: "Paper",
+        title: "When Do Multi-Agent Systems Help? An Information Bottleneck Perspective",
+        source: "arXiv",
+        date: "2026-07-17",
+        href: "https://arxiv.org/abs/2607.16133",
+        summary:
+          "Analyzes when isolated agent contexts and bounded relay messages can outperform a single shared-context agent, giving a useful lens for multi-agent design.",
+        tags: ["Multi-Agent Systems", "Information Bottleneck", "Agent Design"],
+      },
+      {
+        type: "Paper",
+        title: "The Honest Quorum Problem: Epistemic Byzantine Fault Tolerance for Agentic Infrastructure",
+        source: "arXiv",
+        date: "2026-07-17",
+        href: "https://arxiv.org/abs/2607.16109",
+        summary:
+          "Introduces epistemic faults for protocol-compliant but semantically mistaken agentic validators, a sharp safety problem for distributed agent infrastructure.",
+        tags: ["Agent Infrastructure", "Byzantine Fault Tolerance", "Safety"],
+      },
       {
         type: "Paper",
         title: "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
@@ -193,36 +223,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "Proposes a broader benchmark for general agents across heterogeneous tasks, tools, and interaction patterns instead of a single narrow workflow.",
         tags: ["Agent Benchmarks", "Tool Use", "Evaluation"],
-      },
-      {
-        type: "Paper",
-        title: "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
-        source: "arXiv",
-        date: "2026-07-14",
-        href: "https://arxiv.org/abs/2607.13034",
-        summary:
-          "Argues that LLM agents often over-spend context and effort on simple tasks, motivating complexity-aware execution policies for more efficient automation.",
-        tags: ["Agent Efficiency", "Complexity Awareness", "Execution"],
-      },
-      {
-        type: "Paper",
-        title: "MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations",
-        source: "arXiv",
-        date: "2026-07-14",
-        href: "https://arxiv.org/abs/2607.12893",
-        summary:
-          "Benchmarks the full lifecycle of agent memory operations rather than only downstream question answering, making long-horizon memory evaluation more diagnostic.",
-        tags: ["Agent Memory", "Benchmarks", "Long-Horizon Tasks"],
-      },
-      {
-        type: "GitHub",
-        title: "open-multi-agent/open-multi-agent",
-        source: "GitHub",
-        date: "Updated 2026-07-19",
-        href: "https://github.com/open-multi-agent/open-multi-agent",
-        summary:
-          "A TypeScript orchestration framework where a coordinator dynamically plans task graphs, making it a useful reference for flexible multi-agent workflow design.",
-        tags: ["Agent Framework", "Multi-Agent", "TypeScript"],
       },
     ],
   },
