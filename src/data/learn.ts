@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-20";
+export const lastUpdated = "2026-07-21";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title: "Sharp Asymptotics for Regularized Optimal Transport",
+        source: "arXiv",
+        date: "2026-07-20",
+        href: "https://arxiv.org/abs/2607.18191",
+        summary:
+          "Derives exact small-regularization limits for Lp and entropic optimal transport, sharpening the theory behind one of the most-used numerical tools in statistics and ML.",
+        tags: ["Optimal Transport", "Probability", "Optimization"],
+      },
+      {
+        type: "Paper",
+        title: "Risk-sensitive exit-time control for stochastic differential equations with path-dependent coefficients",
+        source: "arXiv",
+        date: "2026-07-20",
+        href: "https://arxiv.org/abs/2607.18192",
+        summary:
+          "Studies small-noise asymptotics for path-dependent stochastic control, connecting probability, optimal control, and robust decision-making under rare events.",
+        tags: ["Stochastic Control", "Probability", "SDEs"],
+      },
       {
         type: "Paper",
         title: "Optimal control of symmetry-breaking dynamics near criticality",
@@ -57,34 +77,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Probability", "Sampling", "Hamiltonian Monte Carlo"],
       },
       {
-        type: "Paper",
-        title: "Efficient higher-order local time integration for Friedrichs' systems",
-        source: "arXiv",
-        date: "2026-07-16",
-        href: "https://arxiv.org/abs/2607.15192",
-        summary:
-          "Develops local time-integration schemes for spatial discretizations with only a few small mesh elements, a practical numerical-analysis problem in multiscale simulation.",
-        tags: ["Numerical Analysis", "Time Integration", "PDEs"],
-      },
-      {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-07-18",
+        date: "Updated 2026-07-21",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical and statistical standard library for JavaScript/TypeScript, useful for seeing how scientific-computing primitives are packaged for production web stacks.",
         tags: ["Numerical Computing", "Statistics", "TypeScript"],
-      },
-      {
-        type: "Paper",
-        title: "Online Control via Counterfactual Tracking",
-        source: "arXiv",
-        date: "2026-07-14",
-        href: "https://arxiv.org/abs/2607.13029",
-        summary:
-          "Introduces an online-control method that competes with broad classes of causal policies under adversarial disturbances, expanding beyond standard linear-controller benchmarks.",
-        tags: ["Online Control", "Dynamical Systems", "Optimization"],
       },
     ],
   },
@@ -95,6 +95,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "A running list of ML papers and codebases I am reading to improve model-building, evaluation, and deployment intuition.",
     resources: [
+      {
+        type: "Paper",
+        title: "Causal Discovery on Irregular Time Series",
+        source: "arXiv",
+        date: "2026-07-20",
+        href: "https://arxiv.org/abs/2607.18226",
+        summary:
+          "Targets causal discovery when observations arrive at irregular times, a realistic setting where many standard temporal ML assumptions break down.",
+        tags: ["Causal Discovery", "Time Series", "Statistical ML"],
+      },
+      {
+        type: "Paper",
+        title: "Patch Policy: Efficient Embodied Control via Dense Visual Representations",
+        source: "arXiv",
+        date: "2026-07-20",
+        href: "https://arxiv.org/abs/2607.18236",
+        summary:
+          "Reuses dense ViT features for robot policies, offering a practical route to stronger embodied-control models without retraining visual backbones from scratch.",
+        tags: ["Robot Learning", "Vision Transformers", "Embodied AI"],
+      },
       {
         type: "Paper",
         title: "PagedWeight: Efficient MoE LLM Serving with Dynamic Quality-Aware Weight Quantization",
@@ -126,34 +146,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Robot Learning", "Test-Time Training", "Long Context"],
       },
       {
-        type: "Paper",
-        title: "Pretraining Data Can Be Poisoned through Computational Propaganda",
-        source: "arXiv",
-        date: "2026-07-16",
-        href: "https://arxiv.org/abs/2607.15267",
-        summary:
-          "Shows how adversarial content can survive realistic data-curation pipelines, making pretraining-data security a concrete systems problem rather than only a benchmark concern.",
-        tags: ["Data Poisoning", "Pretraining", "AI Security"],
-      },
-      {
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-07-17",
+        date: "Updated 2026-07-21",
         href: "https://github.com/vllm-project/vllm",
         summary:
           "A high-throughput LLM inference engine whose active development is worth following for serving, batching, memory, and deployment patterns.",
         tags: ["LLM Serving", "Inference", "PyTorch"],
-      },
-      {
-        type: "GitHub",
-        title: "NVIDIA/TensorRT-LLM",
-        source: "GitHub",
-        date: "Updated 2026-07-19",
-        href: "https://github.com/NVIDIA/TensorRT-LLM",
-        summary:
-          "A production-oriented toolkit for optimizing and serving large language models on NVIDIA GPUs, worth tracking for practical inference-engineering patterns.",
-        tags: ["LLM Serving", "Inference Optimization", "PyTorch"],
       },
     ],
   },
@@ -164,6 +164,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "Paper",
+        title: "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
+        source: "arXiv",
+        date: "2026-07-20",
+        href: "https://arxiv.org/abs/2607.18171",
+        summary:
+          "Frames deployment of real-time multimodal apps as an agent-guided systems problem, spanning placement, streaming, and cross-pipeline tradeoffs.",
+        tags: ["Agent Harness", "Multimodal Systems", "Deployment"],
+      },
+      {
+        type: "Paper",
+        title: "TRIM: Reducing AI-Generated CodeSlop via Agent Trajectory Minimization",
+        source: "arXiv",
+        date: "2026-07-20",
+        href: "https://arxiv.org/abs/2607.18161",
+        summary:
+          "Looks at code quality through the lens of shortening and cleaning agent trajectories, a useful idea for making coding agents more maintainable.",
+        tags: ["Coding Agents", "Agent Trajectories", "Software Engineering"],
+      },
       {
         type: "Paper",
         title: "Searching Videos as Trees: Self-Correcting Agents for Grounded Long Video QA",
@@ -203,26 +223,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "Evaluates security agents through both task success and the cost of reasoning steps, tool calls, and telemetry queries, which is closer to real operational constraints.",
         tags: ["Security Agents", "Evaluation", "Cost-Aware AI"],
-      },
-      {
-        type: "Paper",
-        title: "Plover: Steering GUI Agents through Plan-Centric Interaction",
-        source: "arXiv",
-        date: "2026-07-16",
-        href: "https://arxiv.org/abs/2607.15193",
-        summary:
-          "Makes GUI-agent plans inspectable and steerable, highlighting human oversight as a core design layer for reliable desktop automation.",
-        tags: ["GUI Agents", "Planning", "Human Oversight"],
-      },
-      {
-        type: "Paper",
-        title: "OmniaBench: Benchmarking General AI Agents Across Diverse Scenarios",
-        source: "arXiv",
-        date: "2026-07-16",
-        href: "https://arxiv.org/abs/2607.14989",
-        summary:
-          "Proposes a broader benchmark for general agents across heterogeneous tasks, tools, and interaction patterns instead of a single narrow workflow.",
-        tags: ["Agent Benchmarks", "Tool Use", "Evaluation"],
       },
     ],
   },
