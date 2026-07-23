@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-21";
+export const lastUpdated = "2026-07-23";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,36 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title: "Flux-Corrected Diagonal Frog: second order and positivity at all time steps",
+        source: "arXiv",
+        date: "2026-07-22",
+        href: "https://arxiv.org/abs/2607.20415",
+        summary:
+          "Builds positivity-preserving, mass-conserving second-order finite-difference schemes for Fokker-Planck equations, a useful numerical-analysis idea for stable stochastic simulation.",
+        tags: ["Numerical Analysis", "Fokker-Planck", "Scientific Computing"],
+      },
+      {
+        type: "Paper",
+        title: "Lipschitzian SLLNs for random functions",
+        source: "arXiv",
+        date: "2026-07-22",
+        href: "https://arxiv.org/abs/2607.20411",
+        summary:
+          "Proves strong laws of large numbers for locally Lipschitz random functions, connecting probability, variational analysis, and stochastic optimization.",
+        tags: ["Probability", "Stochastic Optimization", "Variational Analysis"],
+      },
+      {
+        type: "Paper",
+        title: "PG-KINN: A Physics-Informed Petrov-Galerkin Kolmogorov-Arnold Network for Solving Forward and Inverse PDEs",
+        source: "arXiv",
+        date: "2026-07-22",
+        href: "https://arxiv.org/abs/2607.20378",
+        summary:
+          "Combines Petrov-Galerkin numerical ideas with KAN-style physics-informed learning, making it a practical bridge between PDE solvers and modern ML architectures.",
+        tags: ["PDEs", "Numerical Methods", "Scientific ML"],
+      },
       {
         type: "Paper",
         title: "Sharp Asymptotics for Regularized Optimal Transport",
@@ -47,40 +77,10 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Stochastic Control", "Probability", "SDEs"],
       },
       {
-        type: "Paper",
-        title: "Optimal control of symmetry-breaking dynamics near criticality",
-        source: "arXiv",
-        date: "2026-07-17",
-        href: "https://arxiv.org/abs/2607.16188",
-        summary:
-          "Uses Pontryagin-style asymptotics to study how control strength changes optimal steering near pitchfork bifurcations, connecting dynamical-systems theory with natural symmetry-breaking processes.",
-        tags: ["Optimal Control", "Dynamical Systems", "Bifurcations"],
-      },
-      {
-        type: "Paper",
-        title: "Cluster-Aware Matching via Laplacian Optimal Transport",
-        source: "arXiv",
-        date: "2026-07-17",
-        href: "https://arxiv.org/abs/2607.16178",
-        summary:
-          "Regularizes optimal transport with graph Laplacians so matched point clouds respect cluster structure, a useful bridge between numerical optimization and statistical learning.",
-        tags: ["Optimal Transport", "Numerical Analysis", "Statistics"],
-      },
-      {
-        type: "Paper",
-        title: "Delocalization of bias in unadjusted Hamiltonian Monte Carlo and underdamped Langevin",
-        source: "arXiv",
-        date: "2026-07-16",
-        href: "https://arxiv.org/abs/2607.15208",
-        summary:
-          "Extends delocalization-of-bias analysis to unadjusted HMC and underdamped Langevin, offering a sharper view of when biased samplers can still be useful at scale.",
-        tags: ["Probability", "Sampling", "Hamiltonian Monte Carlo"],
-      },
-      {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-07-21",
+        date: "Updated 2026-07-23",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical and statistical standard library for JavaScript/TypeScript, useful for seeing how scientific-computing primitives are packaged for production web stacks.",
@@ -95,6 +95,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "A running list of ML papers and codebases I am reading to improve model-building, evaluation, and deployment intuition.",
     resources: [
+      {
+        type: "Paper",
+        title: "SoftReason: A Fully Differentiable Neuro-Soft-Symbolic Deductive Reasoning Architecture over High-Dimensional Perceptual Data",
+        source: "arXiv",
+        date: "2026-07-22",
+        href: "https://arxiv.org/abs/2607.20402",
+        summary:
+          "Makes deductive reasoning differentiable over perceptual inputs and knowledge-graph evidence, a clean reference point for neuro-symbolic model design.",
+        tags: ["Neuro-Symbolic AI", "Reasoning", "Knowledge Graphs"],
+      },
+      {
+        type: "Paper",
+        title: "Train the Model, Not the Reader: Decodability Supervision for Verifiable Activation Explanations",
+        source: "arXiv",
+        date: "2026-07-22",
+        href: "https://arxiv.org/abs/2607.20379",
+        summary:
+          "Targets more verifiable activation explanations by supervising what is actually decodable from hidden states, which is directly relevant to interpretability practice.",
+        tags: ["Interpretability", "Activation Explanations", "Evaluation"],
+      },
       {
         type: "Paper",
         title: "Causal Discovery on Irregular Time Series",
@@ -126,26 +146,6 @@ export const learnTopics: LearnTopic[] = [
         tags: ["LLM Serving", "MoE", "Quantization"],
       },
       {
-        type: "Paper",
-        title: "When Does Muon Help Agentic Reinforcement Learning?",
-        source: "arXiv",
-        date: "2026-07-17",
-        href: "https://arxiv.org/abs/2607.16169",
-        summary:
-          "Compares Muon and AdamW in sparse-reward agentic RL, showing optimizer choice can materially affect post-training success in environments like ALFWorld.",
-        tags: ["Agentic RL", "Optimization", "Post-Training"],
-      },
-      {
-        type: "Paper",
-        title: "RoboTTT: Context Scaling for Robot Policies",
-        source: "arXiv",
-        date: "2026-07-16",
-        href: "https://arxiv.org/abs/2607.15275",
-        summary:
-          "Scales robot-policy context to thousands of timesteps with test-time training, pointing toward models that can adapt from long demonstrations without adding inference latency.",
-        tags: ["Robot Learning", "Test-Time Training", "Long Context"],
-      },
-      {
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
@@ -164,6 +164,36 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "Paper",
+        title: "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning",
+        source: "arXiv",
+        date: "2026-07-22",
+        href: "https://arxiv.org/abs/2607.20064",
+        summary:
+          "Uses complete structured logs plus code-searchable memory to improve long-horizon agent performance, a strong design pattern for agents that must revisit past context.",
+        tags: ["Agent Memory", "Long-Horizon Reasoning", "ARC-AGI"],
+      },
+      {
+        type: "Paper",
+        title: "JANUS: Foreseeing Latent Risk for Long-Horizon Agent Safety",
+        source: "arXiv",
+        date: "2026-07-22",
+        href: "https://arxiv.org/abs/2607.19913",
+        summary:
+          "Moves agent safety from reactive moderation toward foresight over partial trajectories, which is important for tool-using systems with delayed consequences.",
+        tags: ["Agent Safety", "Tool Use", "Risk Forecasting"],
+      },
+      {
+        type: "Paper",
+        title: "The Ethics of Autonomous AI Agents for Offensive Security",
+        source: "arXiv",
+        date: "2026-07-22",
+        href: "https://arxiv.org/abs/2607.20255",
+        summary:
+          "Analyzes how autonomous offensive-security agents change predictability, impact, and access, giving a grounded governance lens for dual-use agent systems.",
+        tags: ["Security Agents", "AI Ethics", "Governance"],
+      },
       {
         type: "Paper",
         title: "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
@@ -185,44 +215,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Coding Agents", "Agent Trajectories", "Software Engineering"],
       },
       {
-        type: "Paper",
-        title: "Searching Videos as Trees: Self-Correcting Agents for Grounded Long Video QA",
-        source: "arXiv",
-        date: "2026-07-17",
-        href: "https://arxiv.org/abs/2607.16189",
+        type: "GitHub",
+        title: "google/adk-python",
+        source: "GitHub",
+        date: "Updated 2026-07-23",
+        href: "https://github.com/google/adk-python",
         summary:
-          "Frames long-video QA as adaptive tree search with self-correction, showing how agentic backtracking can improve grounded multimodal reasoning.",
-        tags: ["VLM Agents", "Video QA", "Self-Correction"],
-      },
-      {
-        type: "Paper",
-        title: "When Do Multi-Agent Systems Help? An Information Bottleneck Perspective",
-        source: "arXiv",
-        date: "2026-07-17",
-        href: "https://arxiv.org/abs/2607.16133",
-        summary:
-          "Analyzes when isolated agent contexts and bounded relay messages can outperform a single shared-context agent, giving a useful lens for multi-agent design.",
-        tags: ["Multi-Agent Systems", "Information Bottleneck", "Agent Design"],
-      },
-      {
-        type: "Paper",
-        title: "The Honest Quorum Problem: Epistemic Byzantine Fault Tolerance for Agentic Infrastructure",
-        source: "arXiv",
-        date: "2026-07-17",
-        href: "https://arxiv.org/abs/2607.16109",
-        summary:
-          "Introduces epistemic faults for protocol-compliant but semantically mistaken agentic validators, a sharp safety problem for distributed agent infrastructure.",
-        tags: ["Agent Infrastructure", "Byzantine Fault Tolerance", "Safety"],
-      },
-      {
-        type: "Paper",
-        title: "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
-        source: "arXiv",
-        date: "2026-07-16",
-        href: "https://arxiv.org/abs/2607.15263",
-        summary:
-          "Evaluates security agents through both task success and the cost of reasoning steps, tool calls, and telemetry queries, which is closer to real operational constraints.",
-        tags: ["Security Agents", "Evaluation", "Cost-Aware AI"],
+          "A code-first Python toolkit for building, evaluating, and deploying agents, useful for comparing practical agent framework abstractions.",
+        tags: ["Agent Framework", "Python", "Evaluation"],
       },
     ],
   },
