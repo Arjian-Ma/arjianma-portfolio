@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-23";
+export const lastUpdated = "2026-07-24";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,36 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title: "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension n≥4",
+        source: "arXiv",
+        date: "2026-07-23",
+        href: "https://arxiv.org/abs/2607.21579",
+        summary:
+          "Gives a constructive negative result for superlinear convergence of the long Barzilai-Borwein method on convex quadratics, sharpening intuition about a widely used optimization heuristic.",
+        tags: ["Optimization", "Numerical Methods", "Convergence"],
+      },
+      {
+        type: "Paper",
+        title: "Optimal use of a black-box learner in semiparametric estimation",
+        source: "arXiv",
+        date: "2026-07-23",
+        href: "https://arxiv.org/abs/2607.21541",
+        summary:
+          "Characterizes when black-box nuisance learners help semiparametric estimation, linking statistical theory with practical ML-style estimators.",
+        tags: ["Statistics", "Semiparametric Estimation", "Statistical ML"],
+      },
+      {
+        type: "Paper",
+        title: "Asymptotic Analysis of Empirical Dynamic Programming in Infinite-Horizon Stochastic Optimal Control",
+        source: "arXiv",
+        date: "2026-07-23",
+        href: "https://arxiv.org/abs/2607.21520",
+        summary:
+          "Derives limit theorems for sample-based dynamic programming, a useful bridge between stochastic control, probability, and data-driven decision systems.",
+        tags: ["Stochastic Control", "Dynamic Programming", "Probability"],
+      },
       {
         type: "Paper",
         title: "Flux-Corrected Diagonal Frog: second order and positivity at all time steps",
@@ -38,26 +68,6 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "Paper",
-        title: "Lipschitzian SLLNs for random functions",
-        source: "arXiv",
-        date: "2026-07-22",
-        href: "https://arxiv.org/abs/2607.20411",
-        summary:
-          "Proves strong laws of large numbers for locally Lipschitz random functions, connecting probability, variational analysis, and stochastic optimization.",
-        tags: ["Probability", "Stochastic Optimization", "Variational Analysis"],
-      },
-      {
-        type: "Paper",
-        title: "PG-KINN: A Physics-Informed Petrov-Galerkin Kolmogorov-Arnold Network for Solving Forward and Inverse PDEs",
-        source: "arXiv",
-        date: "2026-07-22",
-        href: "https://arxiv.org/abs/2607.20378",
-        summary:
-          "Combines Petrov-Galerkin numerical ideas with KAN-style physics-informed learning, making it a practical bridge between PDE solvers and modern ML architectures.",
-        tags: ["PDEs", "Numerical Methods", "Scientific ML"],
-      },
-      {
-        type: "Paper",
         title: "Sharp Asymptotics for Regularized Optimal Transport",
         source: "arXiv",
         date: "2026-07-20",
@@ -67,20 +77,10 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Optimal Transport", "Probability", "Optimization"],
       },
       {
-        type: "Paper",
-        title: "Risk-sensitive exit-time control for stochastic differential equations with path-dependent coefficients",
-        source: "arXiv",
-        date: "2026-07-20",
-        href: "https://arxiv.org/abs/2607.18192",
-        summary:
-          "Studies small-noise asymptotics for path-dependent stochastic control, connecting probability, optimal control, and robust decision-making under rare events.",
-        tags: ["Stochastic Control", "Probability", "SDEs"],
-      },
-      {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-07-23",
+        date: "Updated 2026-07-24",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical and statistical standard library for JavaScript/TypeScript, useful for seeing how scientific-computing primitives are packaged for production web stacks.",
@@ -97,6 +97,36 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "3D-Aware VLMs with Implicit and Explicit Geometries",
+        source: "arXiv",
+        date: "2026-07-23",
+        href: "https://arxiv.org/abs/2607.21595",
+        summary:
+          "Adds implicit and explicit geometry tokens to VLMs so they can reason over 3D scenes from video, a practical direction for spatially grounded multimodal models.",
+        tags: ["Vision-Language Models", "3D Understanding", "Multimodal ML"],
+      },
+      {
+        type: "Paper",
+        title: "Expanding Flow Maps",
+        source: "arXiv",
+        date: "2026-07-23",
+        href: "https://arxiv.org/abs/2607.21585",
+        summary:
+          "Introduces generative flows that grow dimensionality over time, expanding the flow-model toolkit beyond fixed-size continuous or sequence spaces.",
+        tags: ["Generative Models", "Flow Matching", "Model Architecture"],
+      },
+      {
+        type: "Paper",
+        title: "GraphVid: Interactive Graph-Controllable Video Generation",
+        source: "arXiv",
+        date: "2026-07-23",
+        href: "https://arxiv.org/abs/2607.21580",
+        summary:
+          "Controls multi-object video generation with structured interaction graphs, a clean interface for specifying relationships that text prompts and trajectories often miss.",
+        tags: ["Video Generation", "Controllable Generation", "Graphs"],
+      },
+      {
+        type: "Paper",
         title: "SoftReason: A Fully Differentiable Neuro-Soft-Symbolic Deductive Reasoning Architecture over High-Dimensional Perceptual Data",
         source: "arXiv",
         date: "2026-07-22",
@@ -104,36 +134,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "Makes deductive reasoning differentiable over perceptual inputs and knowledge-graph evidence, a clean reference point for neuro-symbolic model design.",
         tags: ["Neuro-Symbolic AI", "Reasoning", "Knowledge Graphs"],
-      },
-      {
-        type: "Paper",
-        title: "Train the Model, Not the Reader: Decodability Supervision for Verifiable Activation Explanations",
-        source: "arXiv",
-        date: "2026-07-22",
-        href: "https://arxiv.org/abs/2607.20379",
-        summary:
-          "Targets more verifiable activation explanations by supervising what is actually decodable from hidden states, which is directly relevant to interpretability practice.",
-        tags: ["Interpretability", "Activation Explanations", "Evaluation"],
-      },
-      {
-        type: "Paper",
-        title: "Causal Discovery on Irregular Time Series",
-        source: "arXiv",
-        date: "2026-07-20",
-        href: "https://arxiv.org/abs/2607.18226",
-        summary:
-          "Targets causal discovery when observations arrive at irregular times, a realistic setting where many standard temporal ML assumptions break down.",
-        tags: ["Causal Discovery", "Time Series", "Statistical ML"],
-      },
-      {
-        type: "Paper",
-        title: "Patch Policy: Efficient Embodied Control via Dense Visual Representations",
-        source: "arXiv",
-        date: "2026-07-20",
-        href: "https://arxiv.org/abs/2607.18236",
-        summary:
-          "Reuses dense ViT features for robot policies, offering a practical route to stronger embodied-control models without retraining visual backbones from scratch.",
-        tags: ["Robot Learning", "Vision Transformers", "Embodied AI"],
       },
       {
         type: "Paper",
@@ -166,6 +166,36 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "OpenForgeRL: Train Harness-native Agents in Any Environment",
+        source: "arXiv",
+        date: "2026-07-23",
+        href: "https://arxiv.org/abs/2607.21557",
+        summary:
+          "Targets RL training for real multi-turn harness agents by recording model calls through a proxy, bringing open training loops closer to production agent workflows.",
+        tags: ["Agent Training", "RL", "Tool Use"],
+      },
+      {
+        type: "Paper",
+        title: "GS-Agent: Creating 4D Physical Worlds With Generative Simulation",
+        source: "arXiv",
+        date: "2026-07-23",
+        href: "https://arxiv.org/abs/2607.21522",
+        summary:
+          "Uses an agentic generative-simulation pipeline to turn language into dynamic physical worlds, showing how agents can coordinate multimodal creation tasks.",
+        tags: ["Embodied Agents", "Generative Simulation", "Multimodal AI"],
+      },
+      {
+        type: "Paper",
+        title: "Same Dangerous Objective, Opposite Advice: Direct Exposure versus Multi-Agent Mediation",
+        source: "arXiv",
+        date: "2026-07-23",
+        href: "https://arxiv.org/abs/2607.21518",
+        summary:
+          "Studies how multi-agent mediation can transform risky objectives into different advice, a useful caution for safety evaluations of agent chains.",
+        tags: ["Agent Safety", "Multi-Agent Systems", "Evaluation"],
+      },
+      {
+        type: "Paper",
         title: "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning",
         source: "arXiv",
         date: "2026-07-22",
@@ -185,44 +215,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Agent Safety", "Tool Use", "Risk Forecasting"],
       },
       {
-        type: "Paper",
-        title: "The Ethics of Autonomous AI Agents for Offensive Security",
-        source: "arXiv",
-        date: "2026-07-22",
-        href: "https://arxiv.org/abs/2607.20255",
-        summary:
-          "Analyzes how autonomous offensive-security agents change predictability, impact, and access, giving a grounded governance lens for dual-use agent systems.",
-        tags: ["Security Agents", "AI Ethics", "Governance"],
-      },
-      {
-        type: "Paper",
-        title: "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
-        source: "arXiv",
-        date: "2026-07-20",
-        href: "https://arxiv.org/abs/2607.18171",
-        summary:
-          "Frames deployment of real-time multimodal apps as an agent-guided systems problem, spanning placement, streaming, and cross-pipeline tradeoffs.",
-        tags: ["Agent Harness", "Multimodal Systems", "Deployment"],
-      },
-      {
-        type: "Paper",
-        title: "TRIM: Reducing AI-Generated CodeSlop via Agent Trajectory Minimization",
-        source: "arXiv",
-        date: "2026-07-20",
-        href: "https://arxiv.org/abs/2607.18161",
-        summary:
-          "Looks at code quality through the lens of shortening and cleaning agent trajectories, a useful idea for making coding agents more maintainable.",
-        tags: ["Coding Agents", "Agent Trajectories", "Software Engineering"],
-      },
-      {
         type: "GitHub",
-        title: "google/adk-python",
+        title: "trpc-group/trpc-agent-go",
         source: "GitHub",
-        date: "Updated 2026-07-23",
-        href: "https://github.com/google/adk-python",
+        date: "Updated 2026-07-24",
+        href: "https://github.com/trpc-group/trpc-agent-go",
         summary:
-          "A code-first Python toolkit for building, evaluating, and deploying agents, useful for comparing practical agent framework abstractions.",
-        tags: ["Agent Framework", "Python", "Evaluation"],
+          "A Go framework for production agent systems with graph workflows, tools, memory, MCP, evaluation, and observability, useful for comparing agent infrastructure patterns.",
+        tags: ["Agent Framework", "Go", "MCP"],
       },
     ],
   },
