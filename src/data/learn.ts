@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-24";
+export const lastUpdated = "2026-07-25";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -80,7 +80,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-07-24",
+        date: "Updated 2026-07-25",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical and statistical standard library for JavaScript/TypeScript, useful for seeing how scientific-computing primitives are packaged for production web stacks.",
@@ -149,7 +149,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-07-21",
+        date: "Updated 2026-07-25",
         href: "https://github.com/vllm-project/vllm",
         summary:
           "A high-throughput LLM inference engine whose active development is worth following for serving, batching, memory, and deployment patterns.",
@@ -185,14 +185,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Embodied Agents", "Generative Simulation", "Multimodal AI"],
       },
       {
-        type: "Paper",
-        title: "Same Dangerous Objective, Opposite Advice: Direct Exposure versus Multi-Agent Mediation",
-        source: "arXiv",
-        date: "2026-07-23",
-        href: "https://arxiv.org/abs/2607.21518",
+        type: "GitHub",
+        title: "oomol-lab/open-connector",
+        source: "GitHub",
+        date: "Updated 2026-07-25",
+        href: "https://github.com/oomol-lab/open-connector",
         summary:
-          "Studies how multi-agent mediation can transform risky objectives into different advice, a useful caution for safety evaluations of agent chains.",
-        tags: ["Agent Safety", "Multi-Agent Systems", "Evaluation"],
+          "An open-source auth gateway connecting SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI, useful for studying secure tool and integration layers.",
+        tags: ["Agent Tools", "MCP", "Integrations"],
       },
       {
         type: "Paper",
@@ -218,7 +218,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "trpc-group/trpc-agent-go",
         source: "GitHub",
-        date: "Updated 2026-07-24",
+        date: "Updated 2026-07-25",
         href: "https://github.com/trpc-group/trpc-agent-go",
         summary:
           "A Go framework for production agent systems with graph workflows, tools, memory, MCP, evaluation, and observability, useful for comparing agent infrastructure patterns.",
