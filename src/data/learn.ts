@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-25";
+export const lastUpdated = "2026-07-26";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -78,13 +78,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "stdlib-js/stdlib",
+        title: "JuliaLang/julia",
         source: "GitHub",
-        date: "Updated 2026-07-25",
-        href: "https://github.com/stdlib-js/stdlib",
+        date: "Updated 2026-07-26",
+        href: "https://github.com/JuliaLang/julia",
         summary:
-          "A broad numerical and statistical standard library for JavaScript/TypeScript, useful for seeing how scientific-computing primitives are packaged for production web stacks.",
-        tags: ["Numerical Computing", "Statistics", "TypeScript"],
+          "A production scientific-computing language with strong numerical, optimization, and ML ecosystems; its active development is useful to watch for high-performance mathematical programming patterns.",
+        tags: ["Scientific Computing", "Numerical Methods", "Julia"],
       },
     ],
   },
@@ -147,13 +147,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "vllm-project/vllm",
+        title: "pytorch/pytorch",
         source: "GitHub",
-        date: "Updated 2026-07-25",
-        href: "https://github.com/vllm-project/vllm",
+        date: "Updated 2026-07-26",
+        href: "https://github.com/pytorch/pytorch",
         summary:
-          "A high-throughput LLM inference engine whose active development is worth following for serving, batching, memory, and deployment patterns.",
-        tags: ["LLM Serving", "Inference", "PyTorch"],
+          "The core dynamic-tensor and autograd framework remains a high-signal codebase for learning practical deep-learning kernels, compiler integration, distributed training, and GPU systems design.",
+        tags: ["Deep Learning", "PyTorch", "ML Systems"],
       },
     ],
   },
@@ -216,13 +216,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "trpc-group/trpc-agent-go",
+        title: "langgenius/dify",
         source: "GitHub",
-        date: "Updated 2026-07-25",
-        href: "https://github.com/trpc-group/trpc-agent-go",
+        date: "Updated 2026-07-26",
+        href: "https://github.com/langgenius/dify",
         summary:
-          "A Go framework for production agent systems with graph workflows, tools, memory, MCP, evaluation, and observability, useful for comparing agent infrastructure patterns.",
-        tags: ["Agent Framework", "Go", "MCP"],
+          "A large, actively maintained platform for agentic workflows and RAG pipelines, useful for studying how tools, model providers, orchestration, and self-hosted deployment fit together.",
+        tags: ["Agent Workflows", "RAG", "Orchestration"],
       },
     ],
   },
