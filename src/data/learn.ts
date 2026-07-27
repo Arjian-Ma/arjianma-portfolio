@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-26";
+export const lastUpdated = "2026-07-27";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,36 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "GitHub",
+        title: "stdlib-js/stdlib",
+        source: "GitHub",
+        date: "Updated 2026-07-27",
+        href: "https://github.com/stdlib-js/stdlib",
+        summary:
+          "A broad JavaScript/TypeScript numerical library whose active development is useful for studying portable implementations of statistics, linear algebra, and scientific-computing primitives.",
+        tags: ["Numerical Computing", "Statistics", "JavaScript"],
+      },
+      {
+        type: "Paper",
+        title: "Fully Convergent Projection-based Methods with Momentum under Nonconvex Geometric Constraints",
+        source: "arXiv",
+        date: "2026-07-24",
+        href: "https://arxiv.org/abs/2607.22510",
+        summary:
+          "Extends momentum-style projection methods to difficult nonconvex geometric constraints, a useful optimization reference for constrained modeling and inverse problems.",
+        tags: ["Optimization", "Nonconvex Methods", "Projection Algorithms"],
+      },
+      {
+        type: "Paper",
+        title: "Singular value soft-thresholding via the polar decomposition",
+        source: "arXiv",
+        date: "2026-07-24",
+        href: "https://arxiv.org/abs/2607.22484",
+        summary:
+          "Recasts singular-value soft-thresholding through polar decomposition, connecting a common low-rank numerical primitive with algorithms that can be easier to implement and accelerate.",
+        tags: ["Numerical Linear Algebra", "Low-Rank Methods", "Optimization"],
+      },
       {
         type: "Paper",
         title: "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension n≥4",
@@ -56,36 +86,6 @@ export const learnTopics: LearnTopic[] = [
           "Derives limit theorems for sample-based dynamic programming, a useful bridge between stochastic control, probability, and data-driven decision systems.",
         tags: ["Stochastic Control", "Dynamic Programming", "Probability"],
       },
-      {
-        type: "Paper",
-        title: "Flux-Corrected Diagonal Frog: second order and positivity at all time steps",
-        source: "arXiv",
-        date: "2026-07-22",
-        href: "https://arxiv.org/abs/2607.20415",
-        summary:
-          "Builds positivity-preserving, mass-conserving second-order finite-difference schemes for Fokker-Planck equations, a useful numerical-analysis idea for stable stochastic simulation.",
-        tags: ["Numerical Analysis", "Fokker-Planck", "Scientific Computing"],
-      },
-      {
-        type: "Paper",
-        title: "Sharp Asymptotics for Regularized Optimal Transport",
-        source: "arXiv",
-        date: "2026-07-20",
-        href: "https://arxiv.org/abs/2607.18191",
-        summary:
-          "Derives exact small-regularization limits for Lp and entropic optimal transport, sharpening the theory behind one of the most-used numerical tools in statistics and ML.",
-        tags: ["Optimal Transport", "Probability", "Optimization"],
-      },
-      {
-        type: "GitHub",
-        title: "JuliaLang/julia",
-        source: "GitHub",
-        date: "Updated 2026-07-26",
-        href: "https://github.com/JuliaLang/julia",
-        summary:
-          "A production scientific-computing language with strong numerical, optimization, and ML ecosystems; its active development is useful to watch for high-performance mathematical programming patterns.",
-        tags: ["Scientific Computing", "Numerical Methods", "Julia"],
-      },
     ],
   },
   {
@@ -95,6 +95,36 @@ export const learnTopics: LearnTopic[] = [
     description:
       "A running list of ML papers and codebases I am reading to improve model-building, evaluation, and deployment intuition.",
     resources: [
+      {
+        type: "Paper",
+        title: "PinEqualizer: Full Funnel Content Exploration and Debiasing System at Pinterest",
+        source: "arXiv",
+        date: "2026-07-24",
+        href: "https://arxiv.org/abs/2607.22518",
+        summary:
+          "Describes a production exploration and debiasing system for recommender funnels, giving a concrete case study in how large platforms balance discovery, feedback loops, and ranking quality.",
+        tags: ["Recommender Systems", "Debiasing", "Applied ML"],
+      },
+      {
+        type: "GitHub",
+        title: "ultralytics/ultralytics",
+        source: "GitHub",
+        date: "Updated 2026-07-27",
+        href: "https://github.com/ultralytics/ultralytics",
+        summary:
+          "An actively maintained YOLO computer-vision toolkit with practical training, deployment, and model-zoo patterns for object detection, segmentation, classification, and pose tasks.",
+        tags: ["Computer Vision", "Deep Learning", "Deployment"],
+      },
+      {
+        type: "Paper",
+        title: "Quantum Spectral Model: Data Reuploading with Input-Conditioned Frequency Support",
+        source: "arXiv",
+        date: "2026-07-24",
+        href: "https://arxiv.org/abs/2607.22516",
+        summary:
+          "Studies input-conditioned frequency support for data-reuploading quantum models, a useful angle on matching model inductive bias to signal structure.",
+        tags: ["Model Architecture", "Inductive Bias", "Quantum ML"],
+      },
       {
         type: "Paper",
         title: "3D-Aware VLMs with Implicit and Explicit Geometries",
@@ -116,40 +146,10 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Generative Models", "Flow Matching", "Model Architecture"],
       },
       {
-        type: "Paper",
-        title: "GraphVid: Interactive Graph-Controllable Video Generation",
-        source: "arXiv",
-        date: "2026-07-23",
-        href: "https://arxiv.org/abs/2607.21580",
-        summary:
-          "Controls multi-object video generation with structured interaction graphs, a clean interface for specifying relationships that text prompts and trajectories often miss.",
-        tags: ["Video Generation", "Controllable Generation", "Graphs"],
-      },
-      {
-        type: "Paper",
-        title: "SoftReason: A Fully Differentiable Neuro-Soft-Symbolic Deductive Reasoning Architecture over High-Dimensional Perceptual Data",
-        source: "arXiv",
-        date: "2026-07-22",
-        href: "https://arxiv.org/abs/2607.20402",
-        summary:
-          "Makes deductive reasoning differentiable over perceptual inputs and knowledge-graph evidence, a clean reference point for neuro-symbolic model design.",
-        tags: ["Neuro-Symbolic AI", "Reasoning", "Knowledge Graphs"],
-      },
-      {
-        type: "Paper",
-        title: "PagedWeight: Efficient MoE LLM Serving with Dynamic Quality-Aware Weight Quantization",
-        source: "arXiv",
-        date: "2026-07-17",
-        href: "https://arxiv.org/abs/2607.16184",
-        summary:
-          "Dynamically quantizes MoE weights at runtime to balance expert precision against KV-cache pressure, giving a concrete systems idea for memory-sensitive LLM serving.",
-        tags: ["LLM Serving", "MoE", "Quantization"],
-      },
-      {
         type: "GitHub",
         title: "pytorch/pytorch",
         source: "GitHub",
-        date: "Updated 2026-07-26",
+        date: "Updated 2026-07-27",
         href: "https://github.com/pytorch/pytorch",
         summary:
           "The core dynamic-tensor and autograd framework remains a high-signal codebase for learning practical deep-learning kernels, compiler integration, distributed training, and GPU systems design.",
@@ -164,6 +164,36 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "Paper",
+        title: "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
+        source: "arXiv",
+        date: "2026-07-24",
+        href: "https://arxiv.org/abs/2607.22520",
+        summary:
+          "Breaks down why adding procedural skills can both improve and degrade agent success, a helpful evaluation lens for deciding when reusable skills are actually worth installing.",
+        tags: ["LLM Agents", "Skills", "Evaluation"],
+      },
+      {
+        type: "Paper",
+        title: "CausalForge: A Formally Grounded, Self-Improving Agentic Framework for Automated Research in Causal Inference",
+        source: "arXiv",
+        date: "2026-07-24",
+        href: "https://arxiv.org/abs/2607.22511",
+        summary:
+          "Frames automated causal-inference research as a self-improving agentic workflow, connecting formal reasoning with practical scientific-agent design.",
+        tags: ["Research Agents", "Causal Inference", "Self-Improvement"],
+      },
+      {
+        type: "GitHub",
+        title: "activepieces/activepieces",
+        source: "GitHub",
+        date: "Updated 2026-07-27",
+        href: "https://github.com/activepieces/activepieces",
+        summary:
+          "A large open-source automation platform for AI agents, MCP servers, and workflow orchestration, useful for seeing how agent tools are packaged for real integrations.",
+        tags: ["Agent Workflows", "MCP", "Automation"],
+      },
       {
         type: "Paper",
         title: "OpenForgeRL: Train Harness-native Agents in Any Environment",
@@ -185,16 +215,6 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Embodied Agents", "Generative Simulation", "Multimodal AI"],
       },
       {
-        type: "GitHub",
-        title: "oomol-lab/open-connector",
-        source: "GitHub",
-        date: "Updated 2026-07-25",
-        href: "https://github.com/oomol-lab/open-connector",
-        summary:
-          "An open-source auth gateway connecting SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI, useful for studying secure tool and integration layers.",
-        tags: ["Agent Tools", "MCP", "Integrations"],
-      },
-      {
         type: "Paper",
         title: "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning",
         source: "arXiv",
@@ -203,26 +223,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "Uses complete structured logs plus code-searchable memory to improve long-horizon agent performance, a strong design pattern for agents that must revisit past context.",
         tags: ["Agent Memory", "Long-Horizon Reasoning", "ARC-AGI"],
-      },
-      {
-        type: "Paper",
-        title: "JANUS: Foreseeing Latent Risk for Long-Horizon Agent Safety",
-        source: "arXiv",
-        date: "2026-07-22",
-        href: "https://arxiv.org/abs/2607.19913",
-        summary:
-          "Moves agent safety from reactive moderation toward foresight over partial trajectories, which is important for tool-using systems with delayed consequences.",
-        tags: ["Agent Safety", "Tool Use", "Risk Forecasting"],
-      },
-      {
-        type: "GitHub",
-        title: "langgenius/dify",
-        source: "GitHub",
-        date: "Updated 2026-07-26",
-        href: "https://github.com/langgenius/dify",
-        summary:
-          "A large, actively maintained platform for agentic workflows and RAG pipelines, useful for studying how tools, model providers, orchestration, and self-hosted deployment fit together.",
-        tags: ["Agent Workflows", "RAG", "Orchestration"],
       },
     ],
   },
