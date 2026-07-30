@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-29";
+export const lastUpdated = "2026-07-30";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,63 +28,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "From Classification to Regression: Using a Fruitfly to Solve Equations",
+        source: "arXiv",
+        date: "2026-07-29",
+        href: "https://arxiv.org/abs/2607.27196",
+        summary:
+          "Turns regression into a classification-inspired framework motivated by fruitfly sensing, a creative bridge between numerical approximation and learning systems.",
+        tags: ["Numerical Methods", "Regression", "Learning Theory"],
+      },
+      {
+        type: "Paper",
+        title: "Numerical approach to the London Equation of superconductivity",
+        source: "arXiv",
+        date: "2026-07-29",
+        href: "https://arxiv.org/abs/2607.27103",
+        summary:
+          "Builds a discretization strategy for superconductivity's London equation in three-dimensional space, useful for studying careful PDE-to-computation translation.",
+        tags: ["Numerical PDEs", "Scientific Computing", "Superconductivity"],
+      },
+      {
+        type: "Paper",
+        title: "Modelling Anomalous Diffusion: The Role of CTRWs and Non-Local Dynamics",
+        source: "arXiv",
+        date: "2026-07-29",
+        href: "https://arxiv.org/abs/2607.27150",
+        summary:
+          "Surveys continuous-time random walks and scaling limits for anomalous diffusion, making probability models feel closer to physical and non-local dynamics.",
+        tags: ["Probability", "Stochastic Processes", "Diffusion"],
+      },
+      {
+        type: "Paper",
         title: "Optimization under Persistent State-Dependent Bias: Gradient-based Method and Complexity Analysis",
         source: "arXiv",
         date: "2026-07-28",
         href: "https://arxiv.org/abs/2607.26032",
         summary:
-          "Analyzes stochastic gradient descent when updates carry persistent state-dependent bias, a useful theoretical lens for optimization systems where implementation or feedback effects distort gradients.",
+          "Analyzes stochastic gradient descent when updates carry persistent state-dependent bias, a useful theoretical lens for optimization systems where feedback effects distort gradients.",
         tags: ["Optimization", "Stochastic Gradients", "Complexity"],
-      },
-      {
-        type: "Paper",
-        title: "Weak-form Extended Dynamic Mode Decomposition",
-        source: "arXiv",
-        date: "2026-07-28",
-        href: "https://arxiv.org/abs/2607.25950",
-        summary:
-          "Develops a weak-form EDMD method designed to reduce noise sensitivity, connecting dynamical-systems theory with practical data-driven modeling.",
-        tags: ["Dynamical Systems", "Operator Learning", "Numerical Methods"],
-      },
-      {
-        type: "Paper",
-        title: "Quasi-SVD: Learning a Lie-constrained matrix factorisation for real-time imaging",
-        source: "arXiv",
-        date: "2026-07-28",
-        href: "https://arxiv.org/abs/2607.25967",
-        summary:
-          "Learns a Lie-constrained matrix factorization for real-time imaging, offering an applied numerical-linear-algebra route around the sequential cost of classical SVD.",
-        tags: ["Numerical Linear Algebra", "Matrix Factorization", "Imaging"],
-      },
-      {
-        type: "GitHub",
-        title: "root-project/root",
-        source: "GitHub",
-        date: "Updated 2026-07-29",
-        href: "https://github.com/root-project/root",
-        summary:
-          "A mature scientific-computing platform for storing, analyzing, and visualizing large datasets, useful for learning production-grade numerical tooling beyond notebooks.",
-        tags: ["Scientific Computing", "Data Analysis", "C++"],
       },
       {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-07-29",
+        date: "Updated 2026-07-30",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad JavaScript/TypeScript numerical library whose active development is useful for studying portable implementations of statistics, linear algebra, and scientific-computing primitives.",
         tags: ["Numerical Computing", "Statistics", "JavaScript"],
-      },
-      {
-        type: "Paper",
-        title: "Singular value soft-thresholding via the polar decomposition",
-        source: "arXiv",
-        date: "2026-07-24",
-        href: "https://arxiv.org/abs/2607.22484",
-        summary:
-          "Recasts singular-value soft-thresholding through polar decomposition, connecting a common low-rank numerical primitive with algorithms that can be easier to implement and accelerate.",
-        tags: ["Numerical Linear Algebra", "Low-Rank Methods", "Optimization"],
       },
     ],
   },
@@ -97,63 +87,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
+        title: "Do You Really Need to Pretrain Q-Functions for Online RL Fine-Tuning?",
         source: "arXiv",
-        date: "2026-07-28",
-        href: "https://arxiv.org/abs/2607.26057",
+        date: "2026-07-29",
+        href: "https://arxiv.org/abs/2607.27203",
         summary:
-          "Proposes trajectory-relayed on-policy distillation to reduce prefix-failure cascades, a timely training idea for stronger reasoning models.",
-        tags: ["Distillation", "Reasoning", "Language Models"],
+          "Questions a common value-based RL fine-tuning recipe by separating pretrained policies from pretrained Q-functions, useful for sharper offline-to-online training intuition.",
+        tags: ["Reinforcement Learning", "Fine-Tuning", "Q-Functions"],
       },
       {
         type: "Paper",
-        title: "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
+        title: "From Classification to Regression: Using a Fruitfly to Solve Equations",
         source: "arXiv",
-        date: "2026-07-28",
-        href: "https://arxiv.org/abs/2607.26052",
+        date: "2026-07-29",
+        href: "https://arxiv.org/abs/2607.27196",
         summary:
-          "Adapts the number of LoRA experts to token-level uncertainty, a practical efficiency idea for MoE-style fine-tuning.",
-        tags: ["Mixture of Experts", "LoRA", "Efficient Fine-Tuning"],
+          "A biologically inspired regression method that replaces complex global surfaces with simpler local classification-style surrogates.",
+        tags: ["Regression", "Bio-Inspired ML", "Numerical Learning"],
       },
       {
         type: "Paper",
-        title: "Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance",
+        title: "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
         source: "arXiv",
-        date: "2026-07-28",
-        href: "https://arxiv.org/abs/2607.26040",
+        date: "2026-07-29",
+        href: "https://arxiv.org/abs/2607.27188",
         summary:
-          "Uses extra latent guidance to train a world model more efficiently, connecting representation learning with reinforcement-learning sample efficiency.",
-        tags: ["Reinforcement Learning", "World Models", "Representation Learning"],
+          "Uses controlled and chronological benchmarks to test whether models recover latent financial densities, a good reminder that accurate predictions need not imply faithful inverse learning.",
+        tags: ["Inverse Learning", "Benchmarks", "Financial ML"],
       },
       {
         type: "GitHub",
-        title: "huggingface/transformers",
+        title: "microsoft/onnxruntime",
         source: "GitHub",
-        date: "Updated 2026-07-29",
-        href: "https://github.com/huggingface/transformers",
+        date: "Updated 2026-07-30",
+        href: "https://github.com/microsoft/onnxruntime",
         summary:
-          "The main open-source model-definition library for modern text, vision, audio, and multimodal transformers, with constant examples of production ML ergonomics.",
-        tags: ["Transformers", "Model Library", "Multimodal ML"],
+          "A production-grade runtime for cross-platform ML inference and training acceleration, worth following for deployment, optimization, and hardware abstraction patterns.",
+        tags: ["Inference", "Deployment", "Optimization"],
       },
       {
         type: "GitHub",
-        title: "flashinfer-ai/flashinfer",
+        title: "deepspeedai/DeepSpeed",
         source: "GitHub",
-        date: "Updated 2026-07-29",
-        href: "https://github.com/flashinfer-ai/flashinfer",
+        date: "Updated 2026-07-30",
+        href: "https://github.com/deepspeedai/DeepSpeed",
         summary:
-          "A kernel library for LLM serving that is worth following for inference performance, batching, and GPU-systems implementation patterns.",
-        tags: ["LLM Serving", "GPU Kernels", "Inference"],
-      },
-      {
-        type: "GitHub",
-        title: "ultralytics/ultralytics",
-        source: "GitHub",
-        date: "Updated 2026-07-29",
-        href: "https://github.com/ultralytics/ultralytics",
-        summary:
-          "An actively maintained YOLO computer-vision toolkit with practical training, deployment, and model-zoo patterns for detection, segmentation, classification, and pose tasks.",
-        tags: ["Computer Vision", "Deep Learning", "Deployment"],
+          "A deep-learning optimization library for distributed training and inference, useful for understanding scaling systems around large models.",
+        tags: ["Distributed Training", "Inference", "Large Models"],
       },
     ],
   },
@@ -166,63 +146,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
+        title: "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
         source: "arXiv",
-        date: "2026-07-28",
-        href: "https://arxiv.org/abs/2607.26041",
+        date: "2026-07-29",
+        href: "https://arxiv.org/abs/2607.27191",
         summary:
-          "Isolates whether computer-use agents understand causal GUI transitions, an important benchmark direction beyond single-frame grounding or final task success.",
-        tags: ["Computer-Use Agents", "Benchmarks", "GUI Understanding"],
+          "Directly probes whether agents can move beyond narrow verifiable tasks into open-ended AI research, an important question for forecasting agentic progress.",
+        tags: ["AI Research Agents", "Evaluation", "Case Studies"],
       },
       {
         type: "Paper",
-        title: "UniMem: Complementary Episodic-to-Parametric Memory for Boundary-Agnostic Task Streams",
+        title: "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
         source: "arXiv",
-        date: "2026-07-28",
-        href: "https://arxiv.org/abs/2607.26017",
+        date: "2026-07-29",
+        href: "https://arxiv.org/abs/2607.27155",
         summary:
-          "Studies agent memory over evolving task streams, balancing reusable episodic experience with parametric consolidation.",
-        tags: ["Agent Memory", "Continual Learning", "Task Streams"],
+          "Introduces economically grounded office-suite workflows for testing long-horizon LLM agents, connecting benchmark scores with practical work value.",
+        tags: ["Agent Benchmarks", "Office Workflows", "Long-Horizon Tasks"],
       },
       {
         type: "Paper",
-        title: "MemLens: A Value-Aware Memory Management System with Interactive Analytics for LLM-based Agents",
+        title: "Scores Are Not Decisions: Cost-Aware Stopping for Tool Acquisition in LLM Agents",
         source: "arXiv",
-        date: "2026-07-28",
-        href: "https://arxiv.org/abs/2607.25992",
+        date: "2026-07-29",
+        href: "https://arxiv.org/abs/2607.27083",
         summary:
-          "Focuses on value-aware memory management and analytics for LLM agents, a practical infrastructure topic for long-horizon deployments.",
-        tags: ["Agent Memory", "Infrastructure", "Analytics"],
+          "Frames tool acquisition as a stopping decision under cost, context, and privacy tradeoffs rather than a simple relevance-scoring problem.",
+        tags: ["Tool Use", "Cost-Aware Agents", "Decision Policies"],
+      },
+      {
+        type: "Paper",
+        title: "MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair",
+        source: "arXiv",
+        date: "2026-07-29",
+        href: "https://arxiv.org/abs/2607.27080",
+        summary:
+          "Benchmarks how malicious instructions can persist through agent memory and later shape actions, a timely security angle for long-lived assistants.",
+        tags: ["Agent Memory", "Security", "Benchmarks"],
       },
       {
         type: "GitHub",
-        title: "alookai/alook",
+        title: "HKUDS/nanobot",
         source: "GitHub",
-        date: "Updated 2026-07-29",
-        href: "https://github.com/alookai/alook",
+        date: "Updated 2026-07-30",
+        href: "https://github.com/HKUDS/nanobot",
         summary:
-          "A collaboration layer for AI workforces where agents coordinate over email and shared memory, useful for studying multi-agent operating patterns.",
-        tags: ["Multi-Agent Systems", "Collaboration", "Memory"],
-      },
-      {
-        type: "Paper",
-        title: "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
-        source: "arXiv",
-        date: "2026-07-24",
-        href: "https://arxiv.org/abs/2607.22520",
-        summary:
-          "Breaks down why adding procedural skills can both improve and degrade agent success, a helpful evaluation lens for deciding when reusable skills are actually worth installing.",
-        tags: ["LLM Agents", "Skills", "Evaluation"],
-      },
-      {
-        type: "Paper",
-        title: "PRO-LONG: Programmatic Memory Enables Long-Horizon Reasoning",
-        source: "arXiv",
-        date: "2026-07-22",
-        href: "https://arxiv.org/abs/2607.20064",
-        summary:
-          "Uses complete structured logs plus code-searchable memory to improve long-horizon agent performance, a strong design pattern for agents that must revisit past context.",
-        tags: ["Agent Memory", "Long-Horizon Reasoning", "ARC-AGI"],
+          "An actively maintained personal agent framework with WebUI, tools, memory, MCP, and multi-agent workflows for studying practical agent ergonomics.",
+        tags: ["Agent Framework", "Memory", "MCP"],
       },
     ],
   },
