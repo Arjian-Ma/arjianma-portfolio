@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-07-30";
+export const lastUpdated = "2026-08-01";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title: "Graph Neural Multilevel Preconditioners for Iterative Solvers",
+        source: "arXiv",
+        date: "2026-07-30",
+        href: "https://arxiv.org/abs/2607.28456",
+        summary:
+          "Tests graph neural networks as practical multilevel preconditioners for large sparse linear systems, a sharp meeting point between numerical linear algebra and learned scientific computing.",
+        tags: ["Numerical Linear Algebra", "GNNs", "Scientific Computing"],
+      },
       {
         type: "Paper",
         title: "From Classification to Regression: Using a Fruitfly to Solve Equations",
@@ -87,6 +97,16 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
+        source: "arXiv",
+        date: "2026-07-30",
+        href: "https://arxiv.org/abs/2607.28627",
+        summary:
+          "Introduces a learned retrieval token that selects query-relevant visual tokens from a cached context, useful for thinking about efficient long-context vision-language systems.",
+        tags: ["Vision-Language Models", "Retrieval", "Efficiency"],
+      },
+      {
+        type: "Paper",
         title: "Do You Really Need to Pretrain Q-Functions for Online RL Fine-Tuning?",
         source: "arXiv",
         date: "2026-07-29",
@@ -144,6 +164,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "Paper",
+        title: "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+        source: "arXiv",
+        date: "2026-07-30",
+        href: "https://arxiv.org/abs/2607.28609",
+        summary:
+          "Proposes standardized evaluation for reward models that judge computer-use agent trajectories across platforms, a key piece of infrastructure for scalable CUA training and assessment.",
+        tags: ["Computer-Use Agents", "Reward Models", "Evaluation"],
+      },
       {
         type: "Paper",
         title: "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
