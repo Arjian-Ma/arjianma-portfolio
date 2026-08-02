@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-01";
+export const lastUpdated = "2026-08-02";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -78,13 +78,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "stdlib-js/stdlib",
+        title: "brycewang-stanford/StatsPAI",
         source: "GitHub",
-        date: "Updated 2026-07-30",
-        href: "https://github.com/stdlib-js/stdlib",
+        date: "Updated 2026-08-02",
+        href: "https://github.com/brycewang-stanford/StatsPAI",
         summary:
-          "A broad JavaScript/TypeScript numerical library whose active development is useful for studying portable implementations of statistics, linear algebra, and scientific-computing primitives.",
-        tags: ["Numerical Computing", "Statistics", "JavaScript"],
+          "An agent-native Python library for causal inference and applied econometrics, useful for studying how statistical workflows can become structured, reproducible, and machine-readable.",
+        tags: ["Statistics", "Causal Inference", "Agent-Native Tools"],
       },
     ],
   },
@@ -147,13 +147,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "deepspeedai/DeepSpeed",
+        title: "pytorch/pytorch",
         source: "GitHub",
-        date: "Updated 2026-07-30",
-        href: "https://github.com/deepspeedai/DeepSpeed",
+        date: "Updated 2026-08-02",
+        href: "https://github.com/pytorch/pytorch",
         summary:
-          "A deep-learning optimization library for distributed training and inference, useful for understanding scaling systems around large models.",
-        tags: ["Distributed Training", "Inference", "Large Models"],
+          "The core dynamic neural-network framework remains worth following for practical intuition about tensor systems, GPU acceleration, model execution, and the direction of applied deep learning infrastructure.",
+        tags: ["Deep Learning", "PyTorch", "GPU Acceleration"],
       },
     ],
   },
@@ -216,13 +216,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "HKUDS/nanobot",
+        title: "agentlas-ai/Agentlas-OS",
         source: "GitHub",
-        date: "Updated 2026-07-30",
-        href: "https://github.com/HKUDS/nanobot",
+        date: "Updated 2026-08-02",
+        href: "https://github.com/agentlas-ai/Agentlas-OS",
         summary:
-          "An actively maintained personal agent framework with WebUI, tools, memory, MCP, and multi-agent workflows for studying practical agent ergonomics.",
-        tags: ["Agent Framework", "Memory", "MCP"],
+          "A local-first agent hub that spins up specialist agents and temporary orchestrators, useful for thinking about practical multi-agent organization and task routing.",
+        tags: ["Agent Framework", "Multi-Agent", "Local-First"],
       },
     ],
   },
