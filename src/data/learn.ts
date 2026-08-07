@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-05";
+export const lastUpdated = "2026-08-07";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,43 +28,43 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Reduced-order modeling for electromagnetic inverse problems: a layered medium benchmark",
+        title: "A Profile-Separation Framework for Quantitative Convergence of No-U-Turn Samplers",
         source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.03996",
+        date: "2026-08-06",
+        href: "https://arxiv.org/abs/2608.06336",
         summary:
-          "Uses reduced-order modeling on a layered-medium inverse problem, a good numerical-analysis example where discretized dynamics and inverse objectives meet.",
-        tags: ["Numerical Analysis", "Inverse Problems", "Reduced-Order Models"],
+          "Gives quantitative convergence tools for No-U-Turn Samplers under log-concavity assumptions, useful for connecting probability, MCMC diagnostics, and statistical computation.",
+        tags: ["Probability", "MCMC", "Statistics"],
       },
       {
         type: "Paper",
-        title: "Simulation-Based Neural Policies for Portfolio Choice: Architecture, Training, and Interpretability",
+        title: "Sharp Tail Bounds Beyond Twice the Mean",
         source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.03933",
+        date: "2026-08-06",
+        href: "https://arxiv.org/abs/2608.06317",
         summary:
-          "Frames portfolio choice as stochastic control with neural policies, making it useful for connecting optimal control, simulation, and interpretable decision rules.",
-        tags: ["Stochastic Control", "Optimization", "Finance"],
+          "Develops a sharp probability bound for sums of independent non-negative variables, a compact result worth tracking for concentration and randomized analysis.",
+        tags: ["Probability", "Tail Bounds", "Concentration"],
       },
       {
         type: "Paper",
-        title: "Robust Low-Tubal-Rank Tensor Completion under Cross-Concentrated Sampling",
+        title: "The Benefits of an Integrated Approach for Stability-Constrained Power System Planning",
         source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.03928",
+        date: "2026-08-06",
+        href: "https://arxiv.org/abs/2608.06349",
         summary:
-          "Studies robust tensor completion when observations are concentrated in slices, a relevant bridge between numerical linear algebra and statistical ML.",
-        tags: ["Tensor Completion", "Numerical Linear Algebra", "Statistical ML"],
+          "Models power-system planning with stability constraints inside the optimization loop, showing how applied control problems can benefit from integrated mathematical programming.",
+        tags: ["Optimization", "Control", "Power Systems"],
       },
       {
-        type: "Paper",
-        title: "Trajectory inference via Acceleration Matching",
-        source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.03916",
+        type: "GitHub",
+        title: "stdlib-js/stdlib",
+        source: "GitHub",
+        date: "Updated 2026-08-07",
+        href: "https://github.com/stdlib-js/stdlib",
         summary:
-          "Proposes a trajectory-inference method based on matching accelerations, an elegant optimization view of dynamics from unpaired time snapshots.",
-        tags: ["Optimal Control", "Dynamical Systems", "Trajectory Inference"],
+          "A broad numerical and statistical standard library for JavaScript and TypeScript, useful for seeing how mathematical computing primitives are engineered for production environments.",
+        tags: ["Numerical Computing", "Statistics", "TypeScript"],
       },
       {
         type: "GitHub",
@@ -87,33 +87,43 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility",
+        title: "Learning When to Trust via Selective Context Preference Optimization",
         source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.04001",
+        date: "2026-08-06",
+        href: "https://arxiv.org/abs/2608.06377",
         summary:
-          "Clarifies inference-time compute strategies for reasoning models and emphasizes evaluation hygiene, directly useful for reading LLM benchmark claims.",
-        tags: ["Reasoning", "Evaluation", "LLMs"],
+          "Introduces selective trust as a preference-optimization problem, a practical framing for models that must use helpful context without being derailed by misleading evidence.",
+        tags: ["Preference Optimization", "Robustness", "Context"],
       },
       {
         type: "Paper",
-        title: "Information-Geometric Forward Policy Training in GFlowNets",
+        title: "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
         source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.03967",
+        date: "2026-08-06",
+        href: "https://arxiv.org/abs/2608.06352",
         summary:
-          "Recasts GFlowNet forward-policy training with information geometry, a compact theory angle on amortized inference and structured generation.",
-        tags: ["GFlowNets", "Information Geometry", "Amortized Inference"],
+          "Builds executable terminal tasks through adversarial solver calibration, a useful lens on making agent and coding benchmarks both verifiable and appropriately difficult.",
+        tags: ["Benchmarking", "Terminal Agents", "Calibration"],
       },
       {
         type: "Paper",
-        title: "Interpretable Adaptive Sampling for LLM Test-Time Scaling",
+        title: "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
         source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.03961",
+        date: "2026-08-06",
+        href: "https://arxiv.org/abs/2608.06361",
         summary:
-          "Explores adaptive compute allocation during LLM reasoning, a practical idea for making test-time scaling less wasteful and more inspectable.",
-        tags: ["Test-Time Scaling", "Adaptive Sampling", "LLMs"],
+          "Uses controlled video tasks to isolate event-counting failures, highlighting a simple but important evaluation gap for multimodal ML systems.",
+        tags: ["Video Language Models", "Evaluation", "Multimodal ML"],
+      },
+      {
+        type: "GitHub",
+        title: "flwrlabs/flower",
+        source: "GitHub",
+        date: "Updated 2026-08-07",
+        href: "https://github.com/flwrlabs/flower",
+        summary:
+          "A federated AI framework that remains a strong reference for distributed training, privacy-aware ML workflows, and cross-device experimentation.",
+        tags: ["Federated Learning", "Distributed ML", "Python"],
       },
       {
         type: "GitHub",
@@ -124,16 +134,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A high-throughput LLM serving engine to track for practical inference tradeoffs around batching, memory, and deployment performance.",
         tags: ["Inference", "LLM Serving", "Systems"],
-      },
-      {
-        type: "GitHub",
-        title: "optuna/optuna",
-        source: "GitHub",
-        date: "Updated 2026-08-05",
-        href: "https://github.com/optuna/optuna",
-        summary:
-          "A mature hyperparameter-optimization framework that remains a useful reference for reproducible experiment search and automated tuning workflows.",
-        tags: ["Hyperparameter Optimization", "Experimentation", "Python"],
       },
     ],
   },
@@ -146,53 +146,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning",
+        title: "The Bitter Lesson of Tool Calling",
         source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.04007",
+        date: "2026-08-06",
+        href: "https://arxiv.org/abs/2608.06370",
         summary:
-          "Improves credit assignment across multi-turn tool interactions, a core bottleneck for training reliable tool-using agents.",
-        tags: ["Tool Use", "Self-Distillation", "Reasoning"],
+          "Compares programmatic tool calling with native JSON tool calls under realistic conditions, directly probing how agents should compose and execute external tools.",
+        tags: ["Tool Use", "Agents", "Evaluation"],
       },
       {
         type: "Paper",
-        title: "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents",
+        title: "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
         source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.04003",
+        date: "2026-08-06",
+        href: "https://arxiv.org/abs/2608.06362",
         summary:
-          "Introduces a benchmark for whether personal agents can convert stored experience into better future behavior, putting memory and self-improvement under test.",
-        tags: ["Benchmarks", "Personal Agents", "Memory"],
+          "Proposes anytime-valid stopping for comparing agents in noisy games, making evaluation cheaper while preserving statistical guarantees.",
+        tags: ["Agent Evaluation", "Games", "Statistics"],
       },
       {
         type: "Paper",
-        title: "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
+        title: "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
         source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.03979",
+        date: "2026-08-06",
+        href: "https://arxiv.org/abs/2608.06353",
         summary:
-          "Extends deep-research agents into continuous video, highlighting the next set of challenges for multimodal grounding and web exploration.",
-        tags: ["Multimodal Agents", "Video", "Deep Research"],
-      },
-      {
-        type: "Paper",
-        title: "Should We Type or Talk to LLM Agents? A Comprehensive Study of Voice and Keyboard Input Perturbations",
-        source: "arXiv",
-        date: "2026-08-04",
-        href: "https://arxiv.org/abs/2608.03970",
-        summary:
-          "Studies how typed versus spoken user input changes agent performance, a practical reminder that interface noise affects downstream autonomy.",
-        tags: ["Human-Agent Interaction", "Robustness", "Evaluation"],
+          "Frames deployed-agent governance as resource allocation and mechanism design, a useful formal angle on compute budgets, authorization, and oversight.",
+        tags: ["Agent Governance", "Mechanism Design", "Compute Budgets"],
       },
       {
         type: "GitHub",
-        title: "infiniflow/ragflow",
+        title: "TeleAI-UAGI/Awesome-Agent-Memory",
         source: "GitHub",
-        date: "Updated 2026-08-05",
-        href: "https://github.com/infiniflow/ragflow",
+        date: "Updated 2026-08-07",
+        href: "https://github.com/TeleAI-UAGI/Awesome-Agent-Memory",
         summary:
-          "A production-oriented RAG and agent context engine, useful for studying how retrieval, context management, and agent capabilities are packaged together.",
-        tags: ["RAG", "Agentic Retrieval", "Context Engineering"],
+          "A curated map of memory systems, benchmarks, and papers for LLM and multimodal agents, useful for tracking the rapidly expanding agent-memory literature.",
+        tags: ["Agent Memory", "Reading List", "RAG"],
+      },
+      {
+        type: "GitHub",
+        title: "trpc-group/trpc-agent-go",
+        source: "GitHub",
+        date: "Updated 2026-08-07",
+        href: "https://github.com/trpc-group/trpc-agent-go",
+        summary:
+          "A Go framework for production agent systems with graph workflows, tools, memory, MCP, evaluation, and observability in one stack.",
+        tags: ["Agent Framework", "Go", "MCP"],
       },
     ],
   },
