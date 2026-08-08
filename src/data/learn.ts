@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-07";
+export const lastUpdated = "2026-08-08";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -60,7 +60,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-08-07",
+        date: "Updated 2026-08-08",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical and statistical standard library for JavaScript and TypeScript, useful for seeing how mathematical computing primitives are engineered for production environments.",
@@ -68,13 +68,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "JuliaDynamics/DynamicalSystems.jl",
+        title: "gap-system/gap",
         source: "GitHub",
-        date: "Updated 2026-08-05",
-        href: "https://github.com/JuliaDynamics/DynamicalSystems.jl",
+        date: "Updated 2026-08-07",
+        href: "https://github.com/gap-system/gap",
         summary:
-          "A focused Julia ecosystem for nonlinear dynamics and time-series analysis, worth following for computational experiments with chaos and dynamical systems.",
-        tags: ["Dynamical Systems", "Julia", "Scientific Computing"],
+          "The main development repository for GAP, a mature system for computational discrete algebra and a useful reference for symbolic mathematical software.",
+        tags: ["Discrete Algebra", "Symbolic Computing", "Mathematics"],
       },
     ],
   },
@@ -96,14 +96,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Preference Optimization", "Robustness", "Context"],
       },
       {
-        type: "Paper",
-        title: "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
-        source: "arXiv",
-        date: "2026-08-06",
-        href: "https://arxiv.org/abs/2608.06352",
+        type: "GitHub",
+        title: "sgl-project/sglang",
+        source: "GitHub",
+        date: "Updated 2026-08-08",
+        href: "https://github.com/sgl-project/sglang",
         summary:
-          "Builds executable terminal tasks through adversarial solver calibration, a useful lens on making agent and coding benchmarks both verifiable and appropriately difficult.",
-        tags: ["Benchmarking", "Terminal Agents", "Calibration"],
+          "A high-performance serving framework for large language and multimodal models, worth following for practical inference, scheduling, and systems-level LLM work.",
+        tags: ["LLM Serving", "Inference", "Systems"],
       },
       {
         type: "Paper",
@@ -119,7 +119,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "flwrlabs/flower",
         source: "GitHub",
-        date: "Updated 2026-08-07",
+        date: "Updated 2026-08-08",
         href: "https://github.com/flwrlabs/flower",
         summary:
           "A federated AI framework that remains a strong reference for distributed training, privacy-aware ML workflows, and cross-device experimentation.",
@@ -129,7 +129,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-08-05",
+        date: "Updated 2026-08-08",
         href: "https://github.com/vllm-project/vllm",
         summary:
           "A high-throughput LLM serving engine to track for practical inference tradeoffs around batching, memory, and deployment performance.",
@@ -165,14 +165,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Agent Evaluation", "Games", "Statistics"],
       },
       {
-        type: "Paper",
-        title: "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
-        source: "arXiv",
-        date: "2026-08-06",
-        href: "https://arxiv.org/abs/2608.06353",
+        type: "GitHub",
+        title: "langgenius/dify",
+        source: "GitHub",
+        date: "Updated 2026-08-08",
+        href: "https://github.com/langgenius/dify",
         summary:
-          "Frames deployed-agent governance as resource allocation and mechanism design, a useful formal angle on compute budgets, authorization, and oversight.",
-        tags: ["Agent Governance", "Mechanism Design", "Compute Budgets"],
+          "A collaborative platform for building agentic workflows and RAG pipelines, useful for studying how production teams package tools, retrieval, and deployment around LLM apps.",
+        tags: ["Agent Workflows", "RAG", "LLM Apps"],
       },
       {
         type: "GitHub",
@@ -188,7 +188,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "trpc-group/trpc-agent-go",
         source: "GitHub",
-        date: "Updated 2026-08-07",
+        date: "Updated 2026-08-08",
         href: "https://github.com/trpc-group/trpc-agent-go",
         summary:
           "A Go framework for production agent systems with graph workflows, tools, memory, MCP, evaluation, and observability in one stack.",
