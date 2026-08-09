@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-08";
+export const lastUpdated = "2026-08-09";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -65,6 +65,16 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A broad numerical and statistical standard library for JavaScript and TypeScript, useful for seeing how mathematical computing primitives are engineered for production environments.",
         tags: ["Numerical Computing", "Statistics", "TypeScript"],
+      },
+      {
+        type: "GitHub",
+        title: "statsmodels/statsmodels",
+        source: "GitHub",
+        date: "Updated 2026-08-09",
+        href: "https://github.com/statsmodels/statsmodels",
+        summary:
+          "A mature Python library for statistical modeling and econometrics, useful for connecting mathematical statistics with transparent, inspectable modeling tools.",
+        tags: ["Statistics", "Econometrics", "Python"],
       },
       {
         type: "GitHub",
@@ -135,6 +145,16 @@ export const learnTopics: LearnTopic[] = [
           "A high-throughput LLM serving engine to track for practical inference tradeoffs around batching, memory, and deployment performance.",
         tags: ["Inference", "LLM Serving", "Systems"],
       },
+      {
+        type: "GitHub",
+        title: "hiyouga/LlamaFactory",
+        source: "GitHub",
+        date: "Updated 2026-08-09",
+        href: "https://github.com/hiyouga/LlamaFactory",
+        summary:
+          "A widely used toolkit for efficient fine-tuning of LLMs and VLMs, worth following for practical training recipes, adapters, and experiment workflows.",
+        tags: ["LLM Fine-Tuning", "VLM", "Training"],
+      },
     ],
   },
   {
@@ -193,6 +213,16 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A Go framework for production agent systems with graph workflows, tools, memory, MCP, evaluation, and observability in one stack.",
         tags: ["Agent Framework", "Go", "MCP"],
+      },
+      {
+        type: "GitHub",
+        title: "elizaOS/eliza",
+        source: "GitHub",
+        date: "Updated 2026-08-09",
+        href: "https://github.com/elizaOS/eliza",
+        summary:
+          "An open-source agentic operating system that is useful for studying how agent runtimes combine plugins, memory, model routing, and long-running workflows.",
+        tags: ["Agent Runtime", "Plugins", "Memory"],
       },
     ],
   },
