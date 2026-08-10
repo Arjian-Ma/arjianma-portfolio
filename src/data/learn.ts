@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-09";
+export const lastUpdated = "2026-08-10";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -78,13 +78,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "gap-system/gap",
+        title: "DoubleML/doubleml-for-py",
         source: "GitHub",
-        date: "Updated 2026-08-07",
-        href: "https://github.com/gap-system/gap",
+        date: "Updated 2026-08-10",
+        href: "https://github.com/DoubleML/doubleml-for-py",
         summary:
-          "The main development repository for GAP, a mature system for computational discrete algebra and a useful reference for symbolic mathematical software.",
-        tags: ["Discrete Algebra", "Symbolic Computing", "Mathematics"],
+          "A Python package for double machine learning and causal inference, useful for connecting modern statistical theory with reproducible econometric workflows.",
+        tags: ["Statistics", "Causal Inference", "Python"],
       },
     ],
   },
@@ -127,13 +127,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "flwrlabs/flower",
+        title: "huggingface/transformers",
         source: "GitHub",
-        date: "Updated 2026-08-08",
-        href: "https://github.com/flwrlabs/flower",
+        date: "Updated 2026-08-10",
+        href: "https://github.com/huggingface/transformers",
         summary:
-          "A federated AI framework that remains a strong reference for distributed training, privacy-aware ML workflows, and cross-device experimentation.",
-        tags: ["Federated Learning", "Distributed ML", "Python"],
+          "The widely used model-definition framework for text, vision, audio, and multimodal systems, worth tracking for practical training and inference patterns across modern ML.",
+        tags: ["Transformers", "Deep Learning", "Multimodal ML"],
       },
       {
         type: "GitHub",
@@ -206,13 +206,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "trpc-group/trpc-agent-go",
+        title: "infiniflow/ragflow",
         source: "GitHub",
-        date: "Updated 2026-08-08",
-        href: "https://github.com/trpc-group/trpc-agent-go",
+        date: "Updated 2026-08-10",
+        href: "https://github.com/infiniflow/ragflow",
         summary:
-          "A Go framework for production agent systems with graph workflows, tools, memory, MCP, evaluation, and observability in one stack.",
-        tags: ["Agent Framework", "Go", "MCP"],
+          "A high-activity RAG engine that now emphasizes agentic retrieval and context infrastructure, useful for studying how retrieval becomes an operational layer for LLM agents.",
+        tags: ["RAG", "Agentic Retrieval", "Context Engineering"],
       },
       {
         type: "GitHub",
