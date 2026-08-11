@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-10";
+export const lastUpdated = "2026-08-11";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,53 +28,43 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "A Profile-Separation Framework for Quantitative Convergence of No-U-Turn Samplers",
+        title: "Dynamic e-closure for online hypotheses with any-time-valid evidence",
         source: "arXiv",
-        date: "2026-08-06",
-        href: "https://arxiv.org/abs/2608.06336",
+        date: "2026-08-10",
+        href: "https://arxiv.org/abs/2608.09927",
         summary:
-          "Gives quantitative convergence tools for No-U-Turn Samplers under log-concavity assumptions, useful for connecting probability, MCMC diagnostics, and statistical computation.",
-        tags: ["Probability", "MCMC", "Statistics"],
+          "Builds a dynamic e-value closure framework for online hypotheses and arbitrary stopping times, useful for understanding modern sequential testing and FDR control.",
+        tags: ["Statistics Theory", "Sequential Testing", "e-values"],
       },
       {
         type: "Paper",
-        title: "Sharp Tail Bounds Beyond Twice the Mean",
+        title: "Safe Start: Configuring Optimization Algorithms for Decision-Making under Extreme Risks",
         source: "arXiv",
-        date: "2026-08-06",
-        href: "https://arxiv.org/abs/2608.06317",
+        date: "2026-08-10",
+        href: "https://arxiv.org/abs/2608.09872",
         summary:
-          "Develops a sharp probability bound for sums of independent non-negative variables, a compact result worth tracking for concentration and randomized analysis.",
-        tags: ["Probability", "Tail Bounds", "Concentration"],
+          "Studies stochastic optimization when rare catastrophic events matter, introducing safe-start conditions for finite-time control in risk-sensitive decision problems.",
+        tags: ["Optimization", "Risk", "Stochastic Methods"],
       },
       {
-        type: "Paper",
-        title: "The Benefits of an Integrated Approach for Stability-Constrained Power System Planning",
-        source: "arXiv",
-        date: "2026-08-06",
-        href: "https://arxiv.org/abs/2608.06349",
+        type: "GitHub",
+        title: "pymc-devs/pytensor",
+        source: "GitHub",
+        date: "Updated 2026-08-11",
+        href: "https://github.com/pymc-devs/pytensor",
         summary:
-          "Models power-system planning with stability constraints inside the optimization loop, showing how applied control problems can benefit from integrated mathematical programming.",
-        tags: ["Optimization", "Control", "Power Systems"],
+          "A tensor-expression compiler used by PyMC, worth tracking for how probabilistic and statistical computation is optimized under the hood.",
+        tags: ["Statistics", "Tensor Computing", "Python"],
       },
       {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-08-08",
+        date: "Updated 2026-08-11",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical and statistical standard library for JavaScript and TypeScript, useful for seeing how mathematical computing primitives are engineered for production environments.",
         tags: ["Numerical Computing", "Statistics", "TypeScript"],
-      },
-      {
-        type: "GitHub",
-        title: "statsmodels/statsmodels",
-        source: "GitHub",
-        date: "Updated 2026-08-09",
-        href: "https://github.com/statsmodels/statsmodels",
-        summary:
-          "A mature Python library for statistical modeling and econometrics, useful for connecting mathematical statistics with transparent, inspectable modeling tools.",
-        tags: ["Statistics", "Econometrics", "Python"],
       },
       {
         type: "GitHub",
@@ -97,33 +87,43 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Learning When to Trust via Selective Context Preference Optimization",
+        title: "SR-OPSD: Self-Referenced On-Policy Self-Distillation",
         source: "arXiv",
-        date: "2026-08-06",
-        href: "https://arxiv.org/abs/2608.06377",
+        date: "2026-08-10",
+        href: "https://arxiv.org/abs/2608.09745",
         summary:
-          "Introduces selective trust as a preference-optimization problem, a practical framing for models that must use helpful context without being derailed by misleading evidence.",
-        tags: ["Preference Optimization", "Robustness", "Context"],
+          "Reframes on-policy self-distillation with adaptive token-level targets and Rényi projection geometry, relevant to stable LLM training and reasoning improvements.",
+        tags: ["Self-Distillation", "LLM Training", "Optimization"],
+      },
+      {
+        type: "Paper",
+        title: "Test-Time Augmentation for LLMs: When Input Diversity Beats Output Diversity at Matched Compute",
+        source: "arXiv",
+        date: "2026-08-10",
+        href: "https://arxiv.org/abs/2608.09351",
+        summary:
+          "Compares input-side diversity with output sampling for test-time scaling, a practical lens on how to spend inference compute more effectively.",
+        tags: ["Test-Time Scaling", "LLMs", "Evaluation"],
+      },
+      {
+        type: "GitHub",
+        title: "flashinfer-ai/flashinfer",
+        source: "GitHub",
+        date: "Updated 2026-08-11",
+        href: "https://github.com/flashinfer-ai/flashinfer",
+        summary:
+          "A kernel library for LLM serving, useful for studying practical performance work around attention, batching, and inference memory efficiency.",
+        tags: ["LLM Serving", "Kernels", "Systems"],
       },
       {
         type: "GitHub",
         title: "sgl-project/sglang",
         source: "GitHub",
-        date: "Updated 2026-08-08",
+        date: "Updated 2026-08-11",
         href: "https://github.com/sgl-project/sglang",
         summary:
           "A high-performance serving framework for large language and multimodal models, worth following for practical inference, scheduling, and systems-level LLM work.",
         tags: ["LLM Serving", "Inference", "Systems"],
-      },
-      {
-        type: "Paper",
-        title: "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
-        source: "arXiv",
-        date: "2026-08-06",
-        href: "https://arxiv.org/abs/2608.06361",
-        summary:
-          "Uses controlled video tasks to isolate event-counting failures, highlighting a simple but important evaluation gap for multimodal ML systems.",
-        tags: ["Video Language Models", "Evaluation", "Multimodal ML"],
       },
       {
         type: "GitHub",
@@ -134,26 +134,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "The widely used model-definition framework for text, vision, audio, and multimodal systems, worth tracking for practical training and inference patterns across modern ML.",
         tags: ["Transformers", "Deep Learning", "Multimodal ML"],
-      },
-      {
-        type: "GitHub",
-        title: "vllm-project/vllm",
-        source: "GitHub",
-        date: "Updated 2026-08-08",
-        href: "https://github.com/vllm-project/vllm",
-        summary:
-          "A high-throughput LLM serving engine to track for practical inference tradeoffs around batching, memory, and deployment performance.",
-        tags: ["Inference", "LLM Serving", "Systems"],
-      },
-      {
-        type: "GitHub",
-        title: "hiyouga/LlamaFactory",
-        source: "GitHub",
-        date: "Updated 2026-08-09",
-        href: "https://github.com/hiyouga/LlamaFactory",
-        summary:
-          "A widely used toolkit for efficient fine-tuning of LLMs and VLMs, worth following for practical training recipes, adapters, and experiment workflows.",
-        tags: ["LLM Fine-Tuning", "VLM", "Training"],
       },
     ],
   },
@@ -166,59 +146,49 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "The Bitter Lesson of Tool Calling",
+        title: "SHE: Trajectory-driven Safety Harness Evolution for LLM Agents",
         source: "arXiv",
-        date: "2026-08-06",
-        href: "https://arxiv.org/abs/2608.06370",
+        date: "2026-08-10",
+        href: "https://arxiv.org/abs/2608.09885",
         summary:
-          "Compares programmatic tool calling with native JSON tool calls under realistic conditions, directly probing how agents should compose and execute external tools.",
-        tags: ["Tool Use", "Agents", "Evaluation"],
+          "Treats agent safety as an evolving harness problem across prompts, rule banks, memory, and tool policies, grounded in rollout trajectories and safety-utility validation.",
+        tags: ["Agent Safety", "Tool Policy", "Memory"],
       },
       {
         type: "Paper",
-        title: "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+        title: "Multi-Agent AI Safety as an Institutional Design Problem",
         source: "arXiv",
-        date: "2026-08-06",
-        href: "https://arxiv.org/abs/2608.06362",
+        date: "2026-08-10",
+        href: "https://arxiv.org/abs/2608.09828",
         summary:
-          "Proposes anytime-valid stopping for comparing agents in noisy games, making evaluation cheaper while preserving statistical guarantees.",
-        tags: ["Agent Evaluation", "Games", "Statistics"],
+          "Frames multi-agent safety around delegation rules, authority state, guards, and fallback paths, making it a useful systems view of agent governance.",
+        tags: ["Multi-Agent Systems", "Safety", "Governance"],
       },
       {
         type: "GitHub",
-        title: "langgenius/dify",
+        title: "Ontos-AI/knowhere",
         source: "GitHub",
-        date: "Updated 2026-08-08",
-        href: "https://github.com/langgenius/dify",
+        date: "Updated 2026-08-11",
+        href: "https://github.com/Ontos-AI/knowhere",
         summary:
-          "A collaborative platform for building agentic workflows and RAG pipelines, useful for studying how production teams package tools, retrieval, and deployment around LLM apps.",
-        tags: ["Agent Workflows", "RAG", "LLM Apps"],
+          "A structured chunking tool for AI agents and RAG, useful for thinking about retrieval-ready context as part of agent infrastructure.",
+        tags: ["RAG", "Agent Context", "Parsing"],
       },
       {
         type: "GitHub",
-        title: "TeleAI-UAGI/Awesome-Agent-Memory",
+        title: "HKUDS/nanobot",
         source: "GitHub",
-        date: "Updated 2026-08-07",
-        href: "https://github.com/TeleAI-UAGI/Awesome-Agent-Memory",
+        date: "Updated 2026-08-11",
+        href: "https://github.com/HKUDS/nanobot",
         summary:
-          "A curated map of memory systems, benchmarks, and papers for LLM and multimodal agents, useful for tracking the rapidly expanding agent-memory literature.",
-        tags: ["Agent Memory", "Reading List", "RAG"],
-      },
-      {
-        type: "GitHub",
-        title: "infiniflow/ragflow",
-        source: "GitHub",
-        date: "Updated 2026-08-10",
-        href: "https://github.com/infiniflow/ragflow",
-        summary:
-          "A high-activity RAG engine that now emphasizes agentic retrieval and context infrastructure, useful for studying how retrieval becomes an operational layer for LLM agents.",
-        tags: ["RAG", "Agentic Retrieval", "Context Engineering"],
+          "A lightweight self-hosted personal agent framework with tools, memory, MCP, and multi-agent workflows to study compact agent runtime design.",
+        tags: ["Agent Framework", "Memory", "MCP"],
       },
       {
         type: "GitHub",
         title: "elizaOS/eliza",
         source: "GitHub",
-        date: "Updated 2026-08-09",
+        date: "Updated 2026-08-11",
         href: "https://github.com/elizaOS/eliza",
         summary:
           "An open-source agentic operating system that is useful for studying how agent runtimes combine plugins, memory, model routing, and long-running workflows.",
