@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-11";
+export const lastUpdated = "2026-08-12";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,6 +28,26 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "Gromov-Wasserstein Quantization and Clustering: Structure, Rates, and Algorithms",
+        source: "arXiv",
+        date: "2026-08-11",
+        href: "https://arxiv.org/abs/2608.11016",
+        summary:
+          "Extends quantization and k-means ideas to Gromov-Wasserstein geometry, giving structure, rates, and algorithms for clustering metric and relational data.",
+        tags: ["Optimal Transport", "Clustering", "Geometry"],
+      },
+      {
+        type: "Paper",
+        title: "Optimal Inference with Black-box Predictions",
+        source: "arXiv",
+        date: "2026-08-10",
+        href: "https://arxiv.org/abs/2608.10155",
+        summary:
+          "Develops information-theoretic limits and adaptive tests for using black-box predictive models in statistically valid high-dimensional inference.",
+        tags: ["Statistics Theory", "Inference", "Black-box Models"],
+      },
+      {
+        type: "Paper",
         title: "Dynamic e-closure for online hypotheses with any-time-valid evidence",
         source: "arXiv",
         date: "2026-08-10",
@@ -36,16 +56,7 @@ export const learnTopics: LearnTopic[] = [
           "Builds a dynamic e-value closure framework for online hypotheses and arbitrary stopping times, useful for understanding modern sequential testing and FDR control.",
         tags: ["Statistics Theory", "Sequential Testing", "e-values"],
       },
-      {
-        type: "Paper",
-        title: "Safe Start: Configuring Optimization Algorithms for Decision-Making under Extreme Risks",
-        source: "arXiv",
-        date: "2026-08-10",
-        href: "https://arxiv.org/abs/2608.09872",
-        summary:
-          "Studies stochastic optimization when rare catastrophic events matter, introducing safe-start conditions for finite-time control in risk-sensitive decision problems.",
-        tags: ["Optimization", "Risk", "Stochastic Methods"],
-      },
+
       {
         type: "GitHub",
         title: "pymc-devs/pytensor",
@@ -68,13 +79,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "DoubleML/doubleml-for-py",
+        title: "statsmodels/statsmodels",
         source: "GitHub",
-        date: "Updated 2026-08-10",
-        href: "https://github.com/DoubleML/doubleml-for-py",
+        date: "Updated 2026-08-12",
+        href: "https://github.com/statsmodels/statsmodels",
         summary:
-          "A Python package for double machine learning and causal inference, useful for connecting modern statistical theory with reproducible econometric workflows.",
-        tags: ["Statistics", "Causal Inference", "Python"],
+          "A core Python library for statistical modeling and econometrics, worth revisiting for rigorous applied inference workflows and production-quality statistical APIs.",
+        tags: ["Statistics", "Econometrics", "Python"],
       },
     ],
   },
@@ -85,6 +96,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "A running list of ML papers and codebases I am reading to improve model-building, evaluation, and deployment intuition.",
     resources: [
+      {
+        type: "Paper",
+        title: "Two-stage Odd Residual Flows for Mean-Preserving Probabilistic Time Series Forecasting",
+        source: "arXiv",
+        date: "2026-08-11",
+        href: "https://arxiv.org/abs/2608.11114",
+        summary:
+          "Separates mean forecasting from uncertainty modeling with odd residual normalizing flows, a useful design pattern for risk-sensitive time-series prediction.",
+        tags: ["Time Series", "Probabilistic Forecasting", "Normalizing Flows"],
+      },
       {
         type: "Paper",
         title: "SR-OPSD: Self-Referenced On-Policy Self-Distillation",
@@ -127,13 +148,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "huggingface/transformers",
+        title: "walkinglabs/hands-on-modern-rl",
         source: "GitHub",
-        date: "Updated 2026-08-10",
-        href: "https://github.com/huggingface/transformers",
+        date: "Updated 2026-08-12",
+        href: "https://github.com/walkinglabs/hands-on-modern-rl",
         summary:
-          "The widely used model-definition framework for text, vision, audio, and multimodal systems, worth tracking for practical training and inference patterns across modern ML.",
-        tags: ["Transformers", "Deep Learning", "Multimodal ML"],
+          "A hands-on curriculum spanning modern reinforcement learning, LLM alignment, RLVR, and agentic systems, useful for turning theory into executable practice.",
+        tags: ["Reinforcement Learning", "LLM Alignment", "Curriculum"],
       },
     ],
   },
@@ -144,6 +165,26 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Resources for understanding how AI agents plan, use tools, evaluate themselves, and operate as long-running systems.",
     resources: [
+      {
+        type: "Paper",
+        title: "SkillZip: Evaluation-Free Skill Compression for Self-Evolving Agents by Discovering Reusable Structure",
+        source: "arXiv",
+        date: "2026-08-11",
+        href: "https://arxiv.org/abs/2608.11079",
+        summary:
+          "Treats agent skills as structured behavioral contracts and compresses repeated workflows without rollouts, directly relevant to long-running self-improving agents.",
+        tags: ["Agent Skills", "Memory", "Compression"],
+      },
+      {
+        type: "Paper",
+        title: "ThinkRetrieve: Retrieval-Augmented Reasoning Traces for Test-Time Scaling",
+        source: "arXiv",
+        date: "2026-08-11",
+        href: "https://arxiv.org/abs/2608.10928",
+        summary:
+          "Injects retrieved solved examples into intermediate reasoning traces, offering a concrete approach to retrieval-guided test-time scaling for reasoning agents.",
+        tags: ["Retrieval", "Reasoning", "Test-Time Scaling"],
+      },
       {
         type: "Paper",
         title: "SHE: Trajectory-driven Safety Harness Evolution for LLM Agents",
@@ -164,16 +205,7 @@ export const learnTopics: LearnTopic[] = [
           "Frames multi-agent safety around delegation rules, authority state, guards, and fallback paths, making it a useful systems view of agent governance.",
         tags: ["Multi-Agent Systems", "Safety", "Governance"],
       },
-      {
-        type: "GitHub",
-        title: "Ontos-AI/knowhere",
-        source: "GitHub",
-        date: "Updated 2026-08-11",
-        href: "https://github.com/Ontos-AI/knowhere",
-        summary:
-          "A structured chunking tool for AI agents and RAG, useful for thinking about retrieval-ready context as part of agent infrastructure.",
-        tags: ["RAG", "Agent Context", "Parsing"],
-      },
+
       {
         type: "GitHub",
         title: "HKUDS/nanobot",
@@ -186,13 +218,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "elizaOS/eliza",
+        title: "agentic-box/memora",
         source: "GitHub",
-        date: "Updated 2026-08-11",
-        href: "https://github.com/elizaOS/eliza",
+        date: "Updated 2026-08-12",
+        href: "https://github.com/agentic-box/memora",
         summary:
-          "An open-source agentic operating system that is useful for studying how agent runtimes combine plugins, memory, model routing, and long-running workflows.",
-        tags: ["Agent Runtime", "Plugins", "Memory"],
+          "A persistent collective-memory layer for agents with deduplication, semantic search, lineage, and a graph UI for inspecting evolving context.",
+        tags: ["Agent Memory", "Semantic Search", "Context"],
       },
     ],
   },
