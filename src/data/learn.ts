@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-12";
+export const lastUpdated = "2026-08-13";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,33 +28,33 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Gromov-Wasserstein Quantization and Clustering: Structure, Rates, and Algorithms",
+        title: "A contiguity approach to replica symmetric marginals",
         source: "arXiv",
-        date: "2026-08-11",
-        href: "https://arxiv.org/abs/2608.11016",
+        date: "2026-08-12",
+        href: "https://arxiv.org/abs/2608.12309",
         summary:
-          "Extends quantization and k-means ideas to Gromov-Wasserstein geometry, giving structure, rates, and algorithms for clustering metric and relational data.",
-        tags: ["Optimal Transport", "Clustering", "Geometry"],
+          "Develops a cavity-contiguity framework for proving replica-symmetric convergence of local marginals in mean-field Gibbs systems.",
+        tags: ["Probability", "Statistical Mechanics", "Replica Symmetry"],
       },
       {
         type: "Paper",
-        title: "Optimal Inference with Black-box Predictions",
+        title: "When should one stop the most exciting game? Sequential Inference for win-martingales",
         source: "arXiv",
-        date: "2026-08-10",
-        href: "https://arxiv.org/abs/2608.10155",
+        date: "2026-08-12",
+        href: "https://arxiv.org/abs/2608.12291",
         summary:
-          "Develops information-theoretic limits and adaptive tests for using black-box predictive models in statistically valid high-dimensional inference.",
-        tags: ["Statistics Theory", "Inference", "Black-box Models"],
+          "Studies optional stopping and sequential inference for prediction-market win probabilities, connecting martingale theory with practical evidence monitoring.",
+        tags: ["Probability", "Sequential Inference", "Martingales"],
       },
       {
         type: "Paper",
-        title: "Dynamic e-closure for online hypotheses with any-time-valid evidence",
+        title: "Sharp Berry-Esseen Bounds for the Log Determinant of a Gaussian Sample Correlation Matrix",
         source: "arXiv",
-        date: "2026-08-10",
-        href: "https://arxiv.org/abs/2608.09927",
+        date: "2026-08-12",
+        href: "https://arxiv.org/abs/2608.12242",
         summary:
-          "Builds a dynamic e-value closure framework for online hypotheses and arbitrary stopping times, useful for understanding modern sequential testing and FDR control.",
-        tags: ["Statistics Theory", "Sequential Testing", "e-values"],
+          "Gives sharp normal-approximation bounds for log determinants of Gaussian sample correlation matrices, useful for high-dimensional statistical theory.",
+        tags: ["Statistics Theory", "Random Matrices", "Berry-Esseen"],
       },
 
       {
@@ -71,7 +71,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-08-11",
+        date: "Updated 2026-08-13",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical and statistical standard library for JavaScript and TypeScript, useful for seeing how mathematical computing primitives are engineered for production environments.",
@@ -98,33 +98,33 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Two-stage Odd Residual Flows for Mean-Preserving Probabilistic Time Series Forecasting",
+        title: "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
         source: "arXiv",
-        date: "2026-08-11",
-        href: "https://arxiv.org/abs/2608.11114",
+        date: "2026-08-12",
+        href: "https://arxiv.org/abs/2608.12307",
         summary:
-          "Separates mean forecasting from uncertainty modeling with odd residual normalizing flows, a useful design pattern for risk-sensitive time-series prediction.",
-        tags: ["Time Series", "Probabilistic Forecasting", "Normalizing Flows"],
+          "Explores whether stronger models can transfer capabilities to weaker ones at inference time through harnesses rather than parameter updates.",
+        tags: ["Test-Time Scaling", "Distillation", "LLMs"],
       },
       {
         type: "Paper",
-        title: "SR-OPSD: Self-Referenced On-Policy Self-Distillation",
+        title: "Redistribution-based Cost Inference Improves Sparse Safe Offline RL",
         source: "arXiv",
-        date: "2026-08-10",
-        href: "https://arxiv.org/abs/2608.09745",
+        date: "2026-08-12",
+        href: "https://arxiv.org/abs/2608.12306",
         summary:
-          "Reframes on-policy self-distillation with adaptive token-level targets and Rényi projection geometry, relevant to stable LLM training and reasoning improvements.",
-        tags: ["Self-Distillation", "LLM Training", "Optimization"],
+          "Turns sparse trajectory-level safety feedback into cost signals for offline RL, a practical direction for learning safer policies with limited supervision.",
+        tags: ["Offline RL", "Safety", "Reward Modeling"],
       },
       {
         type: "Paper",
-        title: "Test-Time Augmentation for LLMs: When Input Diversity Beats Output Diversity at Matched Compute",
+        title: "A Framework for Designing Reward Functions: From Objectives to Features to Human-Aligned Reward Functions",
         source: "arXiv",
-        date: "2026-08-10",
-        href: "https://arxiv.org/abs/2608.09351",
+        date: "2026-08-12",
+        href: "https://arxiv.org/abs/2608.12302",
         summary:
-          "Compares input-side diversity with output sampling for test-time scaling, a practical lens on how to spend inference compute more effectively.",
-        tags: ["Test-Time Scaling", "LLMs", "Evaluation"],
+          "Proposes a structured process for turning natural-language objectives into human-aligned reward functions, useful for applied RL and evaluation design.",
+        tags: ["Reward Design", "Alignment", "Reinforcement Learning"],
       },
       {
         type: "GitHub",
@@ -140,7 +140,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "sgl-project/sglang",
         source: "GitHub",
-        date: "Updated 2026-08-11",
+        date: "Updated 2026-08-13",
         href: "https://github.com/sgl-project/sglang",
         summary:
           "A high-performance serving framework for large language and multimodal models, worth following for practical inference, scheduling, and systems-level LLM work.",
@@ -167,64 +167,64 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "SkillZip: Evaluation-Free Skill Compression for Self-Evolving Agents by Discovering Reusable Structure",
+        title: "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation",
         source: "arXiv",
-        date: "2026-08-11",
-        href: "https://arxiv.org/abs/2608.11079",
+        date: "2026-08-12",
+        href: "https://arxiv.org/abs/2608.12308",
         summary:
-          "Treats agent skills as structured behavioral contracts and compresses repeated workflows without rollouts, directly relevant to long-running self-improving agents.",
-        tags: ["Agent Skills", "Memory", "Compression"],
+          "Combines causal memory with receding-horizon diffusion planning for embodied aerial navigation under partial observability.",
+        tags: ["VLM Agents", "Planning", "Memory"],
       },
       {
         type: "Paper",
-        title: "ThinkRetrieve: Retrieval-Augmented Reasoning Traces for Test-Time Scaling",
+        title: "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies",
         source: "arXiv",
-        date: "2026-08-11",
-        href: "https://arxiv.org/abs/2608.10928",
+        date: "2026-08-12",
+        href: "https://arxiv.org/abs/2608.12282",
         summary:
-          "Injects retrieved solved examples into intermediate reasoning traces, offering a concrete approach to retrieval-guided test-time scaling for reasoning agents.",
-        tags: ["Retrieval", "Reasoning", "Test-Time Scaling"],
+          "Introduces a benchmark for agents that must reason across structured APIs and retrieved documents while respecting tool-use policies.",
+        tags: ["Agent Benchmarks", "Tool Use", "RAG"],
       },
       {
         type: "Paper",
-        title: "SHE: Trajectory-driven Safety Harness Evolution for LLM Agents",
+        title: "Convergent Detour Hijacking: Task-Preserving Resource Amplification in Skill-Based LLM Agents",
         source: "arXiv",
-        date: "2026-08-10",
-        href: "https://arxiv.org/abs/2608.09885",
+        date: "2026-08-12",
+        href: "https://arxiv.org/abs/2608.12273",
         summary:
-          "Treats agent safety as an evolving harness problem across prompts, rule banks, memory, and tool policies, grounded in rollout trajectories and safety-utility validation.",
-        tags: ["Agent Safety", "Tool Policy", "Memory"],
+          "Analyzes a security risk in skill-based agents where malicious skills preserve task success while amplifying hidden resource use.",
+        tags: ["Agent Security", "Tool Use", "Skills"],
       },
       {
         type: "Paper",
-        title: "Multi-Agent AI Safety as an Institutional Design Problem",
+        title: "AVA-Encoder: Towards Agent-Native Video Representation Learning",
         source: "arXiv",
-        date: "2026-08-10",
-        href: "https://arxiv.org/abs/2608.09828",
+        date: "2026-08-12",
+        href: "https://arxiv.org/abs/2608.12313",
         summary:
-          "Frames multi-agent safety around delegation rules, authority state, guards, and fallback paths, making it a useful systems view of agent governance.",
-        tags: ["Multi-Agent Systems", "Safety", "Governance"],
+          "Targets video representations designed for creative agents, linking multimodal understanding with agent-native generation workflows.",
+        tags: ["Multimodal Agents", "Video", "Representation Learning"],
       },
 
       {
         type: "GitHub",
-        title: "HKUDS/nanobot",
+        title: "deepset-ai/haystack",
         source: "GitHub",
-        date: "Updated 2026-08-11",
-        href: "https://github.com/HKUDS/nanobot",
+        date: "Updated 2026-08-13",
+        href: "https://github.com/deepset-ai/haystack",
         summary:
-          "A lightweight self-hosted personal agent framework with tools, memory, MCP, and multi-agent workflows to study compact agent runtime design.",
-        tags: ["Agent Framework", "Memory", "MCP"],
+          "A modular orchestration framework for production LLM applications, retrieval pipelines, memory, routing, and agent workflows.",
+        tags: ["Agent Framework", "RAG", "Orchestration"],
       },
       {
         type: "GitHub",
-        title: "agentic-box/memora",
+        title: "Team-Commonly/commonly",
         source: "GitHub",
-        date: "Updated 2026-08-12",
-        href: "https://github.com/agentic-box/memora",
+        date: "Updated 2026-08-13",
+        href: "https://github.com/Team-Commonly/commonly",
         summary:
-          "A persistent collective-memory layer for agents with deduplication, semantic search, lineage, and a graph UI for inspecting evolving context.",
-        tags: ["Agent Memory", "Semantic Search", "Context"],
+          "An open-source workspace for humans and cross-vendor AI agents, useful for studying multi-agent runtime, memory, and workstation design.",
+        tags: ["Multi-Agent", "Agent Runtime", "Memory"],
       },
     ],
   },
