@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-16";
+export const lastUpdated = "2026-08-17";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,33 +28,43 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Hit-and-Run Mixes as Fast as the Ball Walk",
+        title: "Gradient Gibbs measures with non-convex potentials and the universality class of the Gaussian Free Field",
         source: "arXiv",
-        date: "2026-08-13",
-        href: "https://arxiv.org/abs/2608.13487",
+        date: "2026-08-14",
+        href: "https://arxiv.org/abs/2608.14526",
         summary:
-          "Sharpens the mixing-time picture for hit-and-run sampling on isotropic convex bodies, connecting probability, convex geometry, and randomized algorithms.",
-        tags: ["Probability", "Sampling", "Convex Geometry"],
+          "Extends Gaussian Free Field scaling-limit results from convex settings to a broad non-convex class of gradient interface models.",
+        tags: ["Probability", "Statistical Mechanics", "Gaussian Free Field"],
       },
       {
         type: "Paper",
-        title: "The data geometry of masking diffusion: Certified-optimal schedules via unmasking growth complexity",
+        title: "On quantitative sufficient second-order optimality conditions for elliptic optimal control problems",
         source: "arXiv",
-        date: "2026-08-13",
-        href: "https://arxiv.org/abs/2608.13520",
+        date: "2026-08-14",
+        href: "https://arxiv.org/abs/2608.14525",
         summary:
-          "Introduces a path-level complexity measure for discrete diffusion schedules, a useful bridge between statistical geometry and practical generative modeling.",
-        tags: ["Statistics", "Diffusion", "Data Geometry"],
+          "Develops quantitative stability conditions for semilinear elliptic optimal-control problems without relying on Tikhonov regularization.",
+        tags: ["Optimization", "Optimal Control", "PDEs"],
       },
       {
         type: "Paper",
-        title: "Wasserstein stability of the zero cell of a Poisson hyperplane tessellation under directional perturbations",
+        title: "Nodal discontinuous Galerkin methods for non-ideal equations of state: pressure equilibrium preservation and entropy correction",
         source: "arXiv",
-        date: "2026-08-13",
-        href: "https://arxiv.org/abs/2608.13452",
+        date: "2026-08-14",
+        href: "https://arxiv.org/abs/2608.14506",
         summary:
-          "Gives quantitative stability bounds for random tessellations, useful for thinking about stochastic geometry under model perturbations.",
-        tags: ["Probability", "Stochastic Geometry", "Wasserstein"],
+          "Studies structure-preserving DG schemes for real-fluid simulation, balancing pressure-equilibrium preservation with entropy corrections.",
+        tags: ["Numerical Analysis", "Discontinuous Galerkin", "Scientific Computing"],
+      },
+      {
+        type: "GitHub",
+        title: "statsmodels/statsmodels",
+        source: "GitHub",
+        date: "Updated 2026-08-17",
+        href: "https://github.com/statsmodels/statsmodels",
+        summary:
+          "A mature Python library for statistical modeling and econometrics, useful for learning how rigorous statistical APIs are maintained in production.",
+        tags: ["Statistics", "Econometrics", "Python"],
       },
       {
         type: "GitHub",
@@ -65,26 +75,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A broad numerical and statistical standard library for JavaScript and TypeScript, useful for seeing how mathematical computing primitives are engineered for production environments.",
         tags: ["Numerical Computing", "Statistics", "TypeScript"],
-      },
-      {
-        type: "GitHub",
-        title: "jasp-stats/jasp-desktop",
-        source: "GitHub",
-        date: "Updated 2026-08-15",
-        href: "https://github.com/jasp-stats/jasp-desktop",
-        summary:
-          "A polished open-source statistics package spanning Bayesian and frequentist workflows, worth tracking for accessible statistical computing design.",
-        tags: ["Statistics", "Bayesian Methods", "Desktop App"],
-      },
-      {
-        type: "GitHub",
-        title: "mne-tools/mne-python",
-        source: "GitHub",
-        date: "Updated 2026-08-16",
-        href: "https://github.com/mne-tools/mne-python",
-        summary:
-          "A mature Python toolkit for MEG/EEG analysis that shows how statistical signal processing, visualization, and reproducible scientific workflows fit together.",
-        tags: ["Statistics", "Signal Processing", "Python"],
       },
     ],
   },
@@ -97,33 +87,43 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
+        title: "Generation-Powered Inference for Distribution-Valued Outcomes",
         source: "arXiv",
-        date: "2026-08-13",
-        href: "https://arxiv.org/abs/2608.13524",
+        date: "2026-08-14",
+        href: "https://arxiv.org/abs/2608.14542",
         summary:
-          "Extends speculative decoding with diffusion-based draft trees, a practical direction for faster language-model inference without changing outputs.",
-        tags: ["LLM Inference", "Speculative Decoding", "Diffusion"],
+          "Builds statistical inference tools that can use imperfect generative-model outputs for distribution-valued quantities without assuming the model is correct.",
+        tags: ["Statistical ML", "Generative Models", "Inference"],
       },
       {
         type: "Paper",
-        title: "Defensive Boosting for Online Probabilistic Forecasting",
+        title: "ArGEnT: Arbitrary Geometry-encoded Transformer for Operator Learning",
         source: "arXiv",
-        date: "2026-08-13",
-        href: "https://arxiv.org/abs/2608.13554",
+        date: "Updated 2026-08-14",
+        href: "https://arxiv.org/abs/2602.11626",
         summary:
-          "Studies online probabilistic forecasting against adaptive sequences, connecting boosting guarantees with robust calibration-style evaluation.",
-        tags: ["Online Learning", "Forecasting", "Boosting"],
+          "Proposes a geometry-conditioned transformer for operator learning on irregular domains, a strong direction for scientific machine learning.",
+        tags: ["Operator Learning", "Transformers", "Scientific ML"],
       },
       {
         type: "Paper",
-        title: "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
+        title: "Marionette: Predicting World States, Rendering Geometry, Painting Appearance",
         source: "arXiv",
-        date: "2026-08-13",
-        href: "https://arxiv.org/abs/2608.13545",
+        date: "2026-08-14",
+        href: "https://arxiv.org/abs/2608.14530",
         summary:
-          "Uses a deliberately controlled pretraining curriculum to study what language models learn under bounded knowledge exposure.",
-        tags: ["Language Models", "Pretraining", "Evaluation"],
+          "Separates world-state prediction, deterministic geometry rendering, and neural appearance synthesis to improve controllability in interactive world models.",
+        tags: ["World Models", "Computer Vision", "Generative Models"],
+      },
+      {
+        type: "GitHub",
+        title: "unslothai/unsloth",
+        source: "GitHub",
+        date: "Updated 2026-08-17",
+        href: "https://github.com/unslothai/unsloth",
+        summary:
+          "A fast local training and fine-tuning stack for LLMs and diffusion models, worth following for practical efficiency techniques.",
+        tags: ["LLM Fine-Tuning", "Efficiency", "PyTorch"],
       },
       {
         type: "GitHub",
@@ -134,26 +134,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A production-oriented LLM inference stack for NVIDIA GPUs, worth following for kernels, runtime orchestration, and deployment performance.",
         tags: ["LLM Serving", "Inference", "CUDA"],
-      },
-      {
-        type: "GitHub",
-        title: "huggingface/diffusers",
-        source: "GitHub",
-        date: "Updated 2026-08-16",
-        href: "https://github.com/huggingface/diffusers",
-        summary:
-          "A widely used PyTorch library for image, video, and audio diffusion models, useful for tracking modern generative-model APIs and pipelines.",
-        tags: ["Diffusion", "PyTorch", "Generative Models"],
-      },
-      {
-        type: "GitHub",
-        title: "MakazhanAlpamys/Soup",
-        source: "GitHub",
-        date: "Updated 2026-08-16",
-        href: "https://github.com/MakazhanAlpamys/Soup",
-        summary:
-          "A YAML-driven LLM fine-tuning project focused on layer streaming, useful for studying how training workflows can fit tighter local-GPU memory budgets.",
-        tags: ["LLM Fine-Tuning", "PyTorch", "Training Systems"],
       },
     ],
   },
@@ -166,63 +146,63 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Vero: Can AI Agents Build Formally Verified Software Repositories?",
+        title: "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
         source: "arXiv",
-        date: "2026-08-13",
-        href: "https://arxiv.org/abs/2608.13522",
+        date: "2026-08-14",
+        href: "https://arxiv.org/abs/2608.14380",
         summary:
-          "Tests whether coding agents can produce full repositories with machine-checked proofs, pushing agent evaluation toward verified software outcomes.",
-        tags: ["Coding Agents", "Formal Verification", "Benchmarks"],
+          "Introduces checkpoint-based recovery for long-horizon agents so failures can be rolled back across both context and environment state.",
+        tags: ["Long-Horizon Agents", "Recovery", "Runtime Systems"],
       },
       {
         type: "Paper",
-        title: "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+        title: "ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond",
         source: "arXiv",
-        date: "2026-08-13",
-        href: "https://arxiv.org/abs/2608.13547",
+        date: "2026-08-14",
+        href: "https://arxiv.org/abs/2608.14354",
         summary:
-          "Shows how command transport and quoting layers can mask coding-agent failures, a practical reminder that tool-use evaluation must validate final state.",
-        tags: ["Tool Use", "Coding Agents", "Evaluation"],
+          "Targets continuity, recovery, and compute allocation for autonomous research agents working across extended scientific workflows.",
+        tags: ["Research Agents", "Scientific Discovery", "Long-Horizon"],
       },
       {
         type: "Paper",
-        title: "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+        title: "ATLAS: Discovering Agent Strategies through LLM-Guided Abstraction and Automata Learning",
         source: "arXiv",
-        date: "2026-08-13",
-        href: "https://arxiv.org/abs/2608.13560",
+        date: "2026-08-14",
+        href: "https://arxiv.org/abs/2608.14352",
         summary:
-          "Frames design generation as a long-horizon model-harness loop, emphasizing experience accumulation and recursive improvement in agentic workflows.",
-        tags: ["Agentic Design", "Long-Horizon", "Harnesses"],
+          "Recovers interpretable finite-state strategy models from agent trajectories, moving evaluation beyond final success rates.",
+        tags: ["Agent Evaluation", "Strategy Discovery", "Automata Learning"],
       },
       {
         type: "Paper",
-        title: "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+        title: "The Past and Future of AI Scientists",
         source: "arXiv",
-        date: "2026-08-13",
-        href: "https://arxiv.org/abs/2608.13558",
+        date: "2026-08-14",
+        href: "https://arxiv.org/abs/2608.14407",
         summary:
-          "Explores AI-scientist workflows that reason over multimodal scientific evidence rather than only text, code, or precomputed summaries.",
-        tags: ["AI Scientist", "Multimodal", "Research Agents"],
+          "Surveys AI-scientist systems from early self-driving laboratories to foundation-model research agents connected to tools, data, and experiments.",
+        tags: ["AI Scientists", "Survey", "Research Automation"],
+      },
+      {
+        type: "GitHub",
+        title: "elizaOS/eliza",
+        source: "GitHub",
+        date: "Updated 2026-08-17",
+        href: "https://github.com/elizaOS/eliza",
+        summary:
+          "An open-source agentic operating system, useful for studying practical abstractions around agent runtimes, memory, and integrations.",
+        tags: ["Agent Framework", "Agent OS", "TypeScript"],
       },
       {
         type: "GitHub",
         title: "stablyai/orca",
         source: "GitHub",
-        date: "Updated 2026-08-16",
+        date: "Updated 2026-08-17",
         href: "https://github.com/stablyai/orca",
         summary:
           "An agent development environment for coordinating fleets of coding agents across desktop, mobile, and VPS contexts, worth watching for practical multi-agent operations.",
         tags: ["Coding Agents", "Agent Infrastructure", "Multi-Agent"],
-      },
-      {
-        type: "GitHub",
-        title: "strukto-ai/mirage",
-        source: "GitHub",
-        date: "Updated 2026-08-16",
-        href: "https://github.com/strukto-ai/mirage",
-        summary:
-          "A virtual filesystem layer for AI agents, interesting as infrastructure for safer and more observable tool-mediated workspaces.",
-        tags: ["Agent Tools", "Virtual Filesystem", "Sandboxing"],
       },
     ],
   },
