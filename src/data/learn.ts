@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-17";
+export const lastUpdated = "2026-08-18";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -26,6 +26,16 @@ export const learnTopics: LearnTopic[] = [
     description:
       "Papers and repositories that connect rigorous mathematical ideas with modeling, simulation, and computational tools.",
     resources: [
+      {
+        type: "Paper",
+        title: "A Local Central Limit Theorem for Clique Counts in Sparse Random Graphs",
+        source: "arXiv",
+        date: "2026-08-17",
+        href: "https://arxiv.org/abs/2608.16882",
+        summary:
+          "Advances local central limit theory for subgraph counts in sparse Erdős-Rényi graphs, connecting probability, combinatorics, and random-graph asymptotics.",
+        tags: ["Probability", "Random Graphs", "Limit Theorems"],
+      },
       {
         type: "Paper",
         title: "Gradient Gibbs measures with non-convex potentials and the universality class of the Gaussian Free Field",
@@ -87,6 +97,16 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "Q-based Variational Inverse Reinforcement Learning",
+        source: "arXiv",
+        date: "2026-08-17",
+        href: "https://arxiv.org/abs/2608.16888",
+        summary:
+          "Introduces a Bayesian inverse-reinforcement-learning method that learns a variational distribution over optimal Q-values to recover reward uncertainty from demonstrations.",
+        tags: ["Reinforcement Learning", "Bayesian ML", "Preference Learning"],
+      },
+      {
+        type: "Paper",
         title: "Generation-Powered Inference for Distribution-Valued Outcomes",
         source: "arXiv",
         date: "2026-08-14",
@@ -146,6 +166,16 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
+        source: "arXiv",
+        date: "2026-08-17",
+        href: "https://arxiv.org/abs/2608.16889",
+        summary:
+          "Combines an LLM agent, transition-aware memory, and frozen vision-language-action policies to make long-horizon robot manipulation more reliable.",
+        tags: ["VLM Agents", "Robotics", "Memory"],
+      },
+      {
+        type: "Paper",
         title: "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
         source: "arXiv",
         date: "2026-08-14",
@@ -193,16 +223,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "An open-source agentic operating system, useful for studying practical abstractions around agent runtimes, memory, and integrations.",
         tags: ["Agent Framework", "Agent OS", "TypeScript"],
-      },
-      {
-        type: "GitHub",
-        title: "stablyai/orca",
-        source: "GitHub",
-        date: "Updated 2026-08-17",
-        href: "https://github.com/stablyai/orca",
-        summary:
-          "An agent development environment for coordinating fleets of coding agents across desktop, mobile, and VPS contexts, worth watching for practical multi-agent operations.",
-        tags: ["Coding Agents", "Agent Infrastructure", "Multi-Agent"],
       },
     ],
   },
