@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-18";
+export const lastUpdated = "2026-08-19";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,6 +28,36 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "The concentration game: Bayesian updating, regret, and information",
+        source: "arXiv",
+        date: "2026-08-18",
+        href: "https://arxiv.org/abs/2608.18061",
+        summary:
+          "Frames Bayesian updating and exponential-weights regret through one zero-sum game, a useful bridge between probability, statistics, and online learning.",
+        tags: ["Probability", "Statistics", "Online Learning"],
+      },
+      {
+        type: "Paper",
+        title: "Global Optimization of Flexible District Heating Networks",
+        source: "arXiv",
+        date: "2026-08-18",
+        href: "https://arxiv.org/abs/2608.18046",
+        summary:
+          "Applies global optimization to low-carbon district heating networks with heterogeneous sources, storage, and meshed topology.",
+        tags: ["Optimization", "Energy Systems", "Networks"],
+      },
+      {
+        type: "Paper",
+        title: "Unique Ergodicity for the Projective Process of the 2D Navier--Stokes Equation with Nondegenerate Noise",
+        source: "arXiv",
+        date: "2026-08-18",
+        href: "https://arxiv.org/abs/2608.18075",
+        summary:
+          "Studies ergodic behavior for stochastic 2D Navier--Stokes dynamics, tying probability, PDEs, and long-time behavior together.",
+        tags: ["Probability", "Stochastic PDEs", "Dynamics"],
+      },
+      {
+        type: "Paper",
         title: "A Local Central Limit Theorem for Clique Counts in Sparse Random Graphs",
         source: "arXiv",
         date: "2026-08-17",
@@ -37,54 +67,24 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Probability", "Random Graphs", "Limit Theorems"],
       },
       {
-        type: "Paper",
-        title: "Gradient Gibbs measures with non-convex potentials and the universality class of the Gaussian Free Field",
-        source: "arXiv",
-        date: "2026-08-14",
-        href: "https://arxiv.org/abs/2608.14526",
-        summary:
-          "Extends Gaussian Free Field scaling-limit results from convex settings to a broad non-convex class of gradient interface models.",
-        tags: ["Probability", "Statistical Mechanics", "Gaussian Free Field"],
-      },
-      {
-        type: "Paper",
-        title: "On quantitative sufficient second-order optimality conditions for elliptic optimal control problems",
-        source: "arXiv",
-        date: "2026-08-14",
-        href: "https://arxiv.org/abs/2608.14525",
-        summary:
-          "Develops quantitative stability conditions for semilinear elliptic optimal-control problems without relying on Tikhonov regularization.",
-        tags: ["Optimization", "Optimal Control", "PDEs"],
-      },
-      {
-        type: "Paper",
-        title: "Nodal discontinuous Galerkin methods for non-ideal equations of state: pressure equilibrium preservation and entropy correction",
-        source: "arXiv",
-        date: "2026-08-14",
-        href: "https://arxiv.org/abs/2608.14506",
-        summary:
-          "Studies structure-preserving DG schemes for real-fluid simulation, balancing pressure-equilibrium preservation with entropy corrections.",
-        tags: ["Numerical Analysis", "Discontinuous Galerkin", "Scientific Computing"],
-      },
-      {
-        type: "GitHub",
-        title: "statsmodels/statsmodels",
-        source: "GitHub",
-        date: "Updated 2026-08-17",
-        href: "https://github.com/statsmodels/statsmodels",
-        summary:
-          "A mature Python library for statistical modeling and econometrics, useful for learning how rigorous statistical APIs are maintained in production.",
-        tags: ["Statistics", "Econometrics", "Python"],
-      },
-      {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-08-16",
+        date: "Updated 2026-08-19",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical and statistical standard library for JavaScript and TypeScript, useful for seeing how mathematical computing primitives are engineered for production environments.",
         tags: ["Numerical Computing", "Statistics", "TypeScript"],
+      },
+      {
+        type: "GitHub",
+        title: "root-project/root",
+        source: "GitHub",
+        date: "Updated 2026-08-19",
+        href: "https://github.com/root-project/root",
+        summary:
+          "A mature scientific data-analysis framework whose numerical, statistical, and visualization tools show large-scale scientific software design.",
+        tags: ["Scientific Computing", "Statistics", "C++"],
       },
     ],
   },
@@ -97,6 +97,36 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
+        source: "arXiv",
+        date: "2026-08-18",
+        href: "https://arxiv.org/abs/2608.18066",
+        summary:
+          "Stress-tests memory-based self-improving agents and highlights variance, task ordering, and underspecification risks that matter for reliable ML systems.",
+        tags: ["Agentic ML", "Evaluation", "Reliability"],
+      },
+      {
+        type: "Paper",
+        title: "TokEval: A Tokenizer Evaluation Suite",
+        source: "arXiv",
+        date: "2026-08-18",
+        href: "https://arxiv.org/abs/2608.18062",
+        summary:
+          "Offers a focused evaluation suite for tokenizer choices, an often under-measured component that directly affects language-model behavior.",
+        tags: ["Tokenization", "Evaluation", "Language Models"],
+      },
+      {
+        type: "Paper",
+        title: "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation",
+        source: "arXiv",
+        date: "2026-08-18",
+        href: "https://arxiv.org/abs/2608.18076",
+        summary:
+          "Reframes image-generation data design around co-evolving capabilities instead of isolated task datasets, useful for thinking about data curation strategy.",
+        tags: ["Data Curation", "Image Generation", "Generalist Models"],
+      },
+      {
+        type: "Paper",
         title: "Q-based Variational Inverse Reinforcement Learning",
         source: "arXiv",
         date: "2026-08-17",
@@ -106,50 +136,20 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Reinforcement Learning", "Bayesian ML", "Preference Learning"],
       },
       {
-        type: "Paper",
-        title: "Generation-Powered Inference for Distribution-Valued Outcomes",
-        source: "arXiv",
-        date: "2026-08-14",
-        href: "https://arxiv.org/abs/2608.14542",
-        summary:
-          "Builds statistical inference tools that can use imperfect generative-model outputs for distribution-valued quantities without assuming the model is correct.",
-        tags: ["Statistical ML", "Generative Models", "Inference"],
-      },
-      {
-        type: "Paper",
-        title: "ArGEnT: Arbitrary Geometry-encoded Transformer for Operator Learning",
-        source: "arXiv",
-        date: "Updated 2026-08-14",
-        href: "https://arxiv.org/abs/2602.11626",
-        summary:
-          "Proposes a geometry-conditioned transformer for operator learning on irregular domains, a strong direction for scientific machine learning.",
-        tags: ["Operator Learning", "Transformers", "Scientific ML"],
-      },
-      {
-        type: "Paper",
-        title: "Marionette: Predicting World States, Rendering Geometry, Painting Appearance",
-        source: "arXiv",
-        date: "2026-08-14",
-        href: "https://arxiv.org/abs/2608.14530",
-        summary:
-          "Separates world-state prediction, deterministic geometry rendering, and neural appearance synthesis to improve controllability in interactive world models.",
-        tags: ["World Models", "Computer Vision", "Generative Models"],
-      },
-      {
         type: "GitHub",
-        title: "unslothai/unsloth",
+        title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-08-17",
-        href: "https://github.com/unslothai/unsloth",
+        date: "Updated 2026-08-19",
+        href: "https://github.com/vllm-project/vllm",
         summary:
-          "A fast local training and fine-tuning stack for LLMs and diffusion models, worth following for practical efficiency techniques.",
-        tags: ["LLM Fine-Tuning", "Efficiency", "PyTorch"],
+          "A high-throughput LLM inference and serving engine worth following for practical scheduling, memory management, and deployment tradeoffs.",
+        tags: ["LLM Serving", "Inference", "Systems"],
       },
       {
         type: "GitHub",
         title: "NVIDIA/TensorRT-LLM",
         source: "GitHub",
-        date: "Updated 2026-08-16",
+        date: "Updated 2026-08-19",
         href: "https://github.com/NVIDIA/TensorRT-LLM",
         summary:
           "A production-oriented LLM inference stack for NVIDIA GPUs, worth following for kernels, runtime orchestration, and deployment performance.",
@@ -166,13 +166,33 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
+        title: "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
         source: "arXiv",
-        date: "2026-08-17",
-        href: "https://arxiv.org/abs/2608.16889",
+        date: "2026-08-18",
+        href: "https://arxiv.org/abs/2608.18050",
         summary:
-          "Combines an LLM agent, transition-aware memory, and frozen vision-language-action policies to make long-horizon robot manipulation more reliable.",
-        tags: ["VLM Agents", "Robotics", "Memory"],
+          "Proposes versioned workspaces for agents editing persistent artifacts, directly relevant to reliable long-running knowledge work.",
+        tags: ["Agent Workspaces", "Versioning", "Knowledge Work"],
+      },
+      {
+        type: "Paper",
+        title: "StartupBench: Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows",
+        source: "arXiv",
+        date: "2026-08-18",
+        href: "https://arxiv.org/abs/2608.17800",
+        summary:
+          "Benchmarks agents on market-validated startup workflows, pushing evaluation toward realistic end-to-end tasks rather than toy assignments.",
+        tags: ["Agent Benchmarks", "Workflows", "Evaluation"],
+      },
+      {
+        type: "Paper",
+        title: "CABLE: Extending the Reach of Memory Retrieval via Complementary Antecedent-Based Linking and Expansion",
+        source: "arXiv",
+        date: "2026-08-18",
+        href: "https://arxiv.org/abs/2608.17911",
+        summary:
+          "Studies evidence reachability in bounded memory interfaces, a practical bottleneck for agents that operate across long workflows and sessions.",
+        tags: ["Agent Memory", "Retrieval", "Long Context"],
       },
       {
         type: "Paper",
@@ -185,44 +205,24 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Long-Horizon Agents", "Recovery", "Runtime Systems"],
       },
       {
-        type: "Paper",
-        title: "ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond",
-        source: "arXiv",
-        date: "2026-08-14",
-        href: "https://arxiv.org/abs/2608.14354",
+        type: "GitHub",
+        title: "Team-Commonly/commonly",
+        source: "GitHub",
+        date: "Updated 2026-08-19",
+        href: "https://github.com/Team-Commonly/commonly",
         summary:
-          "Targets continuity, recovery, and compute allocation for autonomous research agents working across extended scientific workflows.",
-        tags: ["Research Agents", "Scientific Discovery", "Long-Horizon"],
-      },
-      {
-        type: "Paper",
-        title: "ATLAS: Discovering Agent Strategies through LLM-Guided Abstraction and Automata Learning",
-        source: "arXiv",
-        date: "2026-08-14",
-        href: "https://arxiv.org/abs/2608.14352",
-        summary:
-          "Recovers interpretable finite-state strategy models from agent trajectories, moving evaluation beyond final success rates.",
-        tags: ["Agent Evaluation", "Strategy Discovery", "Automata Learning"],
-      },
-      {
-        type: "Paper",
-        title: "The Past and Future of AI Scientists",
-        source: "arXiv",
-        date: "2026-08-14",
-        href: "https://arxiv.org/abs/2608.14407",
-        summary:
-          "Surveys AI-scientist systems from early self-driving laboratories to foundation-model research agents connected to tools, data, and experiments.",
-        tags: ["AI Scientists", "Survey", "Research Automation"],
+          "An open-source room for humans and cross-vendor agents, useful for studying multi-agent collaboration, memory, and orchestration patterns.",
+        tags: ["Multi-Agent", "Agent Framework", "Collaboration"],
       },
       {
         type: "GitHub",
-        title: "elizaOS/eliza",
+        title: "langgenius/dify",
         source: "GitHub",
-        date: "Updated 2026-08-17",
-        href: "https://github.com/elizaOS/eliza",
+        date: "Updated 2026-08-19",
+        href: "https://github.com/langgenius/dify",
         summary:
-          "An open-source agentic operating system, useful for studying practical abstractions around agent runtimes, memory, and integrations.",
-        tags: ["Agent Framework", "Agent OS", "TypeScript"],
+          "A widely used platform for agentic workflows and RAG pipelines, useful for learning how tools, retrieval, and deployment are packaged for teams.",
+        tags: ["Agent Workflows", "RAG", "Platform"],
       },
     ],
   },
