@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-19";
+export const lastUpdated = "2026-08-20";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,49 +28,49 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "The concentration game: Bayesian updating, regret, and information",
+        title: "Probabilistic Representation and Convergence of Gromov-Wasserstein Gradient Flows",
         source: "arXiv",
-        date: "2026-08-18",
-        href: "https://arxiv.org/abs/2608.18061",
+        date: "2026-08-19",
+        href: "https://arxiv.org/abs/2608.19198",
         summary:
-          "Frames Bayesian updating and exponential-weights regret through one zero-sum game, a useful bridge between probability, statistics, and online learning.",
-        tags: ["Probability", "Statistics", "Online Learning"],
+          "Develops a probabilistic view of Gromov-Wasserstein entropy flows, connecting optimal transport geometry with diffusion-style convergence analysis.",
+        tags: ["Optimal Transport", "Probability", "Gradient Flows"],
       },
       {
         type: "Paper",
-        title: "Global Optimization of Flexible District Heating Networks",
+        title: "Entry growth in Gaussian elimination",
         source: "arXiv",
-        date: "2026-08-18",
-        href: "https://arxiv.org/abs/2608.18046",
+        date: "2026-08-19",
+        href: "https://arxiv.org/abs/2608.19189",
         summary:
-          "Applies global optimization to low-carbon district heating networks with heterogeneous sources, storage, and meshed topology.",
-        tags: ["Optimization", "Energy Systems", "Networks"],
+          "Revisits a classical numerical-linear-algebra stability question by studying how pivoting can amplify entries during Gaussian elimination.",
+        tags: ["Numerical Linear Algebra", "Stability", "Algorithms"],
       },
       {
         type: "Paper",
-        title: "Unique Ergodicity for the Projective Process of the 2D Navier--Stokes Equation with Nondegenerate Noise",
+        title: "Constrained minmax density transportation for linear parabolic PDEs: a numerical optimal control perspective",
         source: "arXiv",
-        date: "2026-08-18",
-        href: "https://arxiv.org/abs/2608.18075",
+        date: "2026-08-19",
+        href: "https://arxiv.org/abs/2608.19170",
         summary:
-          "Studies ergodic behavior for stochastic 2D Navier--Stokes dynamics, tying probability, PDEs, and long-time behavior together.",
-        tags: ["Probability", "Stochastic PDEs", "Dynamics"],
+          "Builds a numerical optimal-control framework for robust density transport in noisy parabolic PDEs such as the heat equation.",
+        tags: ["Optimal Control", "PDEs", "Numerics"],
       },
       {
         type: "Paper",
-        title: "A Local Central Limit Theorem for Clique Counts in Sparse Random Graphs",
+        title: "Continuous-Time Reinforcement Learning for Controlled Hawkes Jump-Diffusions",
         source: "arXiv",
-        date: "2026-08-17",
-        href: "https://arxiv.org/abs/2608.16882",
+        date: "2026-08-19",
+        href: "https://arxiv.org/abs/2608.19151",
         summary:
-          "Advances local central limit theory for subgraph counts in sparse Erdős-Rényi graphs, connecting probability, combinatorics, and random-graph asymptotics.",
-        tags: ["Probability", "Random Graphs", "Limit Theorems"],
+          "Studies control of path-dependent Hawkes jump-diffusions, a useful bridge between stochastic processes, optimization, and learning algorithms.",
+        tags: ["Stochastic Control", "Hawkes Processes", "Reinforcement Learning"],
       },
       {
         type: "GitHub",
         title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-08-19",
+        date: "Updated 2026-08-20",
         href: "https://github.com/stdlib-js/stdlib",
         summary:
           "A broad numerical and statistical standard library for JavaScript and TypeScript, useful for seeing how mathematical computing primitives are engineered for production environments.",
@@ -80,7 +80,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "root-project/root",
         source: "GitHub",
-        date: "Updated 2026-08-19",
+        date: "Updated 2026-08-20",
         href: "https://github.com/root-project/root",
         summary:
           "A mature scientific data-analysis framework whose numerical, statistical, and visualization tools show large-scale scientific software design.",
@@ -97,6 +97,36 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning",
+        source: "arXiv",
+        date: "2026-08-19",
+        href: "https://arxiv.org/abs/2608.19181",
+        summary:
+          "Improves long-context distillation by calibrating groups of student responses rather than relying only on token-level teacher likelihood.",
+        tags: ["Distillation", "Long Context", "Reasoning"],
+      },
+      {
+        type: "Paper",
+        title: "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
+        source: "arXiv",
+        date: "2026-08-19",
+        href: "https://arxiv.org/abs/2608.19171",
+        summary:
+          "Adds uncertainty estimates to continuous-time attention models for irregular time series without requiring a second inference pass.",
+        tags: ["Attention", "Uncertainty", "Time Series"],
+      },
+      {
+        type: "Paper",
+        title: "Learned, Then Lost: A Measured Single-Example Counterfactual in Pre-training",
+        source: "arXiv",
+        date: "2026-08-19",
+        href: "https://arxiv.org/abs/2608.19168",
+        summary:
+          "Measures the effect of one pretraining example through repeated counterfactual training runs, grounding data-attribution questions in direct evidence.",
+        tags: ["Pretraining", "Data Attribution", "Language Models"],
+      },
+      {
+        type: "Paper",
         title: "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
         source: "arXiv",
         date: "2026-08-18",
@@ -104,36 +134,6 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "Stress-tests memory-based self-improving agents and highlights variance, task ordering, and underspecification risks that matter for reliable ML systems.",
         tags: ["Agentic ML", "Evaluation", "Reliability"],
-      },
-      {
-        type: "Paper",
-        title: "TokEval: A Tokenizer Evaluation Suite",
-        source: "arXiv",
-        date: "2026-08-18",
-        href: "https://arxiv.org/abs/2608.18062",
-        summary:
-          "Offers a focused evaluation suite for tokenizer choices, an often under-measured component that directly affects language-model behavior.",
-        tags: ["Tokenization", "Evaluation", "Language Models"],
-      },
-      {
-        type: "Paper",
-        title: "From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation",
-        source: "arXiv",
-        date: "2026-08-18",
-        href: "https://arxiv.org/abs/2608.18076",
-        summary:
-          "Reframes image-generation data design around co-evolving capabilities instead of isolated task datasets, useful for thinking about data curation strategy.",
-        tags: ["Data Curation", "Image Generation", "Generalist Models"],
-      },
-      {
-        type: "Paper",
-        title: "Q-based Variational Inverse Reinforcement Learning",
-        source: "arXiv",
-        date: "2026-08-17",
-        href: "https://arxiv.org/abs/2608.16888",
-        summary:
-          "Introduces a Bayesian inverse-reinforcement-learning method that learns a variational distribution over optimal Q-values to recover reward uncertainty from demonstrations.",
-        tags: ["Reinforcement Learning", "Bayesian ML", "Preference Learning"],
       },
       {
         type: "GitHub",
@@ -149,7 +149,7 @@ export const learnTopics: LearnTopic[] = [
         type: "GitHub",
         title: "NVIDIA/TensorRT-LLM",
         source: "GitHub",
-        date: "Updated 2026-08-19",
+        date: "Updated 2026-08-20",
         href: "https://github.com/NVIDIA/TensorRT-LLM",
         summary:
           "A production-oriented LLM inference stack for NVIDIA GPUs, worth following for kernels, runtime orchestration, and deployment performance.",
@@ -166,6 +166,36 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
+        title: "SPADE: Self-Play in Adaptive Synthetic Executable Environments",
+        source: "arXiv",
+        date: "2026-08-19",
+        href: "https://arxiv.org/abs/2608.19197",
+        summary:
+          "Introduces adaptive executable environments for language-agent self-play, aiming to keep training goals evolving as agents improve.",
+        tags: ["Self-Play", "Agent Training", "Synthetic Environments"],
+      },
+      {
+        type: "Paper",
+        title: "Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication",
+        source: "arXiv",
+        date: "2026-08-19",
+        href: "https://arxiv.org/abs/2608.19161",
+        summary:
+          "Targets hidden-state communication between agents with activation-aware monitoring, a concrete safety issue beyond visible chat transcripts.",
+        tags: ["Multi-Agent Safety", "Monitoring", "Latent Communication"],
+      },
+      {
+        type: "Paper",
+        title: "What is Missing from AI Post-Training AI: An Empirical Analysis",
+        source: "arXiv",
+        date: "2026-08-19",
+        href: "https://arxiv.org/abs/2608.19072",
+        summary:
+          "Separates execution skill from improvement skill in agents that run post-training loops, clarifying what still limits AI-for-AI workflows.",
+        tags: ["Post-Training", "Agent Evaluation", "AI-for-AI"],
+      },
+      {
+        type: "Paper",
         title: "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents",
         source: "arXiv",
         date: "2026-08-18",
@@ -175,44 +205,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Agent Workspaces", "Versioning", "Knowledge Work"],
       },
       {
-        type: "Paper",
-        title: "StartupBench: Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows",
-        source: "arXiv",
-        date: "2026-08-18",
-        href: "https://arxiv.org/abs/2608.17800",
-        summary:
-          "Benchmarks agents on market-validated startup workflows, pushing evaluation toward realistic end-to-end tasks rather than toy assignments.",
-        tags: ["Agent Benchmarks", "Workflows", "Evaluation"],
-      },
-      {
-        type: "Paper",
-        title: "CABLE: Extending the Reach of Memory Retrieval via Complementary Antecedent-Based Linking and Expansion",
-        source: "arXiv",
-        date: "2026-08-18",
-        href: "https://arxiv.org/abs/2608.17911",
-        summary:
-          "Studies evidence reachability in bounded memory interfaces, a practical bottleneck for agents that operate across long workflows and sessions.",
-        tags: ["Agent Memory", "Retrieval", "Long Context"],
-      },
-      {
-        type: "Paper",
-        title: "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents",
-        source: "arXiv",
-        date: "2026-08-14",
-        href: "https://arxiv.org/abs/2608.14380",
-        summary:
-          "Introduces checkpoint-based recovery for long-horizon agents so failures can be rolled back across both context and environment state.",
-        tags: ["Long-Horizon Agents", "Recovery", "Runtime Systems"],
-      },
-      {
         type: "GitHub",
-        title: "Team-Commonly/commonly",
+        title: "agentscope-ai/ReMe",
         source: "GitHub",
-        date: "Updated 2026-08-19",
-        href: "https://github.com/Team-Commonly/commonly",
+        date: "Updated 2026-08-20",
+        href: "https://github.com/agentscope-ai/ReMe",
         summary:
-          "An open-source room for humans and cross-vendor agents, useful for studying multi-agent collaboration, memory, and orchestration patterns.",
-        tags: ["Multi-Agent", "Agent Framework", "Collaboration"],
+          "A focused memory-management kit for agents, useful for studying how retrieval, refinement, and persistence are packaged in agent systems.",
+        tags: ["Agent Memory", "RAG", "Framework"],
       },
       {
         type: "GitHub",
