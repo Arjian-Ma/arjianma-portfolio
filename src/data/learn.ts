@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-08-22";
+export const lastUpdated = "2026-08-23";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -78,13 +78,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "statsmodels/statsmodels",
+        title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-08-22",
-        href: "https://github.com/statsmodels/statsmodels",
+        date: "Updated 2026-08-23",
+        href: "https://github.com/stdlib-js/stdlib",
         summary:
-          "A mature Python library for statistical modeling and econometrics, useful for learning how rigorous statistical methods are exposed in production APIs.",
-        tags: ["Statistics", "Econometrics", "Python"],
+          "A broad numerical library for JavaScript and TypeScript, useful for seeing how scientific-computing primitives can be packaged for the web platform.",
+        tags: ["Numerical Computing", "JavaScript", "Scientific Computing"],
       },
     ],
   },
@@ -147,13 +147,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "huggingface/diffusers",
+        title: "deepspeedai/DeepSpeed",
         source: "GitHub",
-        date: "Updated 2026-08-22",
-        href: "https://github.com/huggingface/diffusers",
+        date: "Updated 2026-08-23",
+        href: "https://github.com/deepspeedai/DeepSpeed",
         summary:
-          "A leading PyTorch diffusion-model toolkit for image, video, and audio generation, useful for tracking practical generative-model workflows.",
-        tags: ["Diffusion Models", "PyTorch", "Generative AI"],
+          "A widely used optimization library for distributed deep-learning training and inference, useful for understanding how large models are made efficient in practice.",
+        tags: ["Distributed Training", "Optimization", "Deep Learning"],
       },
     ],
   },
@@ -216,13 +216,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "IBM/mcp-context-forge",
+        title: "strukto-ai/mirage",
         source: "GitHub",
-        date: "Updated 2026-08-21",
-        href: "https://github.com/IBM/mcp-context-forge",
+        date: "Updated 2026-08-23",
+        href: "https://github.com/strukto-ai/mirage",
         summary:
-          "An MCP gateway and registry for managing tool endpoints, discovery, guardrails, and governance in agent systems.",
-        tags: ["MCP", "Tool Use", "Gateway"],
+          "A virtual filesystem layer for AI agents, relevant to the emerging infrastructure pattern of giving agents safer, structured access to project context.",
+        tags: ["Agent Infrastructure", "Virtual Filesystem", "Context"],
       },
     ],
   },
