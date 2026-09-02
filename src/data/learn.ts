@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-09-01";
+export const lastUpdated = "2026-09-02";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,53 +28,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Colorful Exponential Random Graph Models",
+        title: "Families of relative periodic orbits in the planar three-body problem via consecutive alignments",
         source: "arXiv",
-        date: "2026-08-31",
-        href: "https://arxiv.org/abs/2608.31130",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2609.01585",
         summary:
-          "Extends exponential random graph models to colored networks and graphon limits, linking probability, statistical mechanics, and modern network modeling.",
-        tags: ["Probability", "Random Graphs", "Statistics"],
+          "Presents a numerical continuation procedure for families of relative periodic orbits, blending dynamical systems, celestial mechanics, and computational experimentation.",
+        tags: ["Dynamical Systems", "Numerical Analysis", "Three-Body Problem"],
       },
       {
         type: "Paper",
-        title: "Scale Analysis and Shape Selection for the Generalized Gaussian Mechanism under Approximate Differential Privacy",
+        title: "Concentration of additive functionals of Stratonovich-type",
         source: "arXiv",
-        date: "2026-08-31",
-        href: "https://arxiv.org/abs/2608.31138",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2609.01581",
         summary:
-          "Studies how to tune generalized Gaussian noise for approximate differential privacy, a useful bridge between mathematical statistics and privacy-aware data analysis.",
-        tags: ["Statistics", "Differential Privacy", "Mechanism Design"],
+          "Develops concentration tools for Stratonovich-style additive functionals, useful for thinking about stochastic dynamics and inference from fluctuating paths.",
+        tags: ["Probability", "Stochastic Processes", "Concentration"],
       },
       {
         type: "Paper",
-        title: "On (fake) Stationarity in Stochastic Volterra Equations with Affine Drift and Regular Kernels",
+        title: "Greedy sampling designs via reduced basis methods: optimal recovery in the uniform norm",
         source: "arXiv",
-        date: "2026-08-31",
-        href: "https://arxiv.org/abs/2608.31099",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2609.01578",
         summary:
-          "Clarifies stationarity-like behavior in stochastic Volterra equations, giving a compact window into long-memory stochastic dynamics.",
-        tags: ["Probability", "Stochastic Processes", "Volterra Equations"],
+          "Connects RKHS sampling, reduced-basis ideas, and uniform-norm recovery, offering a rigorous lens on where to sample complex functions.",
+        tags: ["Numerical Analysis", "RKHS", "Sampling"],
+      },
+      {
+        type: "Paper",
+        title: "Pointwise Majorization for sub-Weibull and Mixed Tail Processes with Applications in Quadratic Chaos and Ergodic Diffusions",
+        source: "arXiv",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2609.01576",
+        summary:
+          "Refines chaining-style bounds into pointwise controls for heavy-tailed processes, with applications that touch probability, statistics, and learning theory.",
+        tags: ["Probability", "Statistics", "Learning Theory"],
       },
       {
         type: "GitHub",
-        title: "stdlib-js/stdlib",
+        title: "MoganLab/mogan",
         source: "GitHub",
-        date: "Updated 2026-09-01",
-        href: "https://github.com/stdlib-js/stdlib",
+        date: "Updated 2026-09-02",
+        href: "https://github.com/MoganLab/mogan",
         summary:
-          "A substantial JavaScript/TypeScript numerical and scientific standard library, useful for seeing how mathematical computing APIs are organized for the web ecosystem.",
-        tags: ["Numerical Computing", "Statistics", "TypeScript"],
-      },
-      {
-        type: "GitHub",
-        title: "root-project/root",
-        source: "GitHub",
-        date: "Updated 2026-09-01",
-        href: "https://github.com/root-project/root",
-        summary:
-          "CERN's ROOT toolkit remains a rich case study in statistical analysis, visualization, and large-scale scientific data infrastructure.",
-        tags: ["Statistics", "Scientific Computing", "C++"],
+          "A STEM-focused suite based on GNU TeXmacs; interesting as a live example of tooling for mathematical writing, computation, and technical exploration.",
+        tags: ["Mathematics", "Scientific Writing", "STEM Tools"],
       },
     ],
   },
@@ -87,53 +87,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Sharp Approximation Rates for Neural Networks with Affine Latent Parameterizations",
+        title: "Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation",
         source: "arXiv",
-        date: "2026-08-31",
-        href: "https://arxiv.org/abs/2608.31157",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2609.01604",
         summary:
-          "Analyzes parameter-efficient neural networks where full weights are generated from low-dimensional latent variables, sharpening intuition about compact model families.",
-        tags: ["Approximation Theory", "Neural Networks", "Parameter Efficiency"],
+          "Looks inside LLM-as-a-judge behavior for summarization, which is directly relevant to building more trustworthy evaluation pipelines.",
+        tags: ["Evaluation", "LLM-as-Judge", "Summarization"],
       },
       {
         type: "Paper",
-        title: "On the Complexity of the Compatibility Problem for Succinctly Encoded Conditional Distributions",
+        title: "Shallower ReLU Network Representations via Exact Linear Algebra",
         source: "arXiv",
-        date: "2026-08-31",
-        href: "https://arxiv.org/abs/2608.31120",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2607.21651",
         summary:
-          "Examines when separately specified conditionals can come from a coherent joint distribution, a foundational issue for probabilistic ML modeling.",
-        tags: ["Probabilistic ML", "Complexity", "Conditional Models"],
+          "Uses exact linear algebra to sharpen what shallow ReLU networks can represent, a compact bridge between neural networks and theory.",
+        tags: ["Neural Networks", "Representation", "Theory"],
       },
       {
         type: "Paper",
-        title: "Constant Individual Regret in General Games",
+        title: "Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation",
         source: "arXiv",
-        date: "2026-08-31",
-        href: "https://arxiv.org/abs/2608.31166",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2609.01596",
         summary:
-          "Improves no-regret guarantees in finite games, relevant to learning dynamics and equilibrium-seeking algorithms.",
-        tags: ["Game Theory", "Online Learning", "Regret"],
+          "Combines multimodal representation learning and RL post-training for precise contact-rich robotics, showing how foundation-model ideas move into embodied control.",
+        tags: ["Robotics", "Foundation Models", "Reinforcement Learning"],
+      },
+      {
+        type: "GitHub",
+        title: "pytorch/executorch",
+        source: "GitHub",
+        date: "Updated 2026-09-02",
+        href: "https://github.com/pytorch/executorch",
+        summary:
+          "PyTorch's on-device AI runtime is a practical reference for deploying models across mobile, embedded, and edge environments.",
+        tags: ["PyTorch", "Edge AI", "Deployment"],
       },
       {
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-09-01",
+        date: "Updated 2026-09-02",
         href: "https://github.com/vllm-project/vllm",
         summary:
-          "A high-throughput LLM inference server and engine; its active updates are worth tracking for practical serving, batching, and memory-management patterns.",
+          "A high-throughput LLM inference engine worth tracking for real-world serving, batching, and memory-management patterns.",
         tags: ["LLM Inference", "Serving", "Systems"],
-      },
-      {
-        type: "GitHub",
-        title: "flagos-ai/FlagGems",
-        source: "GitHub",
-        date: "Updated 2026-09-01",
-        href: "https://github.com/flagos-ai/FlagGems",
-        summary:
-          "A Triton-based operator library for large language models, useful for studying the lower-level kernels behind efficient training and inference.",
-        tags: ["LLM Systems", "Triton", "Kernels"],
       },
     ],
   },
@@ -146,53 +146,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "S3Gym: Can LLMs Turn Self-Testing and Self-Judging into Self-Improvement?",
+        title: "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
         source: "arXiv",
-        date: "2026-08-31",
-        href: "https://arxiv.org/abs/2608.31100",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2609.01603",
         summary:
-          "Tests whether agents can convert accumulated experience into self-generated tests, judgments, and improved behavior rather than remaining fixed policies.",
-        tags: ["Self-Improvement", "Agent Benchmarks", "Evaluation"],
+          "Proposes trajectory-aware benchmark sampling for software engineering agents, aiming to make expensive agent evaluation more informative per run.",
+        tags: ["SWE Agents", "Evaluation", "Benchmarks"],
       },
       {
         type: "Paper",
-        title: "Token-Efficient Data Reasoning Agents via Adaptive Structuring of Unstructured Data",
+        title: "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
         source: "arXiv",
-        date: "2026-08-31",
-        href: "https://arxiv.org/abs/2608.31082",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2609.01600",
         summary:
-          "Focuses on reducing token cost for agents reasoning over messy enterprise documents by adaptively structuring unstructured data.",
-        tags: ["Data Agents", "Token Efficiency", "Reasoning"],
+          "Tests whether models can reason about dependency and cleanup effects inside dynamic agent harnesses, a practical failure mode for tool-using systems.",
+        tags: ["Agent Harnesses", "Lifecycle Reasoning", "Benchmarks"],
       },
       {
         type: "Paper",
-        title: "Reconciling Process Supervision with Outcome-Based Credit in Agentic Policy Optimization",
+        title: "The Rise of Verbal Reinforcement Learning",
         source: "arXiv",
-        date: "2026-08-31",
-        href: "https://arxiv.org/abs/2608.31077",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2609.01597",
         summary:
-          "Targets the credit-assignment problem in long-horizon agent training by combining outcome feedback with finer process supervision.",
-        tags: ["Agent Training", "Policy Optimization", "Credit Assignment"],
+          "Frames natural-language feedback as a reinforcement-learning signal for language agents, clarifying when feedback changes prompts, memory, or policies.",
+        tags: ["Verbal RL", "Feedback", "Language Agents"],
+      },
+      {
+        type: "Paper",
+        title: "EvoSCM: Scientific Belief Revision Through Causal Model Evolution and Experimentation",
+        source: "arXiv",
+        date: "2026-09-01",
+        href: "https://arxiv.org/abs/2609.01526",
+        summary:
+          "Gives scientific agents explicit evolving causal models, making belief revision and experiment-driven learning more inspectable.",
+        tags: ["Scientific Agents", "Causal Models", "Belief Revision"],
       },
       {
         type: "GitHub",
-        title: "aaif-goose/goose",
+        title: "infiniflow/ragflow",
         source: "GitHub",
-        date: "Updated 2026-09-01",
-        href: "https://github.com/aaif-goose/goose",
+        date: "Updated 2026-09-02",
+        href: "https://github.com/infiniflow/ragflow",
         summary:
-          "An extensible open-source AI agent that can execute, edit, and test with external tools, making it a practical reference for tool-using coding agents.",
-        tags: ["Coding Agents", "Tool Use", "Open Source"],
-      },
-      {
-        type: "GitHub",
-        title: "stablyai/orca",
-        source: "GitHub",
-        date: "Updated 2026-09-01",
-        href: "https://github.com/stablyai/orca",
-        summary:
-          "An agent development environment for running fleets of parallel coding agents, relevant for understanding orchestration and human oversight workflows.",
-        tags: ["Agent Orchestration", "Parallel Agents", "Developer Tools"],
+          "A substantial open-source RAG engine with agent capabilities, useful for studying production context layers around LLM applications.",
+        tags: ["RAG", "Agentic Retrieval", "LLM Apps"],
       },
     ],
   },
