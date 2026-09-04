@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-09-02";
+export const lastUpdated = "2026-09-04";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -28,23 +28,34 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Families of relative periodic orbits in the planar three-body problem via consecutive alignments",
+        title: "Computation of Strong Solutions to Stochastic Variational Inequalities",
         source: "arXiv",
-        date: "2026-09-01",
-        href: "https://arxiv.org/abs/2609.01585",
+        date: "2026-09-03",
+        href: "https://arxiv.org/abs/2609.04188",
         summary:
-          "Presents a numerical continuation procedure for families of relative periodic orbits, blending dynamical systems, celestial mechanics, and computational experimentation.",
-        tags: ["Dynamical Systems", "Numerical Analysis", "Three-Body Problem"],
+          "Builds a computational framework for monotone stochastic variational inequalities, connecting optimization algorithms with stochastic modeling.",
+        tags: ["Optimization", "Stochastic Systems", "Variational Inequalities"],
       },
       {
         type: "Paper",
-        title: "Concentration of additive functionals of Stratonovich-type",
+        title:
+          "Thermodynamic Concentration Inequalities: Controlling Uncertainty in Finite-Time and Small-Sample Thermodynamic Inference",
         source: "arXiv",
-        date: "2026-09-01",
-        href: "https://arxiv.org/abs/2609.01581",
+        date: "2026-09-03",
+        href: "https://arxiv.org/abs/2609.04162",
         summary:
-          "Develops concentration tools for Stratonovich-style additive functionals, useful for thinking about stochastic dynamics and inference from fluctuating paths.",
-        tags: ["Probability", "Stochastic Processes", "Concentration"],
+          "Derives nonasymptotic concentration bounds for currents of ergodic diffusions, a useful bridge between probability and uncertainty-aware physical inference.",
+        tags: ["Probability", "Concentration", "Stochastic Processes"],
+      },
+      {
+        type: "Paper",
+        title: "Smooth autonomous fast dynamo action on the three-torus",
+        source: "arXiv",
+        date: "2026-09-03",
+        href: "https://arxiv.org/abs/2609.04153",
+        summary:
+          "Constructs smooth autonomous flows on the three-torus that generate fast dynamos, giving a striking dynamical-systems result with computational flavor.",
+        tags: ["Dynamical Systems", "PDE", "Mathematical Physics"],
       },
       {
         type: "Paper",
@@ -57,24 +68,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Numerical Analysis", "RKHS", "Sampling"],
       },
       {
-        type: "Paper",
-        title: "Pointwise Majorization for sub-Weibull and Mixed Tail Processes with Applications in Quadratic Chaos and Ergodic Diffusions",
-        source: "arXiv",
-        date: "2026-09-01",
-        href: "https://arxiv.org/abs/2609.01576",
-        summary:
-          "Refines chaining-style bounds into pointwise controls for heavy-tailed processes, with applications that touch probability, statistics, and learning theory.",
-        tags: ["Probability", "Statistics", "Learning Theory"],
-      },
-      {
         type: "GitHub",
-        title: "MoganLab/mogan",
+        title: "stdlib-js/stdlib",
         source: "GitHub",
-        date: "Updated 2026-09-02",
-        href: "https://github.com/MoganLab/mogan",
+        date: "Updated 2026-09-04",
+        href: "https://github.com/stdlib-js/stdlib",
         summary:
-          "A STEM-focused suite based on GNU TeXmacs; interesting as a live example of tooling for mathematical writing, computation, and technical exploration.",
-        tags: ["Mathematics", "Scientific Writing", "STEM Tools"],
+          "A substantial numerical and scientific standard library for JavaScript/TypeScript, useful for studying how mathematical tooling is organized in production.",
+        tags: ["Numerical Computing", "Statistics", "Scientific Tools"],
       },
     ],
   },
@@ -87,49 +88,50 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation",
+        title: "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
         source: "arXiv",
-        date: "2026-09-01",
-        href: "https://arxiv.org/abs/2609.01604",
+        date: "2026-09-03",
+        href: "https://arxiv.org/abs/2609.04199",
         summary:
-          "Looks inside LLM-as-a-judge behavior for summarization, which is directly relevant to building more trustworthy evaluation pipelines.",
-        tags: ["Evaluation", "LLM-as-Judge", "Summarization"],
+          "Explores replacing repeated remote LLM calls with trained local neural functions, a practical idea for lowering cost, latency, and provider dependence.",
+        tags: ["LLMs", "Model Distillation", "Applied ML"],
       },
       {
         type: "Paper",
-        title: "Shallower ReLU Network Representations via Exact Linear Algebra",
+        title:
+          "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
         source: "arXiv",
-        date: "2026-09-01",
-        href: "https://arxiv.org/abs/2607.21651",
+        date: "2026-09-03",
+        href: "https://arxiv.org/abs/2609.04198",
         summary:
-          "Uses exact linear algebra to sharpen what shallow ReLU networks can represent, a compact bridge between neural networks and theory.",
-        tags: ["Neural Networks", "Representation", "Theory"],
+          "Tests black-box LLM judges as measurement instruments and highlights reliability risks that matter for evaluation pipelines and leaderboards.",
+        tags: ["Evaluation", "LLM-as-Judge", "Reliability"],
       },
       {
         type: "Paper",
-        title: "Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation",
+        title: "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
         source: "arXiv",
-        date: "2026-09-01",
-        href: "https://arxiv.org/abs/2609.01596",
+        date: "2026-09-03",
+        href: "https://arxiv.org/abs/2609.04194",
         summary:
-          "Combines multimodal representation learning and RL post-training for precise contact-rich robotics, showing how foundation-model ideas move into embodied control.",
-        tags: ["Robotics", "Foundation Models", "Reinforcement Learning"],
+          "Challenges the assumption that readable chain-of-thought faithfully explains model decisions, sharpening how to think about interpretability.",
+        tags: ["Interpretability", "Chain-of-Thought", "Evaluation"],
       },
       {
         type: "GitHub",
-        title: "pytorch/executorch",
+        title: "NVIDIA/TensorRT-LLM",
         source: "GitHub",
-        date: "Updated 2026-09-02",
-        href: "https://github.com/pytorch/executorch",
+        date: "Updated 2026-09-04",
+        href: "https://github.com/NVIDIA/TensorRT-LLM",
         summary:
-          "PyTorch's on-device AI runtime is a practical reference for deploying models across mobile, embedded, and edge environments.",
-        tags: ["PyTorch", "Edge AI", "Deployment"],
+          "A high-performance LLM inference stack worth tracking for practical optimization patterns in serving large models efficiently.",
+        tags: ["LLM Inference", "Optimization", "Deployment"],
       },
       {
         type: "GitHub",
         title: "vllm-project/vllm",
         source: "GitHub",
-        date: "Updated 2026-09-02",
+        date: "Updated 2026-09-04",
         href: "https://github.com/vllm-project/vllm",
         summary:
           "A high-throughput LLM inference engine worth tracking for real-world serving, batching, and memory-management patterns.",
@@ -146,53 +148,53 @@ export const learnTopics: LearnTopic[] = [
     resources: [
       {
         type: "Paper",
-        title: "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
+        title: "A Case Study on Emergent Cheating and Whistleblowing in Autonomous Research Swarms",
         source: "arXiv",
-        date: "2026-09-01",
-        href: "https://arxiv.org/abs/2609.01603",
+        date: "2026-09-03",
+        href: "https://arxiv.org/abs/2609.04170",
         summary:
-          "Proposes trajectory-aware benchmark sampling for software engineering agents, aiming to make expensive agent evaluation more informative per run.",
-        tags: ["SWE Agents", "Evaluation", "Benchmarks"],
+          "Studies how multi-agent research systems can develop coordination failures, making it relevant to safety, incentives, and monitoring for agent teams.",
+        tags: ["Multi-Agent Systems", "AI Safety", "Research Agents"],
       },
       {
         type: "Paper",
-        title: "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+        title: "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
         source: "arXiv",
-        date: "2026-09-01",
-        href: "https://arxiv.org/abs/2609.01600",
+        date: "2026-09-03",
+        href: "https://arxiv.org/abs/2609.04159",
         summary:
-          "Tests whether models can reason about dependency and cleanup effects inside dynamic agent harnesses, a practical failure mode for tool-using systems.",
-        tags: ["Agent Harnesses", "Lifecycle Reasoning", "Benchmarks"],
+          "Pairs LLM security agents with specialized topological reasoning, showing a concrete pattern for tool-augmented agents in complex environments.",
+        tags: ["Security Agents", "Tool Use", "Reasoning"],
       },
       {
         type: "Paper",
-        title: "The Rise of Verbal Reinforcement Learning",
+        title: "The Natural Language Interaction Protocol and Standard for AI Agents",
         source: "arXiv",
-        date: "2026-09-01",
-        href: "https://arxiv.org/abs/2609.01597",
+        date: "2026-09-03",
+        href: "https://arxiv.org/abs/2609.04135",
         summary:
-          "Frames natural-language feedback as a reinforcement-learning signal for language agents, clarifying when feedback changes prompts, memory, or policies.",
-        tags: ["Verbal RL", "Feedback", "Language Agents"],
+          "Proposes a standard for natural-language agent interaction, useful for comparing how protocols shape interoperability across frameworks and tools.",
+        tags: ["Agent Protocols", "Interoperability", "Standards"],
       },
       {
         type: "Paper",
-        title: "EvoSCM: Scientific Belief Revision Through Causal Model Evolution and Experimentation",
+        title: "PatchBench: Evaluating AI Agents for Vulnerability Patching",
         source: "arXiv",
-        date: "2026-09-01",
-        href: "https://arxiv.org/abs/2609.01526",
+        date: "2026-09-03",
+        href: "https://arxiv.org/abs/2609.04075",
         summary:
-          "Gives scientific agents explicit evolving causal models, making belief revision and experiment-driven learning more inspectable.",
-        tags: ["Scientific Agents", "Causal Models", "Belief Revision"],
+          "Introduces a benchmark for vulnerability-patching agents that goes beyond simple proof-of-concept crash checks toward more realistic evaluation.",
+        tags: ["SWE Agents", "Security", "Benchmarks"],
       },
       {
         type: "GitHub",
-        title: "infiniflow/ragflow",
+        title: "agno-agi/agno",
         source: "GitHub",
-        date: "Updated 2026-09-02",
-        href: "https://github.com/infiniflow/ragflow",
+        date: "Updated 2026-09-04",
+        href: "https://github.com/agno-agi/agno",
         summary:
-          "A substantial open-source RAG engine with agent capabilities, useful for studying production context layers around LLM applications.",
-        tags: ["RAG", "Agentic Retrieval", "LLM Apps"],
+          "A widely used framework for building and managing agent platforms, useful for studying memory, tools, workflows, and production agent infrastructure.",
+        tags: ["Agent Framework", "Tool Use", "Agent Platforms"],
       },
     ],
   },
