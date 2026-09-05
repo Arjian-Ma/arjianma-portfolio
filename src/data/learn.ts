@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-09-04";
+export const lastUpdated = "2026-09-05";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -76,6 +76,16 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A substantial numerical and scientific standard library for JavaScript/TypeScript, useful for studying how mathematical tooling is organized in production.",
         tags: ["Numerical Computing", "Statistics", "Scientific Tools"],
+      },
+      {
+        type: "GitHub",
+        title: "oscar-system/Oscar.jl",
+        source: "GitHub",
+        date: "Updated 2026-09-05",
+        href: "https://github.com/oscar-system/Oscar.jl",
+        summary:
+          "A comprehensive Julia-based computer algebra system for algebra, geometry, and number theory, useful for seeing modern mathematical software design in practice.",
+        tags: ["Computer Algebra", "Julia", "Mathematical Software"],
       },
     ],
   },
@@ -137,6 +147,16 @@ export const learnTopics: LearnTopic[] = [
           "A high-throughput LLM inference engine worth tracking for real-world serving, batching, and memory-management patterns.",
         tags: ["LLM Inference", "Serving", "Systems"],
       },
+      {
+        type: "GitHub",
+        title: "sgl-project/sglang",
+        source: "GitHub",
+        date: "Updated 2026-09-05",
+        href: "https://github.com/sgl-project/sglang",
+        summary:
+          "A fast serving framework for large language and multimodal models, complementing vLLM and TensorRT-LLM with another production-oriented inference stack to study.",
+        tags: ["LLM Inference", "Serving", "Multimodal Models"],
+      },
     ],
   },
   {
@@ -195,6 +215,16 @@ export const learnTopics: LearnTopic[] = [
         summary:
           "A widely used framework for building and managing agent platforms, useful for studying memory, tools, workflows, and production agent infrastructure.",
         tags: ["Agent Framework", "Tool Use", "Agent Platforms"],
+      },
+      {
+        type: "GitHub",
+        title: "promptfoo/promptfoo",
+        source: "GitHub",
+        date: "Updated 2026-09-05",
+        href: "https://github.com/promptfoo/promptfoo",
+        summary:
+          "A practical evaluation and red-teaming toolkit for prompts, agents, and RAG systems, helpful for learning how agent behavior is tested before deployment.",
+        tags: ["Agent Evaluation", "RAG", "Red Teaming"],
       },
     ],
   },
