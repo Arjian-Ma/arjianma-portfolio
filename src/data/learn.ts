@@ -16,7 +16,7 @@ export interface LearnTopic {
   resources: LearnResource[];
 }
 
-export const lastUpdated = "2026-09-05";
+export const lastUpdated = "2026-09-06";
 
 export const learnTopics: LearnTopic[] = [
   {
@@ -48,14 +48,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Probability", "Concentration", "Stochastic Processes"],
       },
       {
-        type: "Paper",
-        title: "Smooth autonomous fast dynamo action on the three-torus",
-        source: "arXiv",
-        date: "2026-09-03",
-        href: "https://arxiv.org/abs/2609.04153",
+        type: "GitHub",
+        title: "statsmodels/statsmodels",
+        source: "GitHub",
+        date: "Updated 2026-09-06",
+        href: "https://github.com/statsmodels/statsmodels",
         summary:
-          "Constructs smooth autonomous flows on the three-torus that generate fast dynamos, giving a striking dynamical-systems result with computational flavor.",
-        tags: ["Dynamical Systems", "PDE", "Mathematical Physics"],
+          "A mature Python library for statistical modeling and econometrics, useful for learning how rigorous statistical methods are exposed through production scientific software.",
+        tags: ["Statistics", "Python", "Scientific Computing"],
       },
       {
         type: "Paper",
@@ -129,13 +129,13 @@ export const learnTopics: LearnTopic[] = [
       },
       {
         type: "GitHub",
-        title: "NVIDIA/TensorRT-LLM",
+        title: "scverse/scvi-tools",
         source: "GitHub",
-        date: "Updated 2026-09-04",
-        href: "https://github.com/NVIDIA/TensorRT-LLM",
+        date: "Updated 2026-09-06",
+        href: "https://github.com/scverse/scvi-tools",
         summary:
-          "A high-performance LLM inference stack worth tracking for practical optimization patterns in serving large models efficiently.",
-        tags: ["LLM Inference", "Optimization", "Deployment"],
+          "A widely used toolkit for deep probabilistic analysis of single-cell and spatial omics data, showing how modern ML methods become reusable scientific workflows.",
+        tags: ["Probabilistic ML", "Scientific ML", "Biology"],
       },
       {
         type: "GitHub",
@@ -187,14 +187,14 @@ export const learnTopics: LearnTopic[] = [
         tags: ["Security Agents", "Tool Use", "Reasoning"],
       },
       {
-        type: "Paper",
-        title: "The Natural Language Interaction Protocol and Standard for AI Agents",
-        source: "arXiv",
-        date: "2026-09-03",
-        href: "https://arxiv.org/abs/2609.04135",
+        type: "GitHub",
+        title: "callstack/agent-device",
+        source: "GitHub",
+        date: "Updated 2026-09-06",
+        href: "https://github.com/callstack/agent-device",
         summary:
-          "Proposes a standard for natural-language agent interaction, useful for comparing how protocols shape interoperability across frameworks and tools.",
-        tags: ["Agent Protocols", "Interoperability", "Standards"],
+          "Provides mobile app automation and verification tools for AI coding agents, a practical bridge between agent workflows and real device testing.",
+        tags: ["Agent Tools", "Mobile Automation", "Verification"],
       },
       {
         type: "Paper",
